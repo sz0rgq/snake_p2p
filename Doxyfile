@@ -1,0 +1,17 @@
+# Project related configuration
+PROJECT_NAME           = "Snake 2P"
+OUTPUT_DIRECTORY       = ./docs
+INPUT                  = ./game/source ./game/includ
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+BRIEF_MEMBER_DESC      = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT                     = YES
+HAVE_DOT                = YES
+CLASS_DIAGRAMS          = YES
+INCLUDE_GRAPH           = YES
+INCLUDED_BY_GRAPH       = YES
+GRAPHICAL_HIERARCHY     = YES
+DIRECTORY_GRAPH         = YES
+DOT_PATH                = /usr/local/bin
