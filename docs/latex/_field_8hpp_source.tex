@@ -1,0 +1,34 @@
+\doxysection{Field.\+hpp}
+\hypertarget{_field_8hpp_source}{}\label{_field_8hpp_source}\index{game/includ/Field.hpp@{game/includ/Field.hpp}}
+\mbox{\hyperlink{_field_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FIELD\_HPP\_SENTRY}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FIELD\_HPP\_SENTRY}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_field_handler}{FieldHandler}};}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_handler}{GameHandler}};}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_field}{Field}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_field_handler}{FieldHandler}};}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_handler}{GameHandler}};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ size\_x;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ size\_y;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ full\_len;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{char}\ *field;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_field_aeda9ded6b09d74af42f6786224f8e16d}{Field}}(\textcolor{keywordtype}{int}\ \_size\_x,\ \textcolor{keywordtype}{int}\ \_size\_y);}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_field_a45d6e6d09b8f8e46de62b40119d62c60}{\string~Field}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_field_aa154caa34062240e997f7a7710802423}{GetFullLen}}()\ \{\ \textcolor{keywordflow}{return}\ full\_len;\ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{class_field_a73b68481fb7fc596bedba92782108e5f}{GetField}}()\ \{\ \textcolor{keywordflow}{return}\ field;\ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_field_abf94fd52060956ee36b4e613de017607}{GetSizeX}}()\ \{\ \textcolor{keywordflow}{return}\ size\_x;\ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_field_a43c0640c0f978ec7bba61084de61a5d2}{GetSizeY}}()\ \{\ \textcolor{keywordflow}{return}\ size\_y;\ \}}
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

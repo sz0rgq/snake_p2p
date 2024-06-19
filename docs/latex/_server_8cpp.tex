@@ -1,0 +1,57 @@
+\doxysection{game/source/\+Server.cpp File Reference}
+\hypertarget{_server_8cpp}{}\label{_server_8cpp}\index{game/source/Server.cpp@{game/source/Server.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$dirent.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$sys/select.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$sys/un.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include "{}../includ/\+Server.\+hpp"{}}\newline
+Include dependency graph for Server.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{_server_8cpp_a06fc87d81c62e9abb8790b6e5713c55baa2d814a2150d8b1455ce51e6fea0c5d0}{time\+\_\+for\+\_\+write\+\_\+sec}} = 0
+, \mbox{\hyperlink{_server_8cpp_a06fc87d81c62e9abb8790b6e5713c55ba6ba74e98ac7c098e69fdcb6eb5b97514}{time\+\_\+for\+\_\+write\+\_\+usec}} = 250000
+ \}
+\begin{DoxyCompactList}\small\item\em Создает новый объект \doxylink{class_client}{Client}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_server_8cpp_a06fc87d81c62e9abb8790b6e5713c55b}\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily \label{_server_8cpp_a06fc87d81c62e9abb8790b6e5713c55b} 
+anonymous enum}
+
+
+
+Создает новый объект \doxylink{class_client}{Client}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+fd} & Дескриптор файла. \\
+\hline
+{\em \+\_\+the\+\_\+master} & Ссылка на мастера. \\
+\hline
+{\em \+\_\+sn} & Порядковый номер \\
+\hline
+\end{DoxyParams}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{time\_for\_write\_sec@{time\_for\_write\_sec}!Server.cpp@{Server.cpp}}\index{Server.cpp@{Server.cpp}!time\_for\_write\_sec@{time\_for\_write\_sec}}}\Hypertarget{_server_8cpp_a06fc87d81c62e9abb8790b6e5713c55baa2d814a2150d8b1455ce51e6fea0c5d0}\label{_server_8cpp_a06fc87d81c62e9abb8790b6e5713c55b} 
+time\+\_\+for\+\_\+write\+\_\+sec&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{time\_for\_write\_usec@{time\_for\_write\_usec}!Server.cpp@{Server.cpp}}\index{Server.cpp@{Server.cpp}!time\_for\_write\_usec@{time\_for\_write\_usec}}}\Hypertarget{_server_8cpp_a06fc87d81c62e9abb8790b6e5713c55ba6ba74e98ac7c098e69fdcb6eb5b97514}\label{_server_8cpp_a06fc87d81c62e9abb8790b6e5713c55b} 
+time\+\_\+for\+\_\+write\+\_\+usec&\\
+\hline
+
+\end{DoxyEnumFields}

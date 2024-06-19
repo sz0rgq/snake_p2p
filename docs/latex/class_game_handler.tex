@@ -1,0 +1,268 @@
+\doxysection{Game\+Handler Class Reference}
+\hypertarget{class_game_handler}{}\label{class_game_handler}\index{GameHandler@{GameHandler}}
+
+
+\doxylink{class_game_handler}{Game\+Handler} класс реализует основную логику игры  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_handler_ab1a07cfd552c9d4c2e9358d3adf3a7e0}{Game\+Handler}} (\mbox{\hyperlink{class_field}{Field}} \texorpdfstring{$\ast$}{*}\+\_\+field, \mbox{\hyperlink{class_list}{List}}$<$ \mbox{\hyperlink{class_food}{Food}} $>$ \texorpdfstring{$\ast$}{*}\+\_\+foods, \mbox{\hyperlink{class_list}{List}}$<$ \mbox{\hyperlink{class_snake}{Snake}} $>$ \texorpdfstring{$\ast$}{*}\+\_\+snakes)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_game_handler}{Game\+Handler}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_handler_a37e9acdced835f48a2bb2a00cb322635}{\texorpdfstring{$\sim$}{\string~}\+Game\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \doxylink{class_game_handler}{Game\+Handler}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_handler_a1ae4d0fce47a5d5b8c039afc503dcca3}{Is\+Snake}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Проверка на столкновение змеи с самой собой. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_handler_a15a7c5a0ad0846d234958fa147dfc8dd}{Is\+Food}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Проверка на столкновение змеи с едой. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_handler_a5d28fc45725271772c8614335e65681b}{Is\+Other\+Snake}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s, \mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}other\+\_\+snake)
+\begin{DoxyCompactList}\small\item\em Проверка на столкновение змеи с другой змеей. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_handler_a333ddb4665a101655134b5f8ff293b82}{Snake\+Truncate}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s, Snake\+::item \texorpdfstring{$\ast$}{*}to)
+\begin{DoxyCompactList}\small\item\em Обрезка змеи до указанного элемента. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_handler_a3b6336c71c0128ca5bd6fe5dc645bc48}{Remove\+Snake}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Удаление змеи из списка змей. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_handler_a8a07fd1cf3cb7835687a6a78acb29189}{Add\+Snake}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Добавление змеи в список змей. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_handler_aeb3f272d99af4862d056efa8e386acfc}{Add\+Food}} ()
+\begin{DoxyCompactList}\small\item\em Добавление еды на поле. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_handler_a456c9cb36f9dbb638775f950c019a6f1}{Handle\+Out\+Of\+Field}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Обработка выхода змеи за пределы поля. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_handler_ac168ebbfd7f028108e3a114db9814a45}{Draw\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Отрисовка поля. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_handler_a6c7bba20d16e3287f56065e10333412c}{Draw\+Field\+For}} (const \mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Отрисовка поля для конкретной змеи. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_game_handler}{Game\+Handler} класс реализует основную логику игры 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_game_handler_ab1a07cfd552c9d4c2e9358d3adf3a7e0}\index{GameHandler@{GameHandler}!GameHandler@{GameHandler}}
+\index{GameHandler@{GameHandler}!GameHandler@{GameHandler}}
+\doxysubsubsection{\texorpdfstring{GameHandler()}{GameHandler()}}
+{\footnotesize\ttfamily \label{class_game_handler_ab1a07cfd552c9d4c2e9358d3adf3a7e0} 
+Game\+Handler\+::\+Game\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_field}{Field}} \texorpdfstring{$\ast$}{*}}]{\+\_\+field}{, }\item[{\mbox{\hyperlink{class_list}{List}}$<$ \mbox{\hyperlink{class_food}{Food}} $>$ \texorpdfstring{$\ast$}{*}}]{\+\_\+foods}{, }\item[{\mbox{\hyperlink{class_list}{List}}$<$ \mbox{\hyperlink{class_snake}{Snake}} $>$ \texorpdfstring{$\ast$}{*}}]{\+\_\+snakes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса \doxylink{class_game_handler}{Game\+Handler}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+field} & Поле игры. \\
+\hline
+{\em \+\_\+foods} & Список еды. \\
+\hline
+{\em \+\_\+snakes} & Список змей. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_handler_a37e9acdced835f48a2bb2a00cb322635}\index{GameHandler@{GameHandler}!````~GameHandler@{\texorpdfstring{$\sim$}{\string~}GameHandler}}
+\index{````~GameHandler@{\texorpdfstring{$\sim$}{\string~}GameHandler}!GameHandler@{GameHandler}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}GameHandler()}{\string~GameHandler()}}
+{\footnotesize\ttfamily \label{class_game_handler_a37e9acdced835f48a2bb2a00cb322635} 
+Game\+Handler\+::\texorpdfstring{$\sim$}{\string~}\+Game\+Handler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Деструктор класса \doxylink{class_game_handler}{Game\+Handler}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_handler_aeb3f272d99af4862d056efa8e386acfc}\index{GameHandler@{GameHandler}!AddFood@{AddFood}}
+\index{AddFood@{AddFood}!GameHandler@{GameHandler}}
+\doxysubsubsection{\texorpdfstring{AddFood()}{AddFood()}}
+{\footnotesize\ttfamily \label{class_game_handler_aeb3f272d99af4862d056efa8e386acfc} 
+void Game\+Handler\+::\+Add\+Food (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Добавление еды на поле. 
+
+Here is the call graph for this function\+:
+% FIG 0
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{class_game_handler_a8a07fd1cf3cb7835687a6a78acb29189}\index{GameHandler@{GameHandler}!AddSnake@{AddSnake}}
+\index{AddSnake@{AddSnake}!GameHandler@{GameHandler}}
+\doxysubsubsection{\texorpdfstring{AddSnake()}{AddSnake()}}
+{\footnotesize\ttfamily \label{class_game_handler_a8a07fd1cf3cb7835687a6a78acb29189} 
+void Game\+Handler\+::\+Add\+Snake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Добавление змеи в список змей. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{class_game_handler_ac168ebbfd7f028108e3a114db9814a45}\index{GameHandler@{GameHandler}!DrawField@{DrawField}}
+\index{DrawField@{DrawField}!GameHandler@{GameHandler}}
+\doxysubsubsection{\texorpdfstring{DrawField()}{DrawField()}}
+{\footnotesize\ttfamily \label{class_game_handler_ac168ebbfd7f028108e3a114db9814a45} 
+void Game\+Handler\+::\+Draw\+Field (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Отрисовка поля. 
+
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{class_game_handler_a6c7bba20d16e3287f56065e10333412c}\index{GameHandler@{GameHandler}!DrawFieldFor@{DrawFieldFor}}
+\index{DrawFieldFor@{DrawFieldFor}!GameHandler@{GameHandler}}
+\doxysubsubsection{\texorpdfstring{DrawFieldFor()}{DrawFieldFor()}}
+{\footnotesize\ttfamily \label{class_game_handler_a6c7bba20d16e3287f56065e10333412c} 
+void Game\+Handler\+::\+Draw\+Field\+For (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Отрисовка поля для конкретной змеи. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7
+\Hypertarget{class_game_handler_a456c9cb36f9dbb638775f950c019a6f1}\index{GameHandler@{GameHandler}!HandleOutOfField@{HandleOutOfField}}
+\index{HandleOutOfField@{HandleOutOfField}!GameHandler@{GameHandler}}
+\doxysubsubsection{\texorpdfstring{HandleOutOfField()}{HandleOutOfField()}}
+{\footnotesize\ttfamily \label{class_game_handler_a456c9cb36f9dbb638775f950c019a6f1} 
+void Game\+Handler\+::\+Handle\+Out\+Of\+Field (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Обработка выхода змеи за пределы поля. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 8
+Here is the caller graph for this function\+:
+% FIG 9
+\Hypertarget{class_game_handler_a15a7c5a0ad0846d234958fa147dfc8dd}\index{GameHandler@{GameHandler}!IsFood@{IsFood}}
+\index{IsFood@{IsFood}!GameHandler@{GameHandler}}
+\doxysubsubsection{\texorpdfstring{IsFood()}{IsFood()}}
+{\footnotesize\ttfamily \label{class_game_handler_a15a7c5a0ad0846d234958fa147dfc8dd} 
+bool Game\+Handler\+::\+Is\+Food (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Проверка на столкновение змеи с едой. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если столкновение произошло. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 10
+Here is the caller graph for this function\+:
+% FIG 11
+\Hypertarget{class_game_handler_a5d28fc45725271772c8614335e65681b}\index{GameHandler@{GameHandler}!IsOtherSnake@{IsOtherSnake}}
+\index{IsOtherSnake@{IsOtherSnake}!GameHandler@{GameHandler}}
+\doxysubsubsection{\texorpdfstring{IsOtherSnake()}{IsOtherSnake()}}
+{\footnotesize\ttfamily \label{class_game_handler_a5d28fc45725271772c8614335e65681b} 
+bool Game\+Handler\+::\+Is\+Other\+Snake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{other\+\_\+snake}{}\end{DoxyParamCaption})}
+
+
+
+Проверка на столкновение змеи с другой змеей. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+{\em other\+\_\+snake} & Указатель на другую змею. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если столкновение произошло. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 12
+Here is the caller graph for this function\+:
+% FIG 13
+\Hypertarget{class_game_handler_a1ae4d0fce47a5d5b8c039afc503dcca3}\index{GameHandler@{GameHandler}!IsSnake@{IsSnake}}
+\index{IsSnake@{IsSnake}!GameHandler@{GameHandler}}
+\doxysubsubsection{\texorpdfstring{IsSnake()}{IsSnake()}}
+{\footnotesize\ttfamily \label{class_game_handler_a1ae4d0fce47a5d5b8c039afc503dcca3} 
+bool Game\+Handler\+::\+Is\+Snake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Проверка на столкновение змеи с самой собой. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если столкновение произошло. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 14
+Here is the caller graph for this function\+:
+% FIG 15
+\Hypertarget{class_game_handler_a3b6336c71c0128ca5bd6fe5dc645bc48}\index{GameHandler@{GameHandler}!RemoveSnake@{RemoveSnake}}
+\index{RemoveSnake@{RemoveSnake}!GameHandler@{GameHandler}}
+\doxysubsubsection{\texorpdfstring{RemoveSnake()}{RemoveSnake()}}
+{\footnotesize\ttfamily \label{class_game_handler_a3b6336c71c0128ca5bd6fe5dc645bc48} 
+void Game\+Handler\+::\+Remove\+Snake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Удаление змеи из списка змей. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 16
+Here is the caller graph for this function\+:
+% FIG 17
+\Hypertarget{class_game_handler_a333ddb4665a101655134b5f8ff293b82}\index{GameHandler@{GameHandler}!SnakeTruncate@{SnakeTruncate}}
+\index{SnakeTruncate@{SnakeTruncate}!GameHandler@{GameHandler}}
+\doxysubsubsection{\texorpdfstring{SnakeTruncate()}{SnakeTruncate()}}
+{\footnotesize\ttfamily \label{class_game_handler_a333ddb4665a101655134b5f8ff293b82} 
+void Game\+Handler\+::\+Snake\+Truncate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{Snake\+::item \texorpdfstring{$\ast$}{*}}]{to}{}\end{DoxyParamCaption})}
+
+
+
+Обрезка змеи до указанного элемента. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+{\em to} & Элемент, до которого обреза змею. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 18
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game/source/\mbox{\hyperlink{_game_handler_8cpp}{Game\+Handler.\+cpp}}\end{DoxyCompactItemize}

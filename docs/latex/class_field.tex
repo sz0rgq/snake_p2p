@@ -1,0 +1,150 @@
+\doxysection{Field Class Reference}
+\hypertarget{class_field}{}\label{class_field}\index{Field@{Field}}
+
+
+Класс, представляющий игровое поле.  
+
+
+
+
+{\ttfamily \#include $<$Field.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_field_aeda9ded6b09d74af42f6786224f8e16d}{Field}} (int \+\_\+size\+\_\+x, int \+\_\+size\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_field}{Field}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_field_a45d6e6d09b8f8e46de62b40119d62c60}{\texorpdfstring{$\sim$}{\string~}\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \doxylink{class_field}{Field}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_field_aa154caa34062240e997f7a7710802423}{Get\+Full\+Len}} ()
+\begin{DoxyCompactList}\small\item\em Получение полной длины поля. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_field_a73b68481fb7fc596bedba92782108e5f}{Get\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Получение массива символов, представляющего поле. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_field_abf94fd52060956ee36b4e613de017607}{Get\+SizeX}} ()
+\begin{DoxyCompactList}\small\item\em Получение ширины поля. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_field_a43c0640c0f978ec7bba61084de61a5d2}{Get\+SizeY}} ()
+\begin{DoxyCompactList}\small\item\em Получение высоты поля. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_field_a5c1d7717d7a6b89ee39931dbfac284f4}{Field\+Handler}}
+\item 
+class \mbox{\hyperlink{class_field_a23d0dfcb136b3dc8999d689fdf77b249}{Game\+Handler}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий игровое поле. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_field_aeda9ded6b09d74af42f6786224f8e16d}\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}}
+{\footnotesize\ttfamily \label{class_field_aeda9ded6b09d74af42f6786224f8e16d} 
+Field\+::\+Field (\begin{DoxyParamCaption}\item[{int}]{\+\_\+size\+\_\+x}{, }\item[{int}]{\+\_\+size\+\_\+y}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \doxylink{class_field}{Field}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+size\+\_\+x} & Ширина поля. \\
+\hline
+{\em \+\_\+size\+\_\+y} & Высота поля.\\
+\hline
+{\em \+\_\+size\+\_\+x} & Ширина поля. \\
+\hline
+{\em \+\_\+size\+\_\+y} & Длина поля. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_field_a45d6e6d09b8f8e46de62b40119d62c60}\index{Field@{Field}!````~Field@{\texorpdfstring{$\sim$}{\string~}Field}}
+\index{````~Field@{\texorpdfstring{$\sim$}{\string~}Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Field()}{\string~Field()}}
+{\footnotesize\ttfamily \label{class_field_a45d6e6d09b8f8e46de62b40119d62c60} 
+Field\+::\texorpdfstring{$\sim$}{\string~}\+Field (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Деструктор класса \doxylink{class_field}{Field}. 
+
+Деструктор класса \doxylink{class_field}{Field}. Освобождает динамически выделенную память для поля. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_field_a73b68481fb7fc596bedba92782108e5f}\index{Field@{Field}!GetField@{GetField}}
+\index{GetField@{GetField}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{GetField()}{GetField()}}
+{\footnotesize\ttfamily \label{class_field_a73b68481fb7fc596bedba92782108e5f} 
+const char \texorpdfstring{$\ast$}{*} Field\+::\+Get\+Field (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение массива символов, представляющего поле. 
+
+\begin{DoxyReturn}{Returns}
+Массив символов, представляющий поле. 
+\end{DoxyReturn}
+\Hypertarget{class_field_aa154caa34062240e997f7a7710802423}\index{Field@{Field}!GetFullLen@{GetFullLen}}
+\index{GetFullLen@{GetFullLen}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{GetFullLen()}{GetFullLen()}}
+{\footnotesize\ttfamily \label{class_field_aa154caa34062240e997f7a7710802423} 
+int Field\+::\+Get\+Full\+Len (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение полной длины поля. 
+
+\begin{DoxyReturn}{Returns}
+Полная длина поля. 
+\end{DoxyReturn}
+\Hypertarget{class_field_abf94fd52060956ee36b4e613de017607}\index{Field@{Field}!GetSizeX@{GetSizeX}}
+\index{GetSizeX@{GetSizeX}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{GetSizeX()}{GetSizeX()}}
+{\footnotesize\ttfamily \label{class_field_abf94fd52060956ee36b4e613de017607} 
+int Field\+::\+Get\+SizeX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение ширины поля. 
+
+\begin{DoxyReturn}{Returns}
+Ширина поля. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\Hypertarget{class_field_a43c0640c0f978ec7bba61084de61a5d2}\index{Field@{Field}!GetSizeY@{GetSizeY}}
+\index{GetSizeY@{GetSizeY}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{GetSizeY()}{GetSizeY()}}
+{\footnotesize\ttfamily \label{class_field_a43c0640c0f978ec7bba61084de61a5d2} 
+int Field\+::\+Get\+SizeY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение высоты поля. 
+
+\begin{DoxyReturn}{Returns}
+Высота поля. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_field_a5c1d7717d7a6b89ee39931dbfac284f4}\index{Field@{Field}!FieldHandler@{FieldHandler}}
+\index{FieldHandler@{FieldHandler}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{FieldHandler}{FieldHandler}}
+{\footnotesize\ttfamily \label{class_field_a5c1d7717d7a6b89ee39931dbfac284f4} 
+friend class \mbox{\hyperlink{class_field_handler}{Field\+Handler}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{class_field_a23d0dfcb136b3dc8999d689fdf77b249}\index{Field@{Field}!GameHandler@{GameHandler}}
+\index{GameHandler@{GameHandler}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{GameHandler}{GameHandler}}
+{\footnotesize\ttfamily \label{class_field_a23d0dfcb136b3dc8999d689fdf77b249} 
+friend class \mbox{\hyperlink{class_game_handler}{Game\+Handler}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game/includ/\mbox{\hyperlink{_field_8hpp}{Field.\+hpp}}\item 
+game/source/\mbox{\hyperlink{_field_8cpp}{Field.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\doxysection{List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_list}{}\label{class_list}\index{List$<$ T $>$@{List$<$ T $>$}}
+
+
+{\ttfamily \#include $<$List.\+hpp$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_list_1_1_iterator}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_list_a5c5e27671b21b3815d4e25b953c69454}{List}} ()
+\item 
+\mbox{\hyperlink{class_list_a2b58189090f6e5ce52939c9195e59e85}{\texorpdfstring{$\sim$}{\string~}\+List}} ()
+\item 
+void \mbox{\hyperlink{class_list_affc43ba30cfcbe45d8d98920d38351c6}{Push}} (T \texorpdfstring{$\ast$}{*}val)
+\item 
+void \mbox{\hyperlink{class_list_ab597cbe65ce184168eb598bc9f32ffb2}{Pop}} ()
+\item 
+void \mbox{\hyperlink{class_list_afec62045def1727f4940468ac1b329e5}{Remove}} (\mbox{\hyperlink{class_list_cursor}{List\+Cursor}}$<$ T $>$ \texorpdfstring{$\ast$}{*}cursor)
+\item 
+\mbox{\hyperlink{class_list_1_1_iterator}{Iterator}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_list_a4e8f5003c3dcd437493060bbdf45e5cb}{Iterate}} ()
+\item 
+void \mbox{\hyperlink{class_list_aab910080a16b2051b0cedac2a3032921}{Remove}} (\mbox{\hyperlink{class_list_cursor}{List\+Cursor}}$<$ \mbox{\hyperlink{class_food}{Food}} $>$ \texorpdfstring{$\ast$}{*}cursor)
+\begin{DoxyCompactList}\small\item\em Специализированная реализация функции Remove для \doxylink{class_list}{List$<$\+Food$>$}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_list_aa42ad98edcdb30fc2ca35cecdbf311cc}{List\+Cursor$<$ T $>$}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_list_a5c5e27671b21b3815d4e25b953c69454}\index{List$<$ T $>$@{List$<$ T $>$}!List@{List}}
+\index{List@{List}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{List()}{List()}}
+{\footnotesize\ttfamily \label{class_list_a5c5e27671b21b3815d4e25b953c69454} 
+template$<$class T $>$ \\
+\mbox{\hyperlink{class_list}{List}}$<$ T $>$\mbox{\hyperlink{class_list}{\+::\+List}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_list_a2b58189090f6e5ce52939c9195e59e85}\index{List$<$ T $>$@{List$<$ T $>$}!````~List@{\texorpdfstring{$\sim$}{\string~}List}}
+\index{````~List@{\texorpdfstring{$\sim$}{\string~}List}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}List()}{\string~List()}}
+{\footnotesize\ttfamily \label{class_list_a2b58189090f6e5ce52939c9195e59e85} 
+template$<$class T $>$ \\
+\mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_list}{List}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_list_a4e8f5003c3dcd437493060bbdf45e5cb}\index{List$<$ T $>$@{List$<$ T $>$}!Iterate@{Iterate}}
+\index{Iterate@{Iterate}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Iterate()}{Iterate()}}
+{\footnotesize\ttfamily \label{class_list_a4e8f5003c3dcd437493060bbdf45e5cb} 
+template$<$class T $>$ \\
+\mbox{\hyperlink{class_list_1_1_iterator}{Iterator}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Iterate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+% FIG 0
+\Hypertarget{class_list_ab597cbe65ce184168eb598bc9f32ffb2}\index{List$<$ T $>$@{List$<$ T $>$}!Pop@{Pop}}
+\index{Pop@{Pop}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Pop()}{Pop()}}
+{\footnotesize\ttfamily \label{class_list_ab597cbe65ce184168eb598bc9f32ffb2} 
+template$<$class T $>$ \\
+void \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Pop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_list_affc43ba30cfcbe45d8d98920d38351c6}\index{List$<$ T $>$@{List$<$ T $>$}!Push@{Push}}
+\index{Push@{Push}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Push()}{Push()}}
+{\footnotesize\ttfamily \label{class_list_affc43ba30cfcbe45d8d98920d38351c6} 
+template$<$class T $>$ \\
+void \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Push (\begin{DoxyParamCaption}\item[{T \texorpdfstring{$\ast$}{*}}]{val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{class_list_aab910080a16b2051b0cedac2a3032921}\index{List$<$ T $>$@{List$<$ T $>$}!Remove@{Remove}}
+\index{Remove@{Remove}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_list_aab910080a16b2051b0cedac2a3032921} 
+void \mbox{\hyperlink{class_list}{List}}$<$ \mbox{\hyperlink{class_food}{Food}} $>$\+::\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_list_cursor}{List\+Cursor}}$<$ \mbox{\hyperlink{class_food}{Food}} $>$ \texorpdfstring{$\ast$}{*}}]{cursor}{}\end{DoxyParamCaption})}
+
+
+
+Специализированная реализация функции Remove для \doxylink{class_list}{List$<$\+Food$>$}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cursor} & Указывает на элемент, который нужно удалить. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_list_afec62045def1727f4940468ac1b329e5}\index{List$<$ T $>$@{List$<$ T $>$}!Remove@{Remove}}
+\index{Remove@{Remove}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_list_afec62045def1727f4940468ac1b329e5} 
+template$<$class T $>$ \\
+void \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_list_cursor}{List\+Cursor}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{cursor}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_list_aa42ad98edcdb30fc2ca35cecdbf311cc}\index{List$<$ T $>$@{List$<$ T $>$}!ListCursor$<$ T $>$@{ListCursor$<$ T $>$}}
+\index{ListCursor$<$ T $>$@{ListCursor$<$ T $>$}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ListCursor$<$ T $>$}{ListCursor< T >}}
+{\footnotesize\ttfamily \label{class_list_aa42ad98edcdb30fc2ca35cecdbf311cc} 
+template$<$class T $>$ \\
+friend class \mbox{\hyperlink{class_list_cursor}{List\+Cursor}}$<$ T $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game/includ/\mbox{\hyperlink{_list_8hpp}{List.\+hpp}}\end{DoxyCompactItemize}

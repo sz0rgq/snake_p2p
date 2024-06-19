@@ -1,0 +1,136 @@
+\doxysection{Event\+Selector Class Reference}
+\hypertarget{class_event_selector}{}\label{class_event_selector}\index{EventSelector@{EventSelector}}
+
+
+Класс для управления событиями.  
+
+
+
+
+{\ttfamily \#include $<$Server.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_event_selector_a85b4978f3048e9206da01eebabda6e0d}{Event\+Selector}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор для селектора событий. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_event_selector_a657cc6cc7c4922d9ddf23f4813e4a963}{\texorpdfstring{$\sim$}{\string~}\+Event\+Selector}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор для селектора событий. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_selector_a8043af807f70322a768cfc88f260c92d}{Add}} (\mbox{\hyperlink{class_fd_handler}{Fd\+Handler}} \texorpdfstring{$\ast$}{*}h)
+\begin{DoxyCompactList}\small\item\em Добавляет дескриптор файла в массив. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_selector_af19b17fc68f47b35d52d3e9585e1308a}{Remove}} (\mbox{\hyperlink{class_fd_handler}{Fd\+Handler}} \texorpdfstring{$\ast$}{*}h)
+\begin{DoxyCompactList}\small\item\em Удаляет дескриптор файла из массива. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_selector_add557411afa2c53a68268edabe00e995}{Set\+Server\+Fd}} (\mbox{\hyperlink{class_fd_handler}{Fd\+Handler}} \texorpdfstring{$\ast$}{*}h)
+\begin{DoxyCompactList}\small\item\em Устанавливает дескриптор файла сервера. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_selector_a9cd9f58dfd10faf5b408ee9dd19864fb}{Run}} ()
+\begin{DoxyCompactList}\small\item\em Запускает цикл обработки событий. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для управления событиями. 
+
+Этот класс предназначен для управления событиями, связанными с дескрипторами файлов. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_event_selector_a85b4978f3048e9206da01eebabda6e0d}\index{EventSelector@{EventSelector}!EventSelector@{EventSelector}}
+\index{EventSelector@{EventSelector}!EventSelector@{EventSelector}}
+\doxysubsubsection{\texorpdfstring{EventSelector()}{EventSelector()}}
+{\footnotesize\ttfamily \label{class_event_selector_a85b4978f3048e9206da01eebabda6e0d} 
+Event\+Selector\+::\+Event\+Selector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор для селектора событий. 
+
+\Hypertarget{class_event_selector_a657cc6cc7c4922d9ddf23f4813e4a963}\index{EventSelector@{EventSelector}!````~EventSelector@{\texorpdfstring{$\sim$}{\string~}EventSelector}}
+\index{````~EventSelector@{\texorpdfstring{$\sim$}{\string~}EventSelector}!EventSelector@{EventSelector}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}EventSelector()}{\string~EventSelector()}}
+{\footnotesize\ttfamily \label{class_event_selector_a657cc6cc7c4922d9ddf23f4813e4a963} 
+Event\+Selector\+::\texorpdfstring{$\sim$}{\string~}\+Event\+Selector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Деструктор для селектора событий. 
+
+Деструктор класса \doxylink{class_event_selector}{Event\+Selector}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_event_selector_a8043af807f70322a768cfc88f260c92d}\index{EventSelector@{EventSelector}!Add@{Add}}
+\index{Add@{Add}!EventSelector@{EventSelector}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{class_event_selector_a8043af807f70322a768cfc88f260c92d} 
+void Event\+Selector\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fd_handler}{Fd\+Handler}} \texorpdfstring{$\ast$}{*}}]{h}{}\end{DoxyParamCaption})}
+
+
+
+Добавляет дескриптор файла в массив. 
+
+Добавление обработчика файлового дескриптора в селектор.
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Дескриптор файла.\\
+\hline
+{\em h} & Обработчик файлового дескриптора. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{class_event_selector_af19b17fc68f47b35d52d3e9585e1308a}\index{EventSelector@{EventSelector}!Remove@{Remove}}
+\index{Remove@{Remove}!EventSelector@{EventSelector}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily \label{class_event_selector_af19b17fc68f47b35d52d3e9585e1308a} 
+void Event\+Selector\+::\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fd_handler}{Fd\+Handler}} \texorpdfstring{$\ast$}{*}}]{h}{}\end{DoxyParamCaption})}
+
+
+
+Удаляет дескриптор файла из массива. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Дескриптор файла. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{class_event_selector_a9cd9f58dfd10faf5b408ee9dd19864fb}\index{EventSelector@{EventSelector}!Run@{Run}}
+\index{Run@{Run}!EventSelector@{EventSelector}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily \label{class_event_selector_a9cd9f58dfd10faf5b408ee9dd19864fb} 
+void Event\+Selector\+::\+Run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Запускает цикл обработки событий. 
+
+Запуск селектора. Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{class_event_selector_add557411afa2c53a68268edabe00e995}\index{EventSelector@{EventSelector}!SetServerFd@{SetServerFd}}
+\index{SetServerFd@{SetServerFd}!EventSelector@{EventSelector}}
+\doxysubsubsection{\texorpdfstring{SetServerFd()}{SetServerFd()}}
+{\footnotesize\ttfamily \label{class_event_selector_add557411afa2c53a68268edabe00e995} 
+void Event\+Selector\+::\+Set\+Server\+Fd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fd_handler}{Fd\+Handler}} \texorpdfstring{$\ast$}{*}}]{h}{}\end{DoxyParamCaption})}
+
+
+
+Устанавливает дескриптор файла сервера. 
+
+Установка серверного файлового дескриптора.
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Дескриптор файла сервера. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game/includ/\mbox{\hyperlink{_server_8hpp}{Server.\+hpp}}\item 
+game/source/\mbox{\hyperlink{_server_8cpp}{Server.\+cpp}}\end{DoxyCompactItemize}

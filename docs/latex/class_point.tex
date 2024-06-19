@@ -1,0 +1,241 @@
+\doxysection{Point Class Reference}
+\hypertarget{class_point}{}\label{class_point}\index{Point@{Point}}
+
+
+Класс точки на плоскости.  
+
+
+
+
+{\ttfamily \#include $<$Point.\+hpp$>$}
+
+
+
+Inheritance diagram for Point\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point_aa49d4ac67981797aaa5eb2727c4cd4d4}{Point}} (int \+\_\+pos\+\_\+x=0, int \+\_\+pos\+\_\+y=0)
+\begin{DoxyCompactList}\small\item\em Конструктор точки. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_point_a364091762d6aa1aa5983d36fd7d8b6d5}{\texorpdfstring{$\sim$}{\string~}\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_point_a56ef488d55611d823a35eb1655f1de7a}{GetX}} ()
+\begin{DoxyCompactList}\small\item\em Получает координату x точки. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_point_aa42c18de4df078af493363a423fd9580}{GetY}} ()
+\begin{DoxyCompactList}\small\item\em Получает координату y точки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_a839b4405541912bf74145aaff087b698}{SetX}} (int \+\_\+pos\+\_\+x)
+\begin{DoxyCompactList}\small\item\em Устанавливает координату x точки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_ae6350ca9aebaafa5363619a04e164e85}{SetY}} (int \+\_\+pos\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Устанавливает координату y точки. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_point_a145aeae2ec938d82a5a2f3a1639f2c15}{operator=}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_point_a6c428a70f1bb4b470628b5174aa5bf5e}{operator==}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор сравнения на равенство. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_point_a7639aa248a3d735ddbe72aab2b7890e9}{operator+=}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор сложения с присваиванием. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_point_a7a0563fa0b01392bc4fddc8287534547}{operator-\/=}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор вычитания с присваиванием. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_point_a7d2d85d1ffef82b7ce75467b29f809c1}{operator+}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор сложения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс точки на плоскости. 
+
+Этот класс представляет собой точку на плоскости с координатами x и y. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_point_aa49d4ac67981797aaa5eb2727c4cd4d4}\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{Point()}{Point()}}
+{\footnotesize\ttfamily \label{class_point_aa49d4ac67981797aaa5eb2727c4cd4d4} 
+Point\+::\+Point (\begin{DoxyParamCaption}\item[{int}]{\+\_\+pos\+\_\+x}{ = {\ttfamily 0}, }\item[{int}]{\+\_\+pos\+\_\+y}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор точки. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+pos\+\_\+x} & Координата x точки (по умолчанию 0). \\
+\hline
+{\em \+\_\+pos\+\_\+y} & Координата y точки (по умолчанию 0). \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{class_point_a364091762d6aa1aa5983d36fd7d8b6d5}\index{Point@{Point}!````~Point@{\texorpdfstring{$\sim$}{\string~}Point}}
+\index{````~Point@{\texorpdfstring{$\sim$}{\string~}Point}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Point()}{\string~Point()}}
+{\footnotesize\ttfamily \label{class_point_a364091762d6aa1aa5983d36fd7d8b6d5} 
+virtual Point\+::\texorpdfstring{$\sim$}{\string~}\+Point (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Виртуальный деструктор. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_point_a56ef488d55611d823a35eb1655f1de7a}\index{Point@{Point}!GetX@{GetX}}
+\index{GetX@{GetX}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{GetX()}{GetX()}}
+{\footnotesize\ttfamily \label{class_point_a56ef488d55611d823a35eb1655f1de7a} 
+int Point\+::\+GetX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получает координату x точки. 
+
+\begin{DoxyReturn}{Returns}
+Координата x точки. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{class_point_aa42c18de4df078af493363a423fd9580}\index{Point@{Point}!GetY@{GetY}}
+\index{GetY@{GetY}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily \label{class_point_aa42c18de4df078af493363a423fd9580} 
+int Point\+::\+GetY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получает координату y точки. 
+
+\begin{DoxyReturn}{Returns}
+Координата y точки. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{class_point_a7d2d85d1ffef82b7ce75467b29f809c1}\index{Point@{Point}!operator+@{operator+}}
+\index{operator+@{operator+}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_point_a7d2d85d1ffef82b7ce75467b29f809c1} 
+\mbox{\hyperlink{class_point}{Point}} Point\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Оператор сложения. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Точка, которая добавляется к текущей. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Новая точка, равная сумме текущей и добавляемой. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 4
+\Hypertarget{class_point_a7639aa248a3d735ddbe72aab2b7890e9}\index{Point@{Point}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \label{class_point_a7639aa248a3d735ddbe72aab2b7890e9} 
+const \mbox{\hyperlink{class_point}{Point}} \& Point\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Оператор сложения с присваиванием. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Точка, которая добавляется к текущей. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на текущую точку. 
+\end{DoxyReturn}
+\Hypertarget{class_point_a7a0563fa0b01392bc4fddc8287534547}\index{Point@{Point}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \label{class_point_a7a0563fa0b01392bc4fddc8287534547} 
+const \mbox{\hyperlink{class_point}{Point}} \& Point\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Оператор вычитания с присваиванием. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Точка, которая вычитается из текущей. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на текущую точку. 
+\end{DoxyReturn}
+\Hypertarget{class_point_a145aeae2ec938d82a5a2f3a1639f2c15}\index{Point@{Point}!operator=@{operator=}}
+\index{operator=@{operator=}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_point_a145aeae2ec938d82a5a2f3a1639f2c15} 
+\mbox{\hyperlink{class_point}{Point}} \& Point\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Оператор присваивания. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Точка, которая копируется. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на текущую точку. 
+\end{DoxyReturn}
+\Hypertarget{class_point_a6c428a70f1bb4b470628b5174aa5bf5e}\index{Point@{Point}!operator==@{operator==}}
+\index{operator==@{operator==}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_point_a6c428a70f1bb4b470628b5174aa5bf5e} 
+bool Point\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Оператор сравнения на равенство. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Точка, с которой сравнивается. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если точки равны, false -\/ в противном случае. 
+\end{DoxyReturn}
+\Hypertarget{class_point_a839b4405541912bf74145aaff087b698}\index{Point@{Point}!SetX@{SetX}}
+\index{SetX@{SetX}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{SetX()}{SetX()}}
+{\footnotesize\ttfamily \label{class_point_a839b4405541912bf74145aaff087b698} 
+void Point\+::\+SetX (\begin{DoxyParamCaption}\item[{int}]{\+\_\+pos\+\_\+x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Устанавливает координату x точки. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+pos\+\_\+x} & Новая координата x точки. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{class_point_ae6350ca9aebaafa5363619a04e164e85}\index{Point@{Point}!SetY@{SetY}}
+\index{SetY@{SetY}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{SetY()}{SetY()}}
+{\footnotesize\ttfamily \label{class_point_ae6350ca9aebaafa5363619a04e164e85} 
+void Point\+::\+SetY (\begin{DoxyParamCaption}\item[{int}]{\+\_\+pos\+\_\+y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Устанавливает координату y точки. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+pos\+\_\+y} & Новая координата y точки. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 6
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game/includ/\mbox{\hyperlink{_point_8hpp}{Point.\+hpp}}\end{DoxyCompactItemize}

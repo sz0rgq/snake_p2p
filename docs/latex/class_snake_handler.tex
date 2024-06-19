@@ -1,0 +1,173 @@
+\doxysection{Snake\+Handler Class Reference}
+\hypertarget{class_snake_handler}{}\label{class_snake_handler}\index{SnakeHandler@{SnakeHandler}}
+
+
+Класс, представляющий обработчик змей.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Handler.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_snake_handler_a3fe92f4e9f0ffb04370af580b4e28afd}{Snake\+Handler}} (\mbox{\hyperlink{class_game_handler}{Game\+Handler}} \texorpdfstring{$\ast$}{*}\+\_\+handler)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_snake_handler}{Snake\+Handler}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_snake_handler_afdc28795a525015236795f39d1e4d02a}{Is\+Snake}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Проверка на столкновение змеи с самой собой. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_snake_handler_a59199ce5eaf4c2fdc21873168dc50bd5}{Is\+Food}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Проверка на столкновение змеи с едой. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_snake_handler_a419af6e8b85ed903d66f2a763a272963}{Is\+Other\+Snake}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s, \mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}other\+\_\+snake)
+\begin{DoxyCompactList}\small\item\em Проверка на столкновение змеи с другой змеей. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_handler_a7759b60a834a94f9e066f28d233a9be2}{Snake\+Truncate}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s, Snake\+::item \texorpdfstring{$\ast$}{*}to)
+\begin{DoxyCompactList}\small\item\em Обрезка змеи до указанного элемента. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_handler_ab18220bdd08da7c8aa087ca1e5e4852d}{Remove\+Snake}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Удаление змеи из списка змей. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_handler_a76810c919dcb7655e577041b339da772}{Add\+Snake}} (\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Добавление змеи в список змей. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий обработчик змей. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_snake_handler_a3fe92f4e9f0ffb04370af580b4e28afd}\index{SnakeHandler@{SnakeHandler}!SnakeHandler@{SnakeHandler}}
+\index{SnakeHandler@{SnakeHandler}!SnakeHandler@{SnakeHandler}}
+\doxysubsubsection{\texorpdfstring{SnakeHandler()}{SnakeHandler()}}
+{\footnotesize\ttfamily \label{class_snake_handler_a3fe92f4e9f0ffb04370af580b4e28afd} 
+Snake\+Handler\+::\+Snake\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_handler}{Game\+Handler}} \texorpdfstring{$\ast$}{*}}]{\+\_\+handler}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \doxylink{class_snake_handler}{Snake\+Handler}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+handler} & Обработчик игры. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_snake_handler_a76810c919dcb7655e577041b339da772}\index{SnakeHandler@{SnakeHandler}!AddSnake@{AddSnake}}
+\index{AddSnake@{AddSnake}!SnakeHandler@{SnakeHandler}}
+\doxysubsubsection{\texorpdfstring{AddSnake()}{AddSnake()}}
+{\footnotesize\ttfamily \label{class_snake_handler_a76810c919dcb7655e577041b339da772} 
+void Snake\+Handler\+::\+Add\+Snake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Добавление змеи в список змей. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+\Hypertarget{class_snake_handler_a59199ce5eaf4c2fdc21873168dc50bd5}\index{SnakeHandler@{SnakeHandler}!IsFood@{IsFood}}
+\index{IsFood@{IsFood}!SnakeHandler@{SnakeHandler}}
+\doxysubsubsection{\texorpdfstring{IsFood()}{IsFood()}}
+{\footnotesize\ttfamily \label{class_snake_handler_a59199ce5eaf4c2fdc21873168dc50bd5} 
+bool Snake\+Handler\+::\+Is\+Food (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Проверка на столкновение змеи с едой. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если столкновение произошло. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+\Hypertarget{class_snake_handler_a419af6e8b85ed903d66f2a763a272963}\index{SnakeHandler@{SnakeHandler}!IsOtherSnake@{IsOtherSnake}}
+\index{IsOtherSnake@{IsOtherSnake}!SnakeHandler@{SnakeHandler}}
+\doxysubsubsection{\texorpdfstring{IsOtherSnake()}{IsOtherSnake()}}
+{\footnotesize\ttfamily \label{class_snake_handler_a419af6e8b85ed903d66f2a763a272963} 
+bool Snake\+Handler\+::\+Is\+Other\+Snake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{other\+\_\+snake}{}\end{DoxyParamCaption})}
+
+
+
+Проверка на столкновение змеи с другой змеей. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+{\em other\+\_\+snake} & Указатель на другую змею. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если столкновение произошло. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
+\Hypertarget{class_snake_handler_afdc28795a525015236795f39d1e4d02a}\index{SnakeHandler@{SnakeHandler}!IsSnake@{IsSnake}}
+\index{IsSnake@{IsSnake}!SnakeHandler@{SnakeHandler}}
+\doxysubsubsection{\texorpdfstring{IsSnake()}{IsSnake()}}
+{\footnotesize\ttfamily \label{class_snake_handler_afdc28795a525015236795f39d1e4d02a} 
+bool Snake\+Handler\+::\+Is\+Snake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Проверка на столкновение змеи с самой собой. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если столкновение произошло. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+\Hypertarget{class_snake_handler_ab18220bdd08da7c8aa087ca1e5e4852d}\index{SnakeHandler@{SnakeHandler}!RemoveSnake@{RemoveSnake}}
+\index{RemoveSnake@{RemoveSnake}!SnakeHandler@{SnakeHandler}}
+\doxysubsubsection{\texorpdfstring{RemoveSnake()}{RemoveSnake()}}
+{\footnotesize\ttfamily \label{class_snake_handler_ab18220bdd08da7c8aa087ca1e5e4852d} 
+void Snake\+Handler\+::\+Remove\+Snake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Удаление змеи из списка змей. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 4
+\Hypertarget{class_snake_handler_a7759b60a834a94f9e066f28d233a9be2}\index{SnakeHandler@{SnakeHandler}!SnakeTruncate@{SnakeTruncate}}
+\index{SnakeTruncate@{SnakeTruncate}!SnakeHandler@{SnakeHandler}}
+\doxysubsubsection{\texorpdfstring{SnakeTruncate()}{SnakeTruncate()}}
+{\footnotesize\ttfamily \label{class_snake_handler_a7759b60a834a94f9e066f28d233a9be2} 
+void Snake\+Handler\+::\+Snake\+Truncate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{Snake\+::item \texorpdfstring{$\ast$}{*}}]{to}{}\end{DoxyParamCaption})}
+
+
+
+Обрезка змеи до указанного элемента. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Змея. \\
+\hline
+{\em to} & Элемент, до которого обрезать змею. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 5
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game/includ/\mbox{\hyperlink{_game_handler_8hpp}{Game\+Handler.\+hpp}}\item 
+game/source/\mbox{\hyperlink{_game_handler_8cpp}{Game\+Handler.\+cpp}}\end{DoxyCompactItemize}

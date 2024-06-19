@@ -1,0 +1,96 @@
+\doxysection{Food Class Reference}
+\hypertarget{class_food}{}\label{class_food}\index{Food@{Food}}
+
+
+Класс, представляющий еду на игровом поле.  
+
+
+
+
+{\ttfamily \#include $<$Food.\+hpp$>$}
+
+
+
+Inheritance diagram for Food\+:
+% FIG 0
+
+
+Collaboration diagram for Food\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_ac0a0df9159f10305c240570f2905cee5}{Food}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_food}{Food}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_food_aaafd52be7f77aa866a3e187f0cbc5ad5}{\texorpdfstring{$\sim$}{\string~}\+Food}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор класса \doxylink{class_food}{Food}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_position}{Position}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_position_a6e36cf0fee251e74cfedb86f4e99558d}{Position}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Конструктор позиции. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_position_acb20b76a37629f79bc2b546cd57a08cc}{\texorpdfstring{$\sim$}{\string~}\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_point}{Point}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point_aa49d4ac67981797aaa5eb2727c4cd4d4}{Point}} (int \+\_\+pos\+\_\+x=0, int \+\_\+pos\+\_\+y=0)
+\begin{DoxyCompactList}\small\item\em Конструктор точки. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_point_a364091762d6aa1aa5983d36fd7d8b6d5}{\texorpdfstring{$\sim$}{\string~}\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_point_a56ef488d55611d823a35eb1655f1de7a}{GetX}} ()
+\begin{DoxyCompactList}\small\item\em Получает координату x точки. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_point_aa42c18de4df078af493363a423fd9580}{GetY}} ()
+\begin{DoxyCompactList}\small\item\em Получает координату y точки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_a839b4405541912bf74145aaff087b698}{SetX}} (int \+\_\+pos\+\_\+x)
+\begin{DoxyCompactList}\small\item\em Устанавливает координату x точки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_ae6350ca9aebaafa5363619a04e164e85}{SetY}} (int \+\_\+pos\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Устанавливает координату y точки. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_point_a145aeae2ec938d82a5a2f3a1639f2c15}{operator=}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_point_a6c428a70f1bb4b470628b5174aa5bf5e}{operator==}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор сравнения на равенство. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_point_a7639aa248a3d735ddbe72aab2b7890e9}{operator+=}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор сложения с присваиванием. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_point_a7a0563fa0b01392bc4fddc8287534547}{operator-\/=}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор вычитания с присваиванием. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_point_a7d2d85d1ffef82b7ce75467b29f809c1}{operator+}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор сложения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий еду на игровом поле. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_food_ac0a0df9159f10305c240570f2905cee5}\index{Food@{Food}!Food@{Food}}
+\index{Food@{Food}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{Food()}{Food()}}
+{\footnotesize\ttfamily \label{class_food_ac0a0df9159f10305c240570f2905cee5} 
+Food\+::\+Food (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса \doxylink{class_food}{Food}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Координата x еды. \\
+\hline
+{\em y} & Координата y еды. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_food_aaafd52be7f77aa866a3e187f0cbc5ad5}\index{Food@{Food}!````~Food@{\texorpdfstring{$\sim$}{\string~}Food}}
+\index{````~Food@{\texorpdfstring{$\sim$}{\string~}Food}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Food()}{\string~Food()}}
+{\footnotesize\ttfamily \label{class_food_aaafd52be7f77aa866a3e187f0cbc5ad5} 
+virtual Food\+::\texorpdfstring{$\sim$}{\string~}\+Food (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Виртуальный деструктор класса \doxylink{class_food}{Food}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game/includ/\mbox{\hyperlink{_food_8hpp}{Food.\+hpp}}\end{DoxyCompactItemize}

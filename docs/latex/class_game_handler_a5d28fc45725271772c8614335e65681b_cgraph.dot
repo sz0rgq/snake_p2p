@@ -1,0 +1,17 @@
+digraph "GameHandler::IsOtherSnake"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="GameHandler::IsOtherSnake",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Проверка на столкновение змеи с другой змеей."];
+  Node1 -> Node2 [id="edge5_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Snake::GetLen",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_snake.html#aed78f659b60028e78def21e795d83900",tooltip="Получает длину змеи."];
+  Node1 -> Node3 [id="edge6_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="List::Iterate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_list.html#a4e8f5003c3dcd437493060bbdf45e5cb",tooltip=" "];
+  Node1 -> Node4 [id="edge7_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="List::Iterator::More",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_list_1_1_iterator.html#aa7af73eba7c335367985be60e8330ea9",tooltip=" "];
+  Node1 -> Node5 [id="edge8_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="List::Iterator::Next",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_list_1_1_iterator.html#ab040a1612b93cc10b8ce3163b37b7ebf",tooltip=" "];
+}

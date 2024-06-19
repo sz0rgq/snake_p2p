@@ -1,0 +1,142 @@
+\doxysection{Server.\+hpp}
+\hypertarget{_server_8hpp_source}{}\label{_server_8hpp_source}\index{game/includ/Server.hpp@{game/includ/Server.hpp}}
+\mbox{\hyperlink{_server_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SERVER\_HPP\_SENTRY}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SERVER\_HPP\_SENTRY}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_snake_8hpp}{Snake.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_list_8hpp}{List.hpp}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_field_8hpp}{Field.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_food_8hpp}{Food.hpp}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_game_handler_8hpp}{GameHandler.hpp}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{_server_8hpp_a99fb83031ce9923c84392b4e92f956b5aa801c15b3ac63535e59607cb49c91864}{fd\_array\_len\_start}}\ =\ 16,\ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{_server_8hpp_a99fb83031ce9923c84392b4e92f956b5ab6636db9267a9b5970e54f0669f83d49}{buffersize}}\ =\ 64\ }
+\DoxyCodeLine{00017\ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_fd_handler}{FdHandler}}}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ fd;\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ want\_read;\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ want\_write;\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_fd_handler_a4eb8248efa9532c0068c13bd3b21c5aa}{FdHandler}}(\textcolor{keywordtype}{int}\ \_fd,\ \textcolor{keywordtype}{bool}\ \_want\_read\ =\ \textcolor{keyword}{true},\ \textcolor{keywordtype}{bool}\ \_want\_write\ =\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ :\ fd(\_fd),\ want\_read(\_want\_read),\ want\_write(\_want\_write)\ \{\}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_fd_handler_aebcb3da6cd5f4f22a50dd05644b6a3ff}{\string~FdHandler}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fd_handler_a99ab037a5e79aa296fc4c4752f4a368a}{GetFd}}()\ \{\ \textcolor{keywordflow}{return}\ fd;\ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fd_handler_a212ea700300020962577c1af60c2de86}{WantRead}}()\ \{\ \textcolor{keywordflow}{return}\ want\_read;\ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fd_handler_a430f7dcad1ca6ab4442a7622a683fc77}{WantWrite}}()\ \{\ \textcolor{keywordflow}{return}\ want\_write;\ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fd_handler_a1954196ce71ad037c99b185ab270f166}{SetRead}}(\textcolor{keywordtype}{bool}\ \_want\_read)\ \{\ want\_read\ =\ \_want\_read;\ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fd_handler_a06a62d234d28f5dca51a7c860485c706}{SetWrite}}(\textcolor{keywordtype}{bool}\ \_want\_write)\ \{\ want\_write\ =\ \_want\_write;\ \}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fd_handler_a4bb9cf381b465d76a06e3776ca42b89e}{Handle}}(\textcolor{keywordtype}{bool}\ r,\ \textcolor{keywordtype}{bool}\ w)\ =\ 0;}
+\DoxyCodeLine{00088\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00095\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_event_selector}{EventSelector}}}
+\DoxyCodeLine{00096\ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{class_fd_handler}{FdHandler}}\ **fd\_array;\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{int}\ fd\_array\_len;\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{int}\ max\_fd;\ }
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{class_fd_handler}{FdHandler}}\ *server\_fd;\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{class_event_selector_a85b4978f3048e9206da01eebabda6e0d}{EventSelector}}()}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ :\ fd\_array(0),\ fd\_array\_len(0),\ max\_fd(-\/1),\ server\_fd(0)\ \{\}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{class_event_selector_a657cc6cc7c4922d9ddf23f4813e4a963}{\string~EventSelector}}();}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_event_selector_a8043af807f70322a768cfc88f260c92d}{Add}}(\mbox{\hyperlink{class_fd_handler}{FdHandler}}\ *h);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_event_selector_af19b17fc68f47b35d52d3e9585e1308a}{Remove}}(\mbox{\hyperlink{class_fd_handler}{FdHandler}}\ *h);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_event_selector_add557411afa2c53a68268edabe00e995}{SetServerFd}}(\mbox{\hyperlink{class_fd_handler}{FdHandler}}\ *h);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_event_selector_a9cd9f58dfd10faf5b408ee9dd19864fb}{Run}}();}
+\DoxyCodeLine{00139\ \};}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_client}{Client}};}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00150\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_server}{Server}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_fd_handler}{FdHandler}}}
+\DoxyCodeLine{00151\ \{}
+\DoxyCodeLine{00152\ \ \ \ \ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keyword}{enum}\ game\_step}
+\DoxyCodeLine{00154\ \ \ \ \ \{}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ not\_started,\ }
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ started\ }
+\DoxyCodeLine{00157\ \ \ \ \ \};}
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keyword}{struct\ }item}
+\DoxyCodeLine{00159\ \ \ \ \ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_client}{Client}}\ *cl;\ }
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ item\ *next;\ }
+\DoxyCodeLine{00162\ \ \ \ \ \};}
+\DoxyCodeLine{00163\ \ \ \ \ item\ *first;\ }
+\DoxyCodeLine{00164\ \ \ \ \ item\ *delete\_list;\ }
+\DoxyCodeLine{00165\ \ \ \ \ \mbox{\hyperlink{class_event_selector}{EventSelector}}\ *the\_selector;\ }
+\DoxyCodeLine{00166\ \ \ \ \ \mbox{\hyperlink{class_field}{Field}}\ *field;\ }
+\DoxyCodeLine{00167\ \ \ \ \ \mbox{\hyperlink{class_game_handler_gemstone}{GameHandlerGemstone}}\ *handler;\ }
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordtype}{int}\ snakes\_count;\ }
+\DoxyCodeLine{00169\ \ \ \ \ game\_step\ st;\ }
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{int}\ food\_count;\ }
+\DoxyCodeLine{00181\ \ \ \ \ \mbox{\hyperlink{class_server}{Server}}(\textcolor{keywordtype}{int}\ \_fd,\ \mbox{\hyperlink{class_event_selector}{EventSelector}}\ *\_the\_selector,}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_field}{Field}}\ *\_field,}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_handler_gemstone}{GameHandlerGemstone}}\ *\_handler,\ \textcolor{keywordtype}{int}\ \_food\_count);}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_server_a4b3aa2579cb1c8cd1d069582c14d0fa6}{\string~Server}}();}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_server}{Server}}\ *\mbox{\hyperlink{class_server_ab714f70af639732cbd139098c3154118}{Start}}(\mbox{\hyperlink{class_event_selector}{EventSelector}}\ *\_the\_selector,\ \mbox{\hyperlink{class_field}{Field}}\ *\_field,}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_handler_gemstone}{GameHandlerGemstone}}\ *\_handler,\ \textcolor{keywordtype}{int}\ \_food\_count,}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ port,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *ip);}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00211\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_server_ab3e95f363c640b977ea7b7933063f0f1}{RemoveClient}}(\mbox{\hyperlink{class_client}{Client}}\ *cl);}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00219\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_server_aa8a2b033575df088c0716ba949875c63}{Handle}}(\textcolor{keywordtype}{bool}\ r,\ \textcolor{keywordtype}{bool}\ w);}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00228\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_server_ac3bc7c9686112d2c478e8978640afdf0}{SendTo}}(\textcolor{keywordtype}{int}\ fd,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *msg,\ \textcolor{keywordtype}{int}\ len);}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00233\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_server_afe6c13a6d4c5b5d2a2fb9f4a750a16ba}{StartGame}}();}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00235\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00239\ \ \ \ \ \textcolor{keywordtype}{void}\ DrawAll();}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00247\ \ \ \ \ \mbox{\hyperlink{class_client}{Client}}\ *FindClientBySnake(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00254\ \ \ \ \ \textcolor{keywordtype}{void}\ AddToDeleteList(\mbox{\hyperlink{class_client}{Client}}\ *cl);}
+\DoxyCodeLine{00255\ }
+\DoxyCodeLine{00259\ \ \ \ \ \textcolor{keywordtype}{void}\ DeleteAllFromList();}
+\DoxyCodeLine{00260\ }
+\DoxyCodeLine{00264\ \ \ \ \ \textcolor{keywordtype}{void}\ WriteHandle();}
+\DoxyCodeLine{00265\ \};}
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00272\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_client}{Client}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_fd_handler}{FdHandler}}}
+\DoxyCodeLine{00273\ \{}
+\DoxyCodeLine{00274\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_server}{Server}};}
+\DoxyCodeLine{00275\ \ \ \ \ \textcolor{keywordtype}{char}\ buf[\mbox{\hyperlink{_server_8hpp_a99fb83031ce9923c84392b4e92f956b5ab6636db9267a9b5970e54f0669f83d49}{buffersize}}];\ }
+\DoxyCodeLine{00276\ \ \ \ \ \textcolor{keywordtype}{int}\ buf\_used;\ }
+\DoxyCodeLine{00277\ \ \ \ \ \mbox{\hyperlink{class_snake}{Snake}}\ *sn;\ }
+\DoxyCodeLine{00279\ \ \ \ \ \mbox{\hyperlink{class_server}{Server}}\ *the\_master;\ }
+\DoxyCodeLine{00281\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00289\ \ \ \ \ \mbox{\hyperlink{class_client_a0c6744adc5aaf342cfc3f387a185c466}{Client}}(\textcolor{keywordtype}{int}\ \_fd,\ \mbox{\hyperlink{class_server}{Server}}\ *\_the\_master,\ \mbox{\hyperlink{class_snake}{Snake}}\ *\_sn);}
+\DoxyCodeLine{00290\ }
+\DoxyCodeLine{00294\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_client_a840e519ca781888cbd54181572ebe3a7}{\string~Client}}();}
+\DoxyCodeLine{00295\ }
+\DoxyCodeLine{00302\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_client_a19bc7e4772a0567a814c0e57b5b881e0}{Handle}}(\textcolor{keywordtype}{bool}\ r,\ \textcolor{keywordtype}{bool}\ w);}
+\DoxyCodeLine{00303\ }
+\DoxyCodeLine{00309\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_client_a9bebff23860caf03faf7589923e13cd1}{StringHandle}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *msg);}
+\DoxyCodeLine{00310\ }
+\DoxyCodeLine{00311\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00317\ \ \ \ \ \mbox{\hyperlink{class_snake}{Snake}}\ *GetSnake()\ \{\ \textcolor{keywordflow}{return}\ sn;\ \}}
+\DoxyCodeLine{00318\ \};}
+\DoxyCodeLine{00319\ }
+\DoxyCodeLine{00320\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

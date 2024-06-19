@@ -1,0 +1,224 @@
+\doxysection{Server Class Reference}
+\hypertarget{class_server}{}\label{class_server}\index{Server@{Server}}
+
+
+Класс для управления сервером.  
+
+
+
+
+{\ttfamily \#include $<$Server.\+hpp$>$}
+
+
+
+Inheritance diagram for Server\+:
+% FIG 0
+
+
+Collaboration diagram for Server\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_server_a4b3aa2579cb1c8cd1d069582c14d0fa6}{\texorpdfstring{$\sim$}{\string~}\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_ab3e95f363c640b977ea7b7933063f0f1}{Remove\+Client}} (\mbox{\hyperlink{class_client}{Client}} \texorpdfstring{$\ast$}{*}cl)
+\begin{DoxyCompactList}\small\item\em Удаляет клиента из списка. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_server_aa8a2b033575df088c0716ba949875c63}{Handle}} (bool r, bool w)
+\begin{DoxyCompactList}\small\item\em Абстрактный метод для обработки событий. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_ac3bc7c9686112d2c478e8978640afdf0}{Send\+To}} (int fd, const char \texorpdfstring{$\ast$}{*}msg, int len)
+\begin{DoxyCompactList}\small\item\em Отправляет сообщение клиенту. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_afe6c13a6d4c5b5d2a2fb9f4a750a16ba}{Start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Начинает игру. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_fd_handler}{Fd\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fd_handler_a4eb8248efa9532c0068c13bd3b21c5aa}{Fd\+Handler}} (int \+\_\+fd, bool \+\_\+want\+\_\+read=true, bool \+\_\+want\+\_\+write=false)
+\begin{DoxyCompactList}\small\item\em Конструктор для обработчика дескриптора. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_fd_handler_aebcb3da6cd5f4f22a50dd05644b6a3ff}{\texorpdfstring{$\sim$}{\string~}\+Fd\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fd_handler_a99ab037a5e79aa296fc4c4752f4a368a}{Get\+Fd}} ()
+\begin{DoxyCompactList}\small\item\em Получает дескриптор файла. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fd_handler_a212ea700300020962577c1af60c2de86}{Want\+Read}} ()
+\begin{DoxyCompactList}\small\item\em Проверяет, нужно ли читать из файла. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fd_handler_a430f7dcad1ca6ab4442a7622a683fc77}{Want\+Write}} ()
+\begin{DoxyCompactList}\small\item\em Проверяет, нужно ли писать в файл. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fd_handler_a1954196ce71ad037c99b185ab270f166}{Set\+Read}} (bool \+\_\+want\+\_\+read)
+\begin{DoxyCompactList}\small\item\em Устанавливает флаг чтения из файла. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fd_handler_a06a62d234d28f5dca51a7c860485c706}{Set\+Write}} (bool \+\_\+want\+\_\+write)
+\begin{DoxyCompactList}\small\item\em Устанавливает флаг записи в файл. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_server}{Server}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_server_ab714f70af639732cbd139098c3154118}{Start}} (\mbox{\hyperlink{class_event_selector}{Event\+Selector}} \texorpdfstring{$\ast$}{*}\+\_\+the\+\_\+selector, \mbox{\hyperlink{class_field}{Field}} \texorpdfstring{$\ast$}{*}\+\_\+field, \mbox{\hyperlink{class_game_handler_gemstone}{Game\+Handler\+Gemstone}} \texorpdfstring{$\ast$}{*}\+\_\+handler, int \+\_\+food\+\_\+count, int port, const char \texorpdfstring{$\ast$}{*}ip)
+\begin{DoxyCompactList}\small\item\em Статический метод для запуска сервера. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для управления сервером. 
+
+Этот класс предназначен для управления сервером, включая управление клиентами и игровым процессом. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_server_a4b3aa2579cb1c8cd1d069582c14d0fa6}\index{Server@{Server}!````~Server@{\texorpdfstring{$\sim$}{\string~}Server}}
+\index{````~Server@{\texorpdfstring{$\sim$}{\string~}Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Server()}{\string~Server()}}
+{\footnotesize\ttfamily \label{class_server_a4b3aa2579cb1c8cd1d069582c14d0fa6} 
+Server\+::\texorpdfstring{$\sim$}{\string~}\+Server (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Виртуальный деструктор. 
+
+Деструктор класса \doxylink{class_server}{Server}. Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_server_aa8a2b033575df088c0716ba949875c63}\index{Server@{Server}!Handle@{Handle}}
+\index{Handle@{Handle}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily \label{class_server_aa8a2b033575df088c0716ba949875c63} 
+void Server\+::\+Handle (\begin{DoxyParamCaption}\item[{bool}]{r}{, }\item[{bool}]{w}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Абстрактный метод для обработки событий. 
+
+Обработка событий на сервере.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Флаг, указывающий на готовность к чтению. \\
+\hline
+{\em w} & Флаг, указывающий на готовность к записи.\\
+\hline
+{\em r} & Флаг наличия данных для чтения. \\
+\hline
+{\em w} & Флаг наличия данных для записи. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_fd_handler_a4bb9cf381b465d76a06e3776ca42b89e}{Fd\+Handler}}.
+
+Here is the call graph for this function\+:
+% FIG 3
+\Hypertarget{class_server_ab3e95f363c640b977ea7b7933063f0f1}\index{Server@{Server}!RemoveClient@{RemoveClient}}
+\index{RemoveClient@{RemoveClient}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{RemoveClient()}{RemoveClient()}}
+{\footnotesize\ttfamily \label{class_server_ab3e95f363c640b977ea7b7933063f0f1} 
+void Server\+::\+Remove\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}} \texorpdfstring{$\ast$}{*}}]{cl}{}\end{DoxyParamCaption})}
+
+
+
+Удаляет клиента из списка. 
+
+Удаление клиента.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cl} & Клиент для удаления.\\
+\hline
+{\em cl} & Клиент. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{class_server_ac3bc7c9686112d2c478e8978640afdf0}\index{Server@{Server}!SendTo@{SendTo}}
+\index{SendTo@{SendTo}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{SendTo()}{SendTo()}}
+{\footnotesize\ttfamily \label{class_server_ac3bc7c9686112d2c478e8978640afdf0} 
+void Server\+::\+Send\+To (\begin{DoxyParamCaption}\item[{int}]{fd}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{msg}{, }\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+
+
+Отправляет сообщение клиенту. 
+
+Отправка данных клиенту.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & Дескриптор файла клиента. \\
+\hline
+{\em msg} & Сообщение для отправки. \\
+\hline
+{\em len} & Длина сообщения.\\
+\hline
+{\em fd} & Файловый дескриптор клиента. \\
+\hline
+{\em msg} & Данные для отправки. \\
+\hline
+{\em len} & Длина данных. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_server_ab714f70af639732cbd139098c3154118}\index{Server@{Server}!Start@{Start}}
+\index{Start@{Start}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_server_ab714f70af639732cbd139098c3154118} 
+\mbox{\hyperlink{class_server}{Server}} \texorpdfstring{$\ast$}{*} Server\+::\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_event_selector}{Event\+Selector}} \texorpdfstring{$\ast$}{*}}]{\+\_\+the\+\_\+selector}{, }\item[{\mbox{\hyperlink{class_field}{Field}} \texorpdfstring{$\ast$}{*}}]{\+\_\+field}{, }\item[{\mbox{\hyperlink{class_game_handler_gemstone}{Game\+Handler\+Gemstone}} \texorpdfstring{$\ast$}{*}}]{\+\_\+handler}{, }\item[{int}]{\+\_\+food\+\_\+count}{, }\item[{int}]{port}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{ip}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Статический метод для запуска сервера. 
+
+Создание сервера.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+the\+\_\+selector} & Селектор событий. \\
+\hline
+{\em \+\_\+field} & Игровое поле. \\
+\hline
+{\em \+\_\+handler} & Обработчик игры. \\
+\hline
+{\em \+\_\+food\+\_\+count} & Количество еды на поле. \\
+\hline
+{\em port} & Порт для подключения. \\
+\hline
+{\em ip} & Адрес для подключения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на запущенный сервер.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+the\+\_\+selector} & Селектор событий. \\
+\hline
+{\em \+\_\+field} & Поле игры. \\
+\hline
+{\em \+\_\+handler} & Обработчик игры. \\
+\hline
+{\em \+\_\+food\+\_\+count} & Количество еды. \\
+\hline
+{\em port} & Порт сервера. \\
+\hline
+{\em ip} & IP-\/адрес сервера. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на созданный сервер. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 6
+\Hypertarget{class_server_afe6c13a6d4c5b5d2a2fb9f4a750a16ba}\index{Server@{Server}!StartGame@{StartGame}}
+\index{StartGame@{StartGame}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{StartGame()}{StartGame()}}
+{\footnotesize\ttfamily \label{class_server_afe6c13a6d4c5b5d2a2fb9f4a750a16ba} 
+void Server\+::\+Start\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Начинает игру. 
+
+Начало игры. Here is the caller graph for this function\+:
+% FIG 7
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game/includ/\mbox{\hyperlink{_server_8hpp}{Server.\+hpp}}\item 
+game/source/\mbox{\hyperlink{_server_8cpp}{Server.\+cpp}}\end{DoxyCompactItemize}
