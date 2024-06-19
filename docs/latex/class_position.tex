@@ -1,0 +1,91 @@
+\doxysection{Position Class Reference}
+\hypertarget{class_position}{}\label{class_position}\index{Position@{Position}}
+
+
+Класс позиции.  
+
+
+
+
+{\ttfamily \#include $<$Move\+And\+Position.\+hpp$>$}
+
+
+
+Inheritance diagram for Position\+:
+% FIG 0
+
+
+Collaboration diagram for Position\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_position_a6e36cf0fee251e74cfedb86f4e99558d}{Position}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Конструктор позиции. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_position_acb20b76a37629f79bc2b546cd57a08cc}{\texorpdfstring{$\sim$}{\string~}\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_point}{Point}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point_aa49d4ac67981797aaa5eb2727c4cd4d4}{Point}} (int \+\_\+pos\+\_\+x=0, int \+\_\+pos\+\_\+y=0)
+\begin{DoxyCompactList}\small\item\em Конструктор точки. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_point_a364091762d6aa1aa5983d36fd7d8b6d5}{\texorpdfstring{$\sim$}{\string~}\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_point_a56ef488d55611d823a35eb1655f1de7a}{GetX}} ()
+\begin{DoxyCompactList}\small\item\em Получает координату x точки. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_point_aa42c18de4df078af493363a423fd9580}{GetY}} ()
+\begin{DoxyCompactList}\small\item\em Получает координату y точки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_a839b4405541912bf74145aaff087b698}{SetX}} (int \+\_\+pos\+\_\+x)
+\begin{DoxyCompactList}\small\item\em Устанавливает координату x точки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_ae6350ca9aebaafa5363619a04e164e85}{SetY}} (int \+\_\+pos\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Устанавливает координату y точки. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_point_a145aeae2ec938d82a5a2f3a1639f2c15}{operator=}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_point_a6c428a70f1bb4b470628b5174aa5bf5e}{operator==}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор сравнения на равенство. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_point_a7639aa248a3d735ddbe72aab2b7890e9}{operator+=}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор сложения с присваиванием. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_point_a7a0563fa0b01392bc4fddc8287534547}{operator-\/=}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор вычитания с присваиванием. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_point_a7d2d85d1ffef82b7ce75467b29f809c1}{operator+}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор сложения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс позиции. 
+
+Этот класс наследуется от класса \doxylink{class_point}{Point} и добавляет функциональность для представления позиции. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_position_a6e36cf0fee251e74cfedb86f4e99558d}\index{Position@{Position}!Position@{Position}}
+\index{Position@{Position}!Position@{Position}}
+\doxysubsubsection{\texorpdfstring{Position()}{Position()}}
+{\footnotesize\ttfamily \label{class_position_a6e36cf0fee251e74cfedb86f4e99558d} 
+Position\+::\+Position (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор позиции. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Координата x позиции. \\
+\hline
+{\em y} & Координата y позиции. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_position_acb20b76a37629f79bc2b546cd57a08cc}\index{Position@{Position}!````~Position@{\texorpdfstring{$\sim$}{\string~}Position}}
+\index{````~Position@{\texorpdfstring{$\sim$}{\string~}Position}!Position@{Position}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Position()}{\string~Position()}}
+{\footnotesize\ttfamily \label{class_position_acb20b76a37629f79bc2b546cd57a08cc} 
+virtual Position\+::\texorpdfstring{$\sim$}{\string~}\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Виртуальный деструктор. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game/includ/\mbox{\hyperlink{_move_and_position_8hpp}{Move\+And\+Position.\+hpp}}\end{DoxyCompactItemize}

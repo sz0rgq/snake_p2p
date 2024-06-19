@@ -1,0 +1,107 @@
+\doxysection{List.\+hpp}
+\hypertarget{_list_8hpp_source}{}\label{_list_8hpp_source}\index{game/includ/List.hpp@{game/includ/List.hpp}}
+\mbox{\hyperlink{_list_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LIST\_HPP\_SENTRY}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LIST\_HPP\_SENTRY}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_list_cursor}{ListCursor}};}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_list}{List}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_list_cursor}{ListCursor}}<T>;}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{struct\ }item}
+\DoxyCodeLine{00012\ \ \ \ \ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ T\ *val;}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ item\ *next;}
+\DoxyCodeLine{00015\ \ \ \ \ \};}
+\DoxyCodeLine{00016\ \ \ \ \ item\ *first;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_list_a5c5e27671b21b3815d4e25b953c69454}{List}}()\ :\ first(0)\ \{\}}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_list_a2b58189090f6e5ce52939c9195e59e85}{\string~List}}()}
+\DoxyCodeLine{00021\ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (first)}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ item\ *p\ =\ first-\/>next;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ first-\/>val;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ first;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ first\ =\ p;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_list_affc43ba30cfcbe45d8d98920d38351c6}{Push}}(T\ *val)}
+\DoxyCodeLine{00032\ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ item\ *tmp\ =\ \textcolor{keyword}{new}\ item;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ tmp-\/>val\ =\ val;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ tmp-\/>next\ =\ first;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ first\ =\ tmp;}
+\DoxyCodeLine{00037\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_list_ab597cbe65ce184168eb598bc9f32ffb2}{Pop}}()}
+\DoxyCodeLine{00040\ \ \ \ \ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ item\ *tmp\ =\ first-\/>next;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ first;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ first\ =\ tmp;}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_list_afec62045def1727f4940468ac1b329e5}{Remove}}(\mbox{\hyperlink{class_list_cursor}{ListCursor<T>}}\ *cursor);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_list_1_1_iterator}{Iterator}}}
+\DoxyCodeLine{00049\ \ \ \ \ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_list}{List}}<T>;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_list}{List<T>}}\ *the\_master;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ item\ **first;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_list_1_1_iterator}{Iterator}}(\mbox{\hyperlink{class_list}{List<T>}}\ *\_the\_master,\ item\ **\_first)}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ :\ the\_master(\_the\_master),\ first(\_first)\ \{\}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_list_1_1_iterator_aa7af73eba7c335367985be60e8330ea9}{More}}()\ \{\ \textcolor{keywordflow}{return}\ (*first);\ \}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_list_cursor}{ListCursor<T>}}\ \mbox{\hyperlink{class_list_1_1_iterator_ab040a1612b93cc10b8ce3163b37b7ebf}{Next}}();}
+\DoxyCodeLine{00059\ \ \ \ \ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_list_1_1_iterator}{Iterator}}\ *\mbox{\hyperlink{class_list_a4e8f5003c3dcd437493060bbdf45e5cb}{Iterate}}()\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_list_1_1_iterator}{Iterator}}(\textcolor{keyword}{this},\ \&first);\ \}}
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00065\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_list_cursor}{ListCursor}}}
+\DoxyCodeLine{00066\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_list}{List}}<T>;}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{class_list}{List<T>}}\ *the\_master;}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{typename}\ List<T>::item\ **itm;}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{class_list_cursor_a406eac0b74916f99af77d9cfb234a46d}{ListCursor}}(\mbox{\hyperlink{class_list}{List<T>}}\ *\_the\_master,\ \textcolor{keyword}{typename}\ List<T>::item\ **\_itm)}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ :\ the\_master(\_the\_master),\ itm(\_itm)\ \{\}}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{class_list_cursor_a78b893db2b2be56e1d1615e2acbb3a1e}{ListCursor}}()\ \{\}}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_list_cursor}{ListCursor<T>}}\ \&\mbox{\hyperlink{class_list_cursor_a95b5641406528a6c05e96aa44fde4118}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_list_cursor}{ListCursor<T>}}\ \&a)}
+\DoxyCodeLine{00076\ \ \ \ \ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ the\_master\ =\ a.the\_master;}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ itm\ =\ a.itm;}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00080\ \ \ \ \ \}}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{operator}\ T\ *()\ \{\ \textcolor{keywordflow}{return}\ (*itm)-\/>val;\ \}}
+\DoxyCodeLine{00082\ \ \ \ \ T\ *\mbox{\hyperlink{class_list_cursor_aaa9581466b8c6b2e79a15fa78a4727de}{operator-\/>}}()\ \{\ \textcolor{keywordflow}{return}\ (*itm)-\/>val;\ \}}
+\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00086\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_list_afec62045def1727f4940468ac1b329e5}{List<T>::Remove}}(\mbox{\hyperlink{class_list_cursor}{ListCursor<T>}}\ *cursor)}
+\DoxyCodeLine{00087\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ item\ *tmp\ =\ (*cursor-\/>itm)-\/>next;}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{delete}\ *(cursor-\/>itm);}
+\DoxyCodeLine{00090\ \ \ \ \ *(cursor-\/>itm)\ =\ tmp;}
+\DoxyCodeLine{00091\ \}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00094\ \mbox{\hyperlink{class_list_cursor}{ListCursor<T>}}\ \mbox{\hyperlink{class_list_1_1_iterator_ab040a1612b93cc10b8ce3163b37b7ebf}{List<T>::Iterator::Next}}()}
+\DoxyCodeLine{00095\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{class_list_cursor}{ListCursor<T>}}\ res(the\_master,\ first);}
+\DoxyCodeLine{00097\ \ \ \ \ first\ =\ \&(*first)-\/>next;}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00099\ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,181 @@
+\doxysection{Snake Class Reference}
+\hypertarget{class_snake}{}\label{class_snake}\index{Snake@{Snake}}
+
+
+Класс для представления змеи в игре.  
+
+
+
+
+{\ttfamily \#include $<$Snake.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_snake_aa9cbcdb4b25d84cbf83509039cac8d01}{Snake}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор для змеи. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_snake_ae835a0ef731717a22201dc4a818813c7}{Snake}} (const \mbox{\hyperlink{class_position}{Position}} \&\+\_\+pos, int \+\_\+id, \mbox{\hyperlink{class_game_handler_gemstone}{Game\+Handler\+Gemstone}} \texorpdfstring{$\ast$}{*}\+\_\+the\+\_\+master)
+\begin{DoxyCompactList}\small\item\em Конструктор для змеи с указанием позиции и идентификатора. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_snake_a941fbaad96ee33ca3a7c30c28ca44ef8}{\texorpdfstring{$\sim$}{\string~}\+Snake}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор для змеи. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_snake_aed78f659b60028e78def21e795d83900}{Get\+Len}} ()
+\begin{DoxyCompactList}\small\item\em Получает длину змеи. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_aa74cd4ff4b0a8d039142a3b0c07767f3}{Move}} ()
+\begin{DoxyCompactList}\small\item\em Двигает змей. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_ab4171e8ccbfab748eef9e3b4d7d8ea17}{Change\+Direction}} (\mbox{\hyperlink{class_move_vector}{Move\+Vector}} \texorpdfstring{$\ast$}{*}mv)
+\begin{DoxyCompactList}\small\item\em Изменяет направление движения змеи. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_a81a0f89bdbd2fe83166fa58e3ab8f8f6}{Eat}} (\mbox{\hyperlink{class_food}{Food}} \texorpdfstring{$\ast$}{*}food)
+\begin{DoxyCompactList}\small\item\em Позволяeет змее поесть еду. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_snake_a5c1d7717d7a6b89ee39931dbfac284f4}{Field\+Handler}}
+\item 
+class \mbox{\hyperlink{class_snake_a7ee34c13c69cc3428c7207e4c77ba734}{Snake\+Handler}}
+\item 
+class \mbox{\hyperlink{class_snake_a23d0dfcb136b3dc8999d689fdf77b249}{Game\+Handler}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для представления змеи в игре. 
+
+Этот класс предназначен для управления змеей, включая ее движение, изменение направления и поедание еды. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_snake_aa9cbcdb4b25d84cbf83509039cac8d01}\index{Snake@{Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{Snake()}{Snake()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_snake_aa9cbcdb4b25d84cbf83509039cac8d01} 
+Snake\+::\+Snake (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор для змеи. 
+
+\Hypertarget{class_snake_ae835a0ef731717a22201dc4a818813c7}\index{Snake@{Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{Snake()}{Snake()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_snake_ae835a0ef731717a22201dc4a818813c7} 
+Snake\+::\+Snake (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_position}{Position}} \&}]{\+\_\+pos}{, }\item[{int}]{\+\_\+id}{, }\item[{\mbox{\hyperlink{class_game_handler_gemstone}{Game\+Handler\+Gemstone}} \texorpdfstring{$\ast$}{*}}]{\+\_\+the\+\_\+master}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор для змеи с указанием позиции и идентификатора. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+pos} & Позиция змеи. \\
+\hline
+{\em \+\_\+id} & Идентификатор змеи. \\
+\hline
+{\em \+\_\+the\+\_\+master} & Указатель на обработчик игры. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_snake_a941fbaad96ee33ca3a7c30c28ca44ef8}\index{Snake@{Snake}!````~Snake@{\texorpdfstring{$\sim$}{\string~}Snake}}
+\index{````~Snake@{\texorpdfstring{$\sim$}{\string~}Snake}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Snake()}{\string~Snake()}}
+{\footnotesize\ttfamily \label{class_snake_a941fbaad96ee33ca3a7c30c28ca44ef8} 
+Snake\+::\texorpdfstring{$\sim$}{\string~}\+Snake (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Деструктор для змеи. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_snake_ab4171e8ccbfab748eef9e3b4d7d8ea17}\index{Snake@{Snake}!ChangeDirection@{ChangeDirection}}
+\index{ChangeDirection@{ChangeDirection}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{ChangeDirection()}{ChangeDirection()}}
+{\footnotesize\ttfamily \label{class_snake_ab4171e8ccbfab748eef9e3b4d7d8ea17} 
+void Snake\+::\+Change\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_move_vector}{Move\+Vector}} \texorpdfstring{$\ast$}{*}}]{mv}{}\end{DoxyParamCaption})}
+
+
+
+Изменяет направление движения змеи. 
+
+Изменение направления движения змеи.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mv} & Новый вектор движения.\\
+\hline
+{\em mv} & Новое направление движения. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 0
+\Hypertarget{class_snake_a81a0f89bdbd2fe83166fa58e3ab8f8f6}\index{Snake@{Snake}!Eat@{Eat}}
+\index{Eat@{Eat}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{Eat()}{Eat()}}
+{\footnotesize\ttfamily \label{class_snake_a81a0f89bdbd2fe83166fa58e3ab8f8f6} 
+void Snake\+::\+Eat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_food}{Food}} \texorpdfstring{$\ast$}{*}}]{food}{}\end{DoxyParamCaption})}
+
+
+
+Позволяeет змее поесть еду. 
+
+Съедение еды.
+
+
+\begin{DoxyParams}{Parameters}
+{\em food} & Еда, которую змея ест.\\
+\hline
+{\em food} & Еда. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{class_snake_aed78f659b60028e78def21e795d83900}\index{Snake@{Snake}!GetLen@{GetLen}}
+\index{GetLen@{GetLen}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{GetLen()}{GetLen()}}
+{\footnotesize\ttfamily \label{class_snake_aed78f659b60028e78def21e795d83900} 
+int Snake\+::\+Get\+Len (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получает длину змеи. 
+
+\begin{DoxyReturn}{Returns}
+Длина змеи. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{class_snake_aa74cd4ff4b0a8d039142a3b0c07767f3}\index{Snake@{Snake}!Move@{Move}}
+\index{Move@{Move}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily \label{class_snake_aa74cd4ff4b0a8d039142a3b0c07767f3} 
+void Snake\+::\+Move (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Двигает змей. 
+
+Перемещение змеи. 
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_snake_a5c1d7717d7a6b89ee39931dbfac284f4}\index{Snake@{Snake}!FieldHandler@{FieldHandler}}
+\index{FieldHandler@{FieldHandler}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{FieldHandler}{FieldHandler}}
+{\footnotesize\ttfamily \label{class_snake_a5c1d7717d7a6b89ee39931dbfac284f4} 
+friend class \mbox{\hyperlink{class_field_handler}{Field\+Handler}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{class_snake_a23d0dfcb136b3dc8999d689fdf77b249}\index{Snake@{Snake}!GameHandler@{GameHandler}}
+\index{GameHandler@{GameHandler}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{GameHandler}{GameHandler}}
+{\footnotesize\ttfamily \label{class_snake_a23d0dfcb136b3dc8999d689fdf77b249} 
+friend class \mbox{\hyperlink{class_game_handler}{Game\+Handler}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{class_snake_a7ee34c13c69cc3428c7207e4c77ba734}\index{Snake@{Snake}!SnakeHandler@{SnakeHandler}}
+\index{SnakeHandler@{SnakeHandler}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{SnakeHandler}{SnakeHandler}}
+{\footnotesize\ttfamily \label{class_snake_a7ee34c13c69cc3428c7207e4c77ba734} 
+friend class \mbox{\hyperlink{class_snake_handler}{Snake\+Handler}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game/includ/\mbox{\hyperlink{_snake_8hpp}{Snake.\+hpp}}\item 
+game/source/\mbox{\hyperlink{_snake_8cpp}{Snake.\+cpp}}\end{DoxyCompactItemize}

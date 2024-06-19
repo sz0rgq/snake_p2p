@@ -1,0 +1,37 @@
+\doxysection{Game\+Init.\+hpp}
+\hypertarget{_game_init_8hpp_source}{}\label{_game_init_8hpp_source}\index{game/includ/GameInit.hpp@{game/includ/GameInit.hpp}}
+\mbox{\hyperlink{_game_init_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GAMEINIT\_HPP\_SENTRY}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GAMEINIT\_HPP\_SENTRY}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_init}{GameInit}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ max\_argc\ =\ 11,}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ std\_port\ =\ 8808,}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ std\_width\ =\ 100,}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ std\_height\ =\ 40,}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ std\_food\_count\ =\ 15}
+\DoxyCodeLine{00016\ \ \ \ \ \};}
+\DoxyCodeLine{00017\ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ argc;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ **argv;\ \ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_game_init_a93dc0f8f57915d3e400d55dd84ae6588}{GameInit}}(\textcolor{keywordtype}{int}\ \_argc,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ **\_argv)\ :\ argc(\_argc),\ argv(\_argv)\ \{\}}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_game_init_a1b50f5c75a233b3548f2a4b3d0e27eec}{\string~GameInit}}()\ \{\}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_init_a044dc9d28077555e45a12a6f6f21bb03}{Start}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsOneOfArgv(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *argv[6],\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *arg,\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{int}\ *matched\_argv\_idx);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ HandleArgv(\textcolor{keywordtype}{int}\ argv\_idx,\ \textcolor{keywordtype}{int}\ matched\_argv,\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ *num\_args,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ **ip);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ WriteHelp();}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

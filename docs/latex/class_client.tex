@@ -1,0 +1,167 @@
+\doxysection{Client Class Reference}
+\hypertarget{class_client}{}\label{class_client}\index{Client@{Client}}
+
+
+Класс для управления клиентом.  
+
+
+
+
+{\ttfamily \#include $<$Server.\+hpp$>$}
+
+
+
+Inheritance diagram for Client\+:
+% FIG 0
+
+
+Collaboration diagram for Client\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_client_a0c6744adc5aaf342cfc3f387a185c466}{Client}} (int \+\_\+fd, \mbox{\hyperlink{class_server}{Server}} \texorpdfstring{$\ast$}{*}\+\_\+the\+\_\+master, \mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}\+\_\+sn)
+\begin{DoxyCompactList}\small\item\em Конструктор для клиента. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_client_a840e519ca781888cbd54181572ebe3a7}{\texorpdfstring{$\sim$}{\string~}\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_client_a19bc7e4772a0567a814c0e57b5b881e0}{Handle}} (bool r, bool w)
+\begin{DoxyCompactList}\small\item\em Абстрактный метод для обработки событий. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_a9bebff23860caf03faf7589923e13cd1}{String\+Handle}} (const char \texorpdfstring{$\ast$}{*}msg)
+\begin{DoxyCompactList}\small\item\em Обрабатывает строку, полученную от клиента. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_fd_handler}{Fd\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fd_handler_a4eb8248efa9532c0068c13bd3b21c5aa}{Fd\+Handler}} (int \+\_\+fd, bool \+\_\+want\+\_\+read=true, bool \+\_\+want\+\_\+write=false)
+\begin{DoxyCompactList}\small\item\em Конструктор для обработчика дескриптора. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_fd_handler_aebcb3da6cd5f4f22a50dd05644b6a3ff}{\texorpdfstring{$\sim$}{\string~}\+Fd\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fd_handler_a99ab037a5e79aa296fc4c4752f4a368a}{Get\+Fd}} ()
+\begin{DoxyCompactList}\small\item\em Получает дескриптор файла. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fd_handler_a212ea700300020962577c1af60c2de86}{Want\+Read}} ()
+\begin{DoxyCompactList}\small\item\em Проверяет, нужно ли читать из файла. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fd_handler_a430f7dcad1ca6ab4442a7622a683fc77}{Want\+Write}} ()
+\begin{DoxyCompactList}\small\item\em Проверяет, нужно ли писать в файл. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fd_handler_a1954196ce71ad037c99b185ab270f166}{Set\+Read}} (bool \+\_\+want\+\_\+read)
+\begin{DoxyCompactList}\small\item\em Устанавливает флаг чтения из файла. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fd_handler_a06a62d234d28f5dca51a7c860485c706}{Set\+Write}} (bool \+\_\+want\+\_\+write)
+\begin{DoxyCompactList}\small\item\em Устанавливает флаг записи в файл. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_client_ac2055578ac48afabe5af487878450f68}{Server}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для управления клиентом. 
+
+Этот класс предназначен для управления клиентом, включая обработку сообщений и управления змеей. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_client_a0c6744adc5aaf342cfc3f387a185c466}\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}}
+{\footnotesize\ttfamily \label{class_client_a0c6744adc5aaf342cfc3f387a185c466} 
+Client\+::\+Client (\begin{DoxyParamCaption}\item[{int}]{\+\_\+fd}{, }\item[{\mbox{\hyperlink{class_server}{Server}} \texorpdfstring{$\ast$}{*}}]{\+\_\+the\+\_\+master}{, }\item[{\mbox{\hyperlink{class_snake}{Snake}} \texorpdfstring{$\ast$}{*}}]{\+\_\+sn}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор для клиента. 
+
+Конструктор класса \doxylink{class_client}{Client}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+fd} & Дескриптор файла клиента. \\
+\hline
+{\em \+\_\+the\+\_\+master} & Указатель на сервер. \\
+\hline
+{\em \+\_\+sn} & Змей клиента.\\
+\hline
+{\em \+\_\+fd} & Файловый дескриптор. \\
+\hline
+{\em \+\_\+the\+\_\+master} & Сервер. \\
+\hline
+{\em \+\_\+sn} & Змея. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_client_a840e519ca781888cbd54181572ebe3a7}\index{Client@{Client}!````~Client@{\texorpdfstring{$\sim$}{\string~}Client}}
+\index{````~Client@{\texorpdfstring{$\sim$}{\string~}Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Client()}{\string~Client()}}
+{\footnotesize\ttfamily \label{class_client_a840e519ca781888cbd54181572ebe3a7} 
+Client\+::\texorpdfstring{$\sim$}{\string~}\+Client (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Виртуальный деструктор. 
+
+Деструктор класса \doxylink{class_client}{Client}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_client_a19bc7e4772a0567a814c0e57b5b881e0}\index{Client@{Client}!Handle@{Handle}}
+\index{Handle@{Handle}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily \label{class_client_a19bc7e4772a0567a814c0e57b5b881e0} 
+void Client\+::\+Handle (\begin{DoxyParamCaption}\item[{bool}]{r}{, }\item[{bool}]{w}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Абстрактный метод для обработки событий. 
+
+Обработка событий на клиенте.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Флаг, указывающий на готовность к чтению. \\
+\hline
+{\em w} & Флаг, указывающий на готовность к записи.\\
+\hline
+{\em r} & Флаг наличия данных для чтения. \\
+\hline
+{\em w} & Флаг наличия данных для записи. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_fd_handler_a4bb9cf381b465d76a06e3776ca42b89e}{Fd\+Handler}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+\Hypertarget{class_client_a9bebff23860caf03faf7589923e13cd1}\index{Client@{Client}!StringHandle@{StringHandle}}
+\index{StringHandle@{StringHandle}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{StringHandle()}{StringHandle()}}
+{\footnotesize\ttfamily \label{class_client_a9bebff23860caf03faf7589923e13cd1} 
+void Client\+::\+String\+Handle (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{msg}{}\end{DoxyParamCaption})}
+
+
+
+Обрабатывает строку, полученную от клиента. 
+
+Обработка строкового сообщения.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Строка для обработки.\\
+\hline
+{\em msg} & Сообщение. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_client_ac2055578ac48afabe5af487878450f68}\index{Client@{Client}!Server@{Server}}
+\index{Server@{Server}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Server}{Server}}
+{\footnotesize\ttfamily \label{class_client_ac2055578ac48afabe5af487878450f68} 
+friend class \mbox{\hyperlink{class_server}{Server}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game/includ/\mbox{\hyperlink{_server_8hpp}{Server.\+hpp}}\item 
+game/source/\mbox{\hyperlink{_server_8cpp}{Server.\+cpp}}\end{DoxyCompactItemize}

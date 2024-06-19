@@ -1,0 +1,31 @@
+digraph "Field::GetSizeX"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Field::GetSizeX",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Получение ширины поля."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="GameHandler::AddFood",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_game_handler.html#aeb3f272d99af4862d056efa8e386acfc",tooltip="Добавление еды на поле."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="FoodHandler::AddFood",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_food_handler.html#ab836bbdcab564067091cb0233dd22751",tooltip="Добавление еды на поле."];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="GameHandler::IsFood",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_game_handler.html#a15a7c5a0ad0846d234958fa147dfc8dd",tooltip="Проверка на столкновение змеи с едой."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="SnakeHandler::IsFood",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_snake_handler.html#a59199ce5eaf4c2fdc21873168dc50bd5",tooltip="Проверка на столкновение змеи с едой."];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="GameHandler::DrawField",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_game_handler.html#ac168ebbfd7f028108e3a114db9814a45",tooltip="Отрисовка поля."];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="DrawHandler::DrawField",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_draw_handler.html#a8b3351b429a0387e54aa5c399a557a16",tooltip="Отрисовка поля."];
+  Node1 -> Node8 [id="edge7_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="GameHandler::DrawFieldFor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_game_handler.html#a6c7bba20d16e3287f56065e10333412c",tooltip="Отрисовка поля для конкретной змеи."];
+  Node8 -> Node9 [id="edge8_Node000008_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="DrawHandler::DrawFieldFor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_draw_handler.html#af69e4051dccdc7b2a413c408ba372b52",tooltip="Отрисовка поля для конкретной змеи."];
+  Node1 -> Node10 [id="edge9_Node000001_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="Server::Handle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_server.html#aa8a2b033575df088c0716ba949875c63",tooltip="Абстрактный метод для обработки событий."];
+  Node1 -> Node11 [id="edge10_Node000001_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="GameHandler::HandleOutOf\lField",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_game_handler.html#a456c9cb36f9dbb638775f950c019a6f1",tooltip="Обработка выхода змеи за пределы поля."];
+  Node11 -> Node12 [id="edge11_Node000011_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="FieldHandler::HandleOutOf\lField",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_field_handler.html#a02019cf19586f16a4c338c8947a9784d",tooltip="Обработка выхода змеи за пределы поля."];
+}

@@ -1,0 +1,23 @@
+digraph "FdHandler::GetFd"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="FdHandler::GetFd",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Получает дескриптор файла."];
+  Node1 -> Node2 [id="edge9_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="EventSelector::Add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_event_selector.html#a8043af807f70322a768cfc88f260c92d",tooltip="Добавляет дескриптор файла в массив."];
+  Node2 -> Node3 [id="edge10_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Server::Handle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_server.html#aa8a2b033575df088c0716ba949875c63",tooltip="Абстрактный метод для обработки событий."];
+  Node1 -> Node4 [id="edge11_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Client::Handle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_client.html#a19bc7e4772a0567a814c0e57b5b881e0",tooltip="Абстрактный метод для обработки событий."];
+  Node1 -> Node3 [id="edge12_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge13_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="EventSelector::Remove",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_event_selector.html#af19b17fc68f47b35d52d3e9585e1308a",tooltip="Удаляет дескриптор файла из массива."];
+  Node5 -> Node6 [id="edge14_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Server::RemoveClient",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_server.html#ab3e95f363c640b977ea7b7933063f0f1",tooltip="Удаляет клиента из списка."];
+  Node6 -> Node4 [id="edge15_Node000006_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node7 [id="edge16_Node000005_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="Server::~Server",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_server.html#a4b3aa2579cb1c8cd1d069582c14d0fa6",tooltip="Виртуальный деструктор."];
+}

@@ -1,0 +1,50 @@
+\doxysection{game/includ/\+Server.hpp File Reference}
+\hypertarget{_server_8hpp}{}\label{_server_8hpp}\index{game/includ/Server.hpp@{game/includ/Server.hpp}}
+{\ttfamily \#include "{}Snake.\+hpp"{}}\newline
+{\ttfamily \#include "{}List.\+hpp"{}}\newline
+{\ttfamily \#include "{}Field.\+hpp"{}}\newline
+{\ttfamily \#include "{}Food.\+hpp"{}}\newline
+{\ttfamily \#include "{}Game\+Handler.\+hpp"{}}\newline
+Include dependency graph for Server.\+hpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fd_handler}{Fd\+Handler}}
+\begin{DoxyCompactList}\small\item\em Абстрактный класс для обработки дескрипторов. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_event_selector}{Event\+Selector}}
+\begin{DoxyCompactList}\small\item\em Класс для управления событиями. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_server}{Server}}
+\begin{DoxyCompactList}\small\item\em Класс для управления сервером. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_client}{Client}}
+\begin{DoxyCompactList}\small\item\em Класс для управления клиентом. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{_server_8hpp_a99fb83031ce9923c84392b4e92f956b5aa801c15b3ac63535e59607cb49c91864}{fd\+\_\+array\+\_\+len\+\_\+start}} = 16
+, \mbox{\hyperlink{_server_8hpp_a99fb83031ce9923c84392b4e92f956b5ab6636db9267a9b5970e54f0669f83d49}{buffersize}} = 64
+ \}
+\begin{DoxyCompactList}\small\item\em Enum для определения размеров массивов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_server_8hpp_a99fb83031ce9923c84392b4e92f956b5}\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily \label{_server_8hpp_a99fb83031ce9923c84392b4e92f956b5} 
+anonymous enum}
+
+
+
+Enum для определения размеров массивов. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{fd\_array\_len\_start@{fd\_array\_len\_start}!Server.hpp@{Server.hpp}}\index{Server.hpp@{Server.hpp}!fd\_array\_len\_start@{fd\_array\_len\_start}}}\Hypertarget{_server_8hpp_a99fb83031ce9923c84392b4e92f956b5aa801c15b3ac63535e59607cb49c91864}\label{_server_8hpp_a99fb83031ce9923c84392b4e92f956b5} 
+fd\+\_\+array\+\_\+len\+\_\+start&Начальный размер массива дескрипторов. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{buffersize@{buffersize}!Server.hpp@{Server.hpp}}\index{Server.hpp@{Server.hpp}!buffersize@{buffersize}}}\Hypertarget{_server_8hpp_a99fb83031ce9923c84392b4e92f956b5ab6636db9267a9b5970e54f0669f83d49}\label{_server_8hpp_a99fb83031ce9923c84392b4e92f956b5} 
+buffersize&Размер буфера для приема и отправки данных. \\
+\hline
+
+\end{DoxyEnumFields}

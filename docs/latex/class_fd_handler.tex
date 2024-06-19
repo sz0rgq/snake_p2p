@@ -1,0 +1,178 @@
+\doxysection{Fd\+Handler Class Reference}
+\hypertarget{class_fd_handler}{}\label{class_fd_handler}\index{FdHandler@{FdHandler}}
+
+
+Абстрактный класс для обработки дескрипторов.  
+
+
+
+
+{\ttfamily \#include $<$Server.\+hpp$>$}
+
+
+
+Inheritance diagram for Fd\+Handler\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fd_handler_a4eb8248efa9532c0068c13bd3b21c5aa}{Fd\+Handler}} (int \+\_\+fd, bool \+\_\+want\+\_\+read=true, bool \+\_\+want\+\_\+write=false)
+\begin{DoxyCompactList}\small\item\em Конструктор для обработчика дескриптора. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_fd_handler_aebcb3da6cd5f4f22a50dd05644b6a3ff}{\texorpdfstring{$\sim$}{\string~}\+Fd\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fd_handler_a99ab037a5e79aa296fc4c4752f4a368a}{Get\+Fd}} ()
+\begin{DoxyCompactList}\small\item\em Получает дескриптор файла. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fd_handler_a212ea700300020962577c1af60c2de86}{Want\+Read}} ()
+\begin{DoxyCompactList}\small\item\em Проверяет, нужно ли читать из файла. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fd_handler_a430f7dcad1ca6ab4442a7622a683fc77}{Want\+Write}} ()
+\begin{DoxyCompactList}\small\item\em Проверяет, нужно ли писать в файл. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fd_handler_a1954196ce71ad037c99b185ab270f166}{Set\+Read}} (bool \+\_\+want\+\_\+read)
+\begin{DoxyCompactList}\small\item\em Устанавливает флаг чтения из файла. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fd_handler_a06a62d234d28f5dca51a7c860485c706}{Set\+Write}} (bool \+\_\+want\+\_\+write)
+\begin{DoxyCompactList}\small\item\em Устанавливает флаг записи в файл. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_fd_handler_a4bb9cf381b465d76a06e3776ca42b89e}{Handle}} (bool r, bool w)=0
+\begin{DoxyCompactList}\small\item\em Абстрактный метод для обработки событий. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Абстрактный класс для обработки дескрипторов. 
+
+Этот класс предназначен для обработки дескрипторов файлов, таких как сокеты. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fd_handler_a4eb8248efa9532c0068c13bd3b21c5aa}\index{FdHandler@{FdHandler}!FdHandler@{FdHandler}}
+\index{FdHandler@{FdHandler}!FdHandler@{FdHandler}}
+\doxysubsubsection{\texorpdfstring{FdHandler()}{FdHandler()}}
+{\footnotesize\ttfamily \label{class_fd_handler_a4eb8248efa9532c0068c13bd3b21c5aa} 
+Fd\+Handler\+::\+Fd\+Handler (\begin{DoxyParamCaption}\item[{int}]{\+\_\+fd}{, }\item[{bool}]{\+\_\+want\+\_\+read}{ = {\ttfamily true}, }\item[{bool}]{\+\_\+want\+\_\+write}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор для обработчика дескриптора. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+fd} & Дескриптор файла. \\
+\hline
+{\em \+\_\+want\+\_\+read} & Флаг, указывающий на необходимость чтения из файла (по умолчанию true). \\
+\hline
+{\em \+\_\+want\+\_\+write} & Флаг, указывающий на необходимость записи в файл (по умолчанию false). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fd_handler_aebcb3da6cd5f4f22a50dd05644b6a3ff}\index{FdHandler@{FdHandler}!````~FdHandler@{\texorpdfstring{$\sim$}{\string~}FdHandler}}
+\index{````~FdHandler@{\texorpdfstring{$\sim$}{\string~}FdHandler}!FdHandler@{FdHandler}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FdHandler()}{\string~FdHandler()}}
+{\footnotesize\ttfamily \label{class_fd_handler_aebcb3da6cd5f4f22a50dd05644b6a3ff} 
+Fd\+Handler\+::\texorpdfstring{$\sim$}{\string~}\+Fd\+Handler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Виртуальный деструктор. 
+
+Деструктор класса \doxylink{class_fd_handler}{Fd\+Handler}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fd_handler_a99ab037a5e79aa296fc4c4752f4a368a}\index{FdHandler@{FdHandler}!GetFd@{GetFd}}
+\index{GetFd@{GetFd}!FdHandler@{FdHandler}}
+\doxysubsubsection{\texorpdfstring{GetFd()}{GetFd()}}
+{\footnotesize\ttfamily \label{class_fd_handler_a99ab037a5e79aa296fc4c4752f4a368a} 
+int Fd\+Handler\+::\+Get\+Fd (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получает дескриптор файла. 
+
+\begin{DoxyReturn}{Returns}
+Дескриптор файла. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{class_fd_handler_a4bb9cf381b465d76a06e3776ca42b89e}\index{FdHandler@{FdHandler}!Handle@{Handle}}
+\index{Handle@{Handle}!FdHandler@{FdHandler}}
+\doxysubsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily \label{class_fd_handler_a4bb9cf381b465d76a06e3776ca42b89e} 
+virtual void Fd\+Handler\+::\+Handle (\begin{DoxyParamCaption}\item[{bool}]{r}{, }\item[{bool}]{w}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Абстрактный метод для обработки событий. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Флаг, указывающий на готовность к чтению. \\
+\hline
+{\em w} & Флаг, указывающий на готовность к записи. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_client_a19bc7e4772a0567a814c0e57b5b881e0}{Client}}, and \mbox{\hyperlink{class_server_aa8a2b033575df088c0716ba949875c63}{Server}}.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{class_fd_handler_a1954196ce71ad037c99b185ab270f166}\index{FdHandler@{FdHandler}!SetRead@{SetRead}}
+\index{SetRead@{SetRead}!FdHandler@{FdHandler}}
+\doxysubsubsection{\texorpdfstring{SetRead()}{SetRead()}}
+{\footnotesize\ttfamily \label{class_fd_handler_a1954196ce71ad037c99b185ab270f166} 
+void Fd\+Handler\+::\+Set\+Read (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+want\+\_\+read}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Устанавливает флаг чтения из файла. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+want\+\_\+read} & Новое значение флага чтения. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fd_handler_a06a62d234d28f5dca51a7c860485c706}\index{FdHandler@{FdHandler}!SetWrite@{SetWrite}}
+\index{SetWrite@{SetWrite}!FdHandler@{FdHandler}}
+\doxysubsubsection{\texorpdfstring{SetWrite()}{SetWrite()}}
+{\footnotesize\ttfamily \label{class_fd_handler_a06a62d234d28f5dca51a7c860485c706} 
+void Fd\+Handler\+::\+Set\+Write (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+want\+\_\+write}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Устанавливает флаг записи в файл. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+want\+\_\+write} & Новое значение флага записи. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{class_fd_handler_a212ea700300020962577c1af60c2de86}\index{FdHandler@{FdHandler}!WantRead@{WantRead}}
+\index{WantRead@{WantRead}!FdHandler@{FdHandler}}
+\doxysubsubsection{\texorpdfstring{WantRead()}{WantRead()}}
+{\footnotesize\ttfamily \label{class_fd_handler_a212ea700300020962577c1af60c2de86} 
+bool Fd\+Handler\+::\+Want\+Read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Проверяет, нужно ли читать из файла. 
+
+\begin{DoxyReturn}{Returns}
+true, если нужно читать, false -\/ в противном случае. 
+\end{DoxyReturn}
+\Hypertarget{class_fd_handler_a430f7dcad1ca6ab4442a7622a683fc77}\index{FdHandler@{FdHandler}!WantWrite@{WantWrite}}
+\index{WantWrite@{WantWrite}!FdHandler@{FdHandler}}
+\doxysubsubsection{\texorpdfstring{WantWrite()}{WantWrite()}}
+{\footnotesize\ttfamily \label{class_fd_handler_a430f7dcad1ca6ab4442a7622a683fc77} 
+bool Fd\+Handler\+::\+Want\+Write (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Проверяет, нужно ли писать в файл. 
+
+\begin{DoxyReturn}{Returns}
+true, если нужно писать, false -\/ в противном случае. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game/includ/\mbox{\hyperlink{_server_8hpp}{Server.\+hpp}}\item 
+game/source/\mbox{\hyperlink{_server_8cpp}{Server.\+cpp}}\end{DoxyCompactItemize}

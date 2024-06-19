@@ -1,0 +1,91 @@
+\doxysection{Move\+Vector Class Reference}
+\hypertarget{class_move_vector}{}\label{class_move_vector}\index{MoveVector@{MoveVector}}
+
+
+Класс вектора движения.  
+
+
+
+
+{\ttfamily \#include $<$Move\+And\+Position.\+hpp$>$}
+
+
+
+Inheritance diagram for Move\+Vector\+:
+% FIG 0
+
+
+Collaboration diagram for Move\+Vector\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_move_vector_ae0c5324e8ada48207f3ffc3f9147cc58}{Move\+Vector}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Конструктор вектора движения. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_move_vector_a5ff57f89cd178888334e4ab729cb1396}{\texorpdfstring{$\sim$}{\string~}\+Move\+Vector}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_point}{Point}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point_aa49d4ac67981797aaa5eb2727c4cd4d4}{Point}} (int \+\_\+pos\+\_\+x=0, int \+\_\+pos\+\_\+y=0)
+\begin{DoxyCompactList}\small\item\em Конструктор точки. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_point_a364091762d6aa1aa5983d36fd7d8b6d5}{\texorpdfstring{$\sim$}{\string~}\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_point_a56ef488d55611d823a35eb1655f1de7a}{GetX}} ()
+\begin{DoxyCompactList}\small\item\em Получает координату x точки. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_point_aa42c18de4df078af493363a423fd9580}{GetY}} ()
+\begin{DoxyCompactList}\small\item\em Получает координату y точки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_a839b4405541912bf74145aaff087b698}{SetX}} (int \+\_\+pos\+\_\+x)
+\begin{DoxyCompactList}\small\item\em Устанавливает координату x точки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_ae6350ca9aebaafa5363619a04e164e85}{SetY}} (int \+\_\+pos\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Устанавливает координату y точки. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_point_a145aeae2ec938d82a5a2f3a1639f2c15}{operator=}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_point_a6c428a70f1bb4b470628b5174aa5bf5e}{operator==}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор сравнения на равенство. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_point_a7639aa248a3d735ddbe72aab2b7890e9}{operator+=}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор сложения с присваиванием. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_point}{Point}} \& \mbox{\hyperlink{class_point_a7a0563fa0b01392bc4fddc8287534547}{operator-\/=}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор вычитания с присваиванием. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_point_a7d2d85d1ffef82b7ce75467b29f809c1}{operator+}} (const \mbox{\hyperlink{class_point}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em Оператор сложения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс вектора движения. 
+
+Этот класс наследуется от класса \doxylink{class_point}{Point} и добавляет функциональность для представления вектора движения. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_move_vector_ae0c5324e8ada48207f3ffc3f9147cc58}\index{MoveVector@{MoveVector}!MoveVector@{MoveVector}}
+\index{MoveVector@{MoveVector}!MoveVector@{MoveVector}}
+\doxysubsubsection{\texorpdfstring{MoveVector()}{MoveVector()}}
+{\footnotesize\ttfamily \label{class_move_vector_ae0c5324e8ada48207f3ffc3f9147cc58} 
+Move\+Vector\+::\+Move\+Vector (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор вектора движения. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Координата x вектора движения. \\
+\hline
+{\em y} & Координата y вектора движения. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_move_vector_a5ff57f89cd178888334e4ab729cb1396}\index{MoveVector@{MoveVector}!````~MoveVector@{\texorpdfstring{$\sim$}{\string~}MoveVector}}
+\index{````~MoveVector@{\texorpdfstring{$\sim$}{\string~}MoveVector}!MoveVector@{MoveVector}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MoveVector()}{\string~MoveVector()}}
+{\footnotesize\ttfamily \label{class_move_vector_a5ff57f89cd178888334e4ab729cb1396} 
+virtual Move\+Vector\+::\texorpdfstring{$\sim$}{\string~}\+Move\+Vector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Виртуальный деструктор. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game/includ/\mbox{\hyperlink{_move_and_position_8hpp}{Move\+And\+Position.\+hpp}}\end{DoxyCompactItemize}

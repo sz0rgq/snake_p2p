@@ -1,0 +1,13 @@
+digraph "Point::SetX"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Point::SetX",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Устанавливает координату x точки."];
+  Node1 -> Node2 [id="edge3_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="GameHandler::HandleOutOf\lField",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_game_handler.html#a456c9cb36f9dbb638775f950c019a6f1",tooltip="Обработка выхода змеи за пределы поля."];
+  Node2 -> Node3 [id="edge4_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="FieldHandler::HandleOutOf\lField",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_field_handler.html#a02019cf19586f16a4c338c8947a9784d",tooltip="Обработка выхода змеи за пределы поля."];
+}
