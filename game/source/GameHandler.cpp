@@ -276,10 +276,6 @@ GameHandlerGemstone::
     GameHandlerGemstone(Field *_field,
                         List<Food> *_foods, List<Snake> *_snakes)
     : handler(new GameHandler(_field, _foods, _snakes)) {}
-/**
- * @brief Деструктор класса GameHandlerGemstone.
- */
-GameHandlerGemstone::~GameHandlerGemstone() { delete handler; }
 
 GameHandlerGemstone::operator FoodHandler()
 {
