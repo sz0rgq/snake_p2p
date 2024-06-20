@@ -11,12 +11,14 @@ digraph "Client::Handle"
   Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="Server::RemoveClient",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_server.html#ab3e95f363c640b977ea7b7933063f0f1",tooltip="Удаляет клиента из списка."];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="EventSelector::Remove",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_event_selector.html#af19b17fc68f47b35d52d3e9585e1308a",tooltip="Удаляет дескриптор файла из массива."];
-  Node4 -> Node2 [id="edge4_Node000004_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node1 -> Node5 [id="edge5_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="Client::StringHandle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_client.html#a9bebff23860caf03faf7589923e13cd1",tooltip="Обрабатывает строку, полученную от клиента."];
-  Node5 -> Node6 [id="edge6_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="Snake::ChangeDirection",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_snake.html#ab4171e8ccbfab748eef9e3b4d7d8ea17",tooltip="Изменяет направление движения змеи."];
-  Node5 -> Node7 [id="edge7_Node000005_Node000007",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="Server::StartGame",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_server.html#afe6c13a6d4c5b5d2a2fb9f4a750a16ba",tooltip="Начинает игру."];
+  Node4 [id="Node000004",label="Client::GetSnake",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_client.html#ab63dac270def68310b81515da93616a2",tooltip="Получает змей клиента."];
+  Node3 -> Node5 [id="edge4_Node000003_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="EventSelector::Remove",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_event_selector.html#af19b17fc68f47b35d52d3e9585e1308a",tooltip="Удаляет дескриптор файла из массива."];
+  Node5 -> Node2 [id="edge5_Node000005_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node6 [id="edge6_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Client::StringHandle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_client.html#a9bebff23860caf03faf7589923e13cd1",tooltip="Обрабатывает строку, полученную от клиента."];
+  Node6 -> Node7 [id="edge7_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="Snake::ChangeDirection",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_snake.html#ab4171e8ccbfab748eef9e3b4d7d8ea17",tooltip="Изменяет направление движения змеи."];
+  Node6 -> Node8 [id="edge8_Node000006_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="Server::StartGame",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_server.html#afe6c13a6d4c5b5d2a2fb9f4a750a16ba",tooltip="Начинает игру."];
 }

@@ -7,7 +7,9 @@ digraph "Server::RemoveClient"
   rankdir="LR";
   Node1 [id="Node000001",label="Server::RemoveClient",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Удаляет клиента из списка."];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="EventSelector::Remove",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_event_selector.html#af19b17fc68f47b35d52d3e9585e1308a",tooltip="Удаляет дескриптор файла из массива."];
-  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="FdHandler::GetFd",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_fd_handler.html#a99ab037a5e79aa296fc4c4752f4a368a",tooltip="Получает дескриптор файла."];
+  Node2 [id="Node000002",label="Client::GetSnake",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_client.html#ab63dac270def68310b81515da93616a2",tooltip="Получает змей клиента."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="EventSelector::Remove",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_event_selector.html#af19b17fc68f47b35d52d3e9585e1308a",tooltip="Удаляет дескриптор файла из массива."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="FdHandler::GetFd",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_fd_handler.html#a99ab037a5e79aa296fc4c4752f4a368a",tooltip="Получает дескриптор файла."];
 }

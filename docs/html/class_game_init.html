@@ -27,6 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Snake 2P
    </div>
+   <div id="projectbrief">An online Snake game written in C++</div>
   </td>
  </tr>
  </tbody>
@@ -86,12 +87,15 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_game_init-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">GameInit Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Инициализирует настройки игры.  
+<p>Класс для инициализации настроек игры.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_game_init_8hpp_source.html">GameInit.hpp</a>&gt;</code></p>
@@ -99,15 +103,87 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a93dc0f8f57915d3e400d55dd84ae6588" id="r_a93dc0f8f57915d3e400d55dd84ae6588"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93dc0f8f57915d3e400d55dd84ae6588">GameInit</a> (int _argc, const char **_argv)</td></tr>
+<tr class="memdesc:a93dc0f8f57915d3e400d55dd84ae6588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_game_init.html" title="Класс для инициализации настроек игры.">GameInit</a>.  <br /></td></tr>
 <tr class="separator:a93dc0f8f57915d3e400d55dd84ae6588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b50f5c75a233b3548f2a4b3d0e27eec" id="r_a1b50f5c75a233b3548f2a4b3d0e27eec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b50f5c75a233b3548f2a4b3d0e27eec">~GameInit</a> ()</td></tr>
+<tr class="memdesc:a1b50f5c75a233b3548f2a4b3d0e27eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор класса <a class="el" href="class_game_init.html" title="Класс для инициализации настроек игры.">GameInit</a>.  <br /></td></tr>
 <tr class="separator:a1b50f5c75a233b3548f2a4b3d0e27eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a044dc9d28077555e45a12a6f6f21bb03" id="r_a044dc9d28077555e45a12a6f6f21bb03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a044dc9d28077555e45a12a6f6f21bb03">Start</a> ()</td></tr>
+<tr class="memdesc:a044dc9d28077555e45a12a6f6f21bb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для старта инициализации игры.  <br /></td></tr>
 <tr class="separator:a044dc9d28077555e45a12a6f6f21bb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a8efa7bba7b023e99dcab1ae6bd1fea26" id="r_a8efa7bba7b023e99dcab1ae6bd1fea26"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="#a8efa7bba7b023e99dcab1ae6bd1fea26a71bce389e492a4b256da61c630d2ca7c">max_argc</a> = 11
+, <a class="el" href="#a8efa7bba7b023e99dcab1ae6bd1fea26a66a5559fb90d43a620654545d08a351c">std_port</a> = 8808
+, <a class="el" href="#a8efa7bba7b023e99dcab1ae6bd1fea26a9d9c2232318c155c9a6181ccf2812b04">std_width</a> = 100
+, <a class="el" href="#a8efa7bba7b023e99dcab1ae6bd1fea26a0e20c03a786fc89e53625af6ea3fe101">std_height</a> = 40
+, <br />
+&#160;&#160;<a class="el" href="#a8efa7bba7b023e99dcab1ae6bd1fea26ab4153e6ca0cf0ebf8f52878e9865aa3f">std_food_count</a> = 15
+<br />
+ }</td></tr>
+<tr class="separator:a8efa7bba7b023e99dcab1ae6bd1fea26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a601bf7f7fcab368716738c1dc4441dbd" id="r_a601bf7f7fcab368716738c1dc4441dbd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a601bf7f7fcab368716738c1dc4441dbd">IsOneOfArgv</a> (const char *<a class="el" href="#a39c213c03ca5081106c68d47b837d79a">argv</a>[6], const char *arg, int <a class="el" href="#a6ef49eca128d0c5323d392f66e71cbb9">argc</a>, int *matched_argv_idx)</td></tr>
+<tr class="memdesc:a601bf7f7fcab368716738c1dc4441dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, является ли аргумент одним из допустимых.  <br /></td></tr>
+<tr class="separator:a601bf7f7fcab368716738c1dc4441dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a202c15769a97282957b9dcbf08997e6d" id="r_a202c15769a97282957b9dcbf08997e6d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a202c15769a97282957b9dcbf08997e6d">HandleArgv</a> (int argv_idx, int matched_argv, int *num_args, const char **ip)</td></tr>
+<tr class="memdesc:a202c15769a97282957b9dcbf08997e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает аргументы командной строки.  <br /></td></tr>
+<tr class="separator:a202c15769a97282957b9dcbf08997e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb23240def1be31f3c870fb5880c2f4" id="r_a6bb23240def1be31f3c870fb5880c2f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bb23240def1be31f3c870fb5880c2f4">WriteHelp</a> ()</td></tr>
+<tr class="memdesc:a6bb23240def1be31f3c870fb5880c2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит информацию о доступных аргументах командной строки.  <br /></td></tr>
+<tr class="separator:a6bb23240def1be31f3c870fb5880c2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6ef49eca128d0c5323d392f66e71cbb9" id="r_a6ef49eca128d0c5323d392f66e71cbb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ef49eca128d0c5323d392f66e71cbb9">argc</a></td></tr>
+<tr class="memdesc:a6ef49eca128d0c5323d392f66e71cbb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество аргументов командной строки  <br /></td></tr>
+<tr class="separator:a6ef49eca128d0c5323d392f66e71cbb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c213c03ca5081106c68d47b837d79a" id="r_a39c213c03ca5081106c68d47b837d79a"><td class="memItemLeft" align="right" valign="top">const char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39c213c03ca5081106c68d47b837d79a">argv</a></td></tr>
+<tr class="memdesc:a39c213c03ca5081106c68d47b837d79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив аргументов командной строки  <br /></td></tr>
+<tr class="separator:a39c213c03ca5081106c68d47b837d79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Инициализирует настройки игры. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><p>Класс для инициализации настроек игры. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a8efa7bba7b023e99dcab1ae6bd1fea26" name="a8efa7bba7b023e99dcab1ae6bd1fea26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8efa7bba7b023e99dcab1ae6bd1fea26">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8efa7bba7b023e99dcab1ae6bd1fea26a71bce389e492a4b256da61c630d2ca7c" name="a8efa7bba7b023e99dcab1ae6bd1fea26a71bce389e492a4b256da61c630d2ca7c"></a>max_argc&#160;</td><td class="fielddoc"><p>Максимальное количество аргументов командной строки </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8efa7bba7b023e99dcab1ae6bd1fea26a66a5559fb90d43a620654545d08a351c" name="a8efa7bba7b023e99dcab1ae6bd1fea26a66a5559fb90d43a620654545d08a351c"></a>std_port&#160;</td><td class="fielddoc"><p>Стандартный порт сервера </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8efa7bba7b023e99dcab1ae6bd1fea26a9d9c2232318c155c9a6181ccf2812b04" name="a8efa7bba7b023e99dcab1ae6bd1fea26a9d9c2232318c155c9a6181ccf2812b04"></a>std_width&#160;</td><td class="fielddoc"><p>Стандартная ширина игрового поля </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8efa7bba7b023e99dcab1ae6bd1fea26a0e20c03a786fc89e53625af6ea3fe101" name="a8efa7bba7b023e99dcab1ae6bd1fea26a0e20c03a786fc89e53625af6ea3fe101"></a>std_height&#160;</td><td class="fielddoc"><p>Стандартная высота игрового поля </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8efa7bba7b023e99dcab1ae6bd1fea26ab4153e6ca0cf0ebf8f52878e9865aa3f" name="a8efa7bba7b023e99dcab1ae6bd1fea26ab4153e6ca0cf0ebf8f52878e9865aa3f"></a>std_food_count&#160;</td><td class="fielddoc"><p>Стандартное количество еды на игровом поле </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a93dc0f8f57915d3e400d55dd84ae6588" name="a93dc0f8f57915d3e400d55dd84ae6588"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93dc0f8f57915d3e400d55dd84ae6588">&#9670;&#160;</a></span>GameInit()</h2>
 
@@ -135,6 +211,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Конструктор класса <a class="el" href="class_game_init.html" title="Класс для инициализации настроек игры.">GameInit</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_argc</td><td>Количество аргументов командной строки. </td></tr>
+    <tr><td class="paramname">_argv</td><td>Массив аргументов командной строки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a1b50f5c75a233b3548f2a4b3d0e27eec" name="a1b50f5c75a233b3548f2a4b3d0e27eec"></a>
@@ -160,9 +245,134 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Деструктор класса <a class="el" href="class_game_init.html" title="Класс для инициализации настроек игры.">GameInit</a>. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a202c15769a97282957b9dcbf08997e6d" name="a202c15769a97282957b9dcbf08997e6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a202c15769a97282957b9dcbf08997e6d">&#9670;&#160;</a></span>HandleArgv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameInit::HandleArgv </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argv_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>matched_argv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>num_args</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **</td>          <td class="paramname"><span class="paramname"><em>ip</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает аргументы командной строки. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argv_idx</td><td>Индекс текущего обрабатываемого аргумента. </td></tr>
+    <tr><td class="paramname">matched_argv</td><td>Индекс совпавшего аргумента. </td></tr>
+    <tr><td class="paramname">num_args</td><td>Массив для хранения значений числовых аргументов. </td></tr>
+    <tr><td class="paramname">ip</td><td>Указатель для хранения значения IP адреса. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если аргумент "help" был найден и обработка завершена, false в противном случае. </dd></dl>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_game_init_a202c15769a97282957b9dcbf08997e6d_cgraph.png" border="0" usemap="#aclass_game_init_a202c15769a97282957b9dcbf08997e6d_cgraph" alt=""/></div>
+</div>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_game_init_a202c15769a97282957b9dcbf08997e6d_icgraph.png" border="0" usemap="#aclass_game_init_a202c15769a97282957b9dcbf08997e6d_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a601bf7f7fcab368716738c1dc4441dbd" name="a601bf7f7fcab368716738c1dc4441dbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601bf7f7fcab368716738c1dc4441dbd">&#9670;&#160;</a></span>IsOneOfArgv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameInit::IsOneOfArgv </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>[6], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>matched_argv_idx</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет, является ли аргумент одним из допустимых. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argv</td><td>Массив допустимых аргументов. </td></tr>
+    <tr><td class="paramname">arg</td><td>Проверяемый аргумент. </td></tr>
+    <tr><td class="paramname">argc</td><td>Количество допустимых аргументов. </td></tr>
+    <tr><td class="paramname">matched_argv_idx</td><td>Указатель для хранения индекса совпавшего аргумента. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если аргумент найден, false в противном случае. </dd></dl>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_game_init_a601bf7f7fcab368716738c1dc4441dbd_icgraph.png" border="0" usemap="#aclass_game_init_a601bf7f7fcab368716738c1dc4441dbd_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
 <a id="a044dc9d28077555e45a12a6f6f21bb03" name="a044dc9d28077555e45a12a6f6f21bb03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a044dc9d28077555e45a12a6f6f21bb03">&#9670;&#160;</a></span>Start()</h2>
 
@@ -177,11 +387,99 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
+
+<p>Метод для старта инициализации игры. </p>
+<dl class="section return"><dt>Returns</dt><dd>Код завершения: 0 - успешное завершение, 1 - ошибка. </dd></dl>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_game_init_a044dc9d28077555e45a12a6f6f21bb03_cgraph.png" border="0" usemap="#aclass_game_init_a044dc9d28077555e45a12a6f6f21bb03_cgraph" alt=""/></div>
 </div>
+
+</div>
+</div>
+<a id="a6bb23240def1be31f3c870fb5880c2f4" name="a6bb23240def1be31f3c870fb5880c2f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb23240def1be31f3c870fb5880c2f4">&#9670;&#160;</a></span>WriteHelp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameInit::WriteHelp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выводит информацию о доступных аргументах командной строки. </p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_game_init_a6bb23240def1be31f3c870fb5880c2f4_icgraph.png" border="0" usemap="#aclass_game_init_a6bb23240def1be31f3c870fb5880c2f4_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6ef49eca128d0c5323d392f66e71cbb9" name="a6ef49eca128d0c5323d392f66e71cbb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef49eca128d0c5323d392f66e71cbb9">&#9670;&#160;</a></span>argc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameInit::argc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество аргументов командной строки </p>
+
+</div>
+</div>
+<a id="a39c213c03ca5081106c68d47b837d79a" name="a39c213c03ca5081106c68d47b837d79a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c213c03ca5081106c68d47b837d79a">&#9670;&#160;</a></span>argv</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char** GameInit::argv</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Массив аргументов командной строки </p>
 
 </div>
 </div>
@@ -192,7 +490,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Thu Jun 20 2024 13:42:50 for Snake 2P by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

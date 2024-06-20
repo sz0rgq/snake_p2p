@@ -27,6 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Snake 2P
    </div>
+   <div id="projectbrief">An online Snake game written in C++</div>
   </td>
  </tr>
  </tbody>
@@ -86,6 +87,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_fd_handler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">FdHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -95,9 +97,11 @@ $(function(){ initResizable(false); });
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_server_8hpp_source.html">Server.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for FdHandler:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for FdHandler:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_fd_handler__inherit__graph.png" border="0" usemap="#a_fd_handler_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -127,6 +131,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4bb9cf381b465d76a06e3776ca42b89e" id="r_a4bb9cf381b465d76a06e3776ca42b89e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bb9cf381b465d76a06e3776ca42b89e">Handle</a> (bool r, bool w)=0</td></tr>
 <tr class="memdesc:a4bb9cf381b465d76a06e3776ca42b89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Абстрактный метод для обработки событий.  <br /></td></tr>
 <tr class="separator:a4bb9cf381b465d76a06e3776ca42b89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5128515d0e6ba4917fc868b999d35b97" id="r_a5128515d0e6ba4917fc868b999d35b97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5128515d0e6ba4917fc868b999d35b97">fd</a></td></tr>
+<tr class="separator:a5128515d0e6ba4917fc868b999d35b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770d1089a0c9daf23c9cc7889153b564" id="r_a770d1089a0c9daf23c9cc7889153b564"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a770d1089a0c9daf23c9cc7889153b564">want_read</a></td></tr>
+<tr class="separator:a770d1089a0c9daf23c9cc7889153b564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59e03266745a6172153d3429266beba" id="r_ad59e03266745a6172153d3429266beba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad59e03266745a6172153d3429266beba">want_write</a></td></tr>
+<tr class="separator:ad59e03266745a6172153d3429266beba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Абстрактный класс для обработки дескрипторов. </p>
@@ -230,9 +243,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Получает дескриптор файла. </p>
 <dl class="section return"><dt>Returns</dt><dd>Дескриптор файла. </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_fd_handler_a99ab037a5e79aa296fc4c4752f4a368a_icgraph.png" border="0" usemap="#aclass_fd_handler_a99ab037a5e79aa296fc4c4752f4a368a_icgraph" alt=""/></div>
 </div>
 
@@ -275,9 +290,11 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p>Implemented in <a class="el" href="class_client.html#a19bc7e4772a0567a814c0e57b5b881e0">Client</a>, and <a class="el" href="class_server.html#aa8a2b033575df088c0716ba949875c63">Server</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_fd_handler_a4bb9cf381b465d76a06e3776ca42b89e_icgraph.png" border="0" usemap="#aclass_fd_handler_a4bb9cf381b465d76a06e3776ca42b89e_icgraph" alt=""/></div>
 </div>
 
@@ -346,9 +363,11 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_fd_handler_a06a62d234d28f5dca51a7c860485c706_icgraph.png" border="0" usemap="#aclass_fd_handler_a06a62d234d28f5dca51a7c860485c706_icgraph" alt=""/></div>
 </div>
 
@@ -407,11 +426,83 @@ Here is the caller graph for this function:</div>
 
 <p>Проверяет, нужно ли писать в файл. </p>
 <dl class="section return"><dt>Returns</dt><dd>true, если нужно писать, false - в противном случае. </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_fd_handler_a430f7dcad1ca6ab4442a7622a683fc77_icgraph.png" border="0" usemap="#aclass_fd_handler_a430f7dcad1ca6ab4442a7622a683fc77_icgraph" alt=""/></div>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5128515d0e6ba4917fc868b999d35b97" name="a5128515d0e6ba4917fc868b999d35b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5128515d0e6ba4917fc868b999d35b97">&#9670;&#160;</a></span>fd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FdHandler::fd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Дескриптор файла. </p>
+
+</div>
+</div>
+<a id="a770d1089a0c9daf23c9cc7889153b564" name="a770d1089a0c9daf23c9cc7889153b564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770d1089a0c9daf23c9cc7889153b564">&#9670;&#160;</a></span>want_read</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FdHandler::want_read</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Флаг, указывающий на необходимость чтения из файла. </p>
+
+</div>
+</div>
+<a id="ad59e03266745a6172153d3429266beba" name="ad59e03266745a6172153d3429266beba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad59e03266745a6172153d3429266beba">&#9670;&#160;</a></span>want_write</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FdHandler::want_write</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Флаг, указывающий на необходимость записи в файл. </p>
 
 </div>
 </div>
@@ -422,7 +513,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Thu Jun 20 2024 13:42:50 for Snake 2P by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

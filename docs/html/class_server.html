@@ -27,6 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Snake 2P
    </div>
+   <div id="projectbrief">An online Snake game written in C++</div>
   </td>
  </tr>
  </tbody>
@@ -85,8 +86,12 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_server-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Server Class Reference</div></div>
 </div><!--header-->
@@ -96,17 +101,26 @@ $(function(){ initResizable(false); });
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_server_8hpp_source.html">Server.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for Server:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Server:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_server__inherit__graph.png" border="0" usemap="#a_server_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for Server:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for Server:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_server__coll__graph.png" border="0" usemap="#a_server_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_1_1item.html">item</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b3aa2579cb1c8cd1d069582c14d0fa6" id="r_a4b3aa2579cb1c8cd1d069582c14d0fa6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b3aa2579cb1c8cd1d069582c14d0fa6">~Server</a> ()</td></tr>
@@ -118,7 +132,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8a2b033575df088c0716ba949875c63" id="r_aa8a2b033575df088c0716ba949875c63"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8a2b033575df088c0716ba949875c63">Handle</a> (bool r, bool w)</td></tr>
 <tr class="memdesc:aa8a2b033575df088c0716ba949875c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Абстрактный метод для обработки событий.  <br /></td></tr>
 <tr class="separator:aa8a2b033575df088c0716ba949875c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3bc7c9686112d2c478e8978640afdf0" id="r_ac3bc7c9686112d2c478e8978640afdf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3bc7c9686112d2c478e8978640afdf0">SendTo</a> (int fd, const char *msg, int len)</td></tr>
+<tr class="memitem:ac3bc7c9686112d2c478e8978640afdf0" id="r_ac3bc7c9686112d2c478e8978640afdf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3bc7c9686112d2c478e8978640afdf0">SendTo</a> (int <a class="el" href="class_fd_handler.html#a5128515d0e6ba4917fc868b999d35b97">fd</a>, const char *msg, int len)</td></tr>
 <tr class="memdesc:ac3bc7c9686112d2c478e8978640afdf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправляет сообщение клиенту.  <br /></td></tr>
 <tr class="separator:ac3bc7c9686112d2c478e8978640afdf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe6c13a6d4c5b5d2a2fb9f4a750a16ba" id="r_afe6c13a6d4c5b5d2a2fb9f4a750a16ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe6c13a6d4c5b5d2a2fb9f4a750a16ba">StartGame</a> ()</td></tr>
@@ -152,11 +166,157 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab714f70af639732cbd139098c3154118" id="r_ab714f70af639732cbd139098c3154118"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_server.html">Server</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab714f70af639732cbd139098c3154118">Start</a> (<a class="el" href="class_event_selector.html">EventSelector</a> *_the_selector, <a class="el" href="class_field.html">Field</a> *_field, <a class="el" href="class_game_handler_gemstone.html">GameHandlerGemstone</a> *_handler, int _food_count, int port, const char *ip)</td></tr>
 <tr class="memdesc:ab714f70af639732cbd139098c3154118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Статический метод для запуска сервера.  <br /></td></tr>
 <tr class="separator:ab714f70af639732cbd139098c3154118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a2bfe62acece945e8aff6354c0b328fe9" id="r_a2bfe62acece945e8aff6354c0b328fe9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bfe62acece945e8aff6354c0b328fe9">game_step</a> { <a class="el" href="#a2bfe62acece945e8aff6354c0b328fe9aad23c3e718330f7160be0c631b570cff">not_started</a>
+, <a class="el" href="#a2bfe62acece945e8aff6354c0b328fe9aed2d49b17f7518bc80469e4257c12779">started</a>
+ }</td></tr>
+<tr class="separator:a2bfe62acece945e8aff6354c0b328fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a53ad1c9f97d2fd8dcf222943ee9aa40e" id="r_a53ad1c9f97d2fd8dcf222943ee9aa40e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53ad1c9f97d2fd8dcf222943ee9aa40e">Server</a> (int _fd, <a class="el" href="class_event_selector.html">EventSelector</a> *_the_selector, <a class="el" href="class_field.html">Field</a> *_field, <a class="el" href="class_game_handler_gemstone.html">GameHandlerGemstone</a> *_handler, int _food_count)</td></tr>
+<tr class="memdesc:a53ad1c9f97d2fd8dcf222943ee9aa40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для сервера.  <br /></td></tr>
+<tr class="separator:a53ad1c9f97d2fd8dcf222943ee9aa40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44be6f37d46d022833250be1a29d2ce0" id="r_a44be6f37d46d022833250be1a29d2ce0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44be6f37d46d022833250be1a29d2ce0">DrawAll</a> ()</td></tr>
+<tr class="memdesc:a44be6f37d46d022833250be1a29d2ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовывает все элементы на поле.  <br /></td></tr>
+<tr class="separator:a44be6f37d46d022833250be1a29d2ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8648f906002f679f9393ae69a70ca845" id="r_a8648f906002f679f9393ae69a70ca845"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_client.html">Client</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8648f906002f679f9393ae69a70ca845">FindClientBySnake</a> (<a class="el" href="class_snake.html">Snake</a> *s)</td></tr>
+<tr class="memdesc:a8648f906002f679f9393ae69a70ca845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит клиента по змее.  <br /></td></tr>
+<tr class="separator:a8648f906002f679f9393ae69a70ca845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396a05223ce021f8df62c5b037726615" id="r_a396a05223ce021f8df62c5b037726615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a396a05223ce021f8df62c5b037726615">AddToDeleteList</a> (<a class="el" href="class_client.html">Client</a> *cl)</td></tr>
+<tr class="memdesc:a396a05223ce021f8df62c5b037726615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет клиента в список для удаления.  <br /></td></tr>
+<tr class="separator:a396a05223ce021f8df62c5b037726615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57eb4221ca74cda9ae58843f6abf1d06" id="r_a57eb4221ca74cda9ae58843f6abf1d06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57eb4221ca74cda9ae58843f6abf1d06">DeleteAllFromList</a> ()</td></tr>
+<tr class="memdesc:a57eb4221ca74cda9ae58843f6abf1d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет всех клиентов из списка.  <br /></td></tr>
+<tr class="separator:a57eb4221ca74cda9ae58843f6abf1d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a0e5a2a9bbc3abf9f77ac704f554af" id="r_a76a0e5a2a9bbc3abf9f77ac704f554af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76a0e5a2a9bbc3abf9f77ac704f554af">WriteHandle</a> ()</td></tr>
+<tr class="memdesc:a76a0e5a2a9bbc3abf9f77ac704f554af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает события записи.  <br /></td></tr>
+<tr class="separator:a76a0e5a2a9bbc3abf9f77ac704f554af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a451eb691566896ab4fcf90bb404dc536" id="r_a451eb691566896ab4fcf90bb404dc536"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_server_1_1item.html">item</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a451eb691566896ab4fcf90bb404dc536">first</a></td></tr>
+<tr class="separator:a451eb691566896ab4fcf90bb404dc536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73b30fabbadf336f712328f805c0fd7" id="r_ad73b30fabbadf336f712328f805c0fd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_server_1_1item.html">item</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad73b30fabbadf336f712328f805c0fd7">delete_list</a></td></tr>
+<tr class="separator:ad73b30fabbadf336f712328f805c0fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc14c56a457c18d805e026d3b6e934e6" id="r_adc14c56a457c18d805e026d3b6e934e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_event_selector.html">EventSelector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc14c56a457c18d805e026d3b6e934e6">the_selector</a></td></tr>
+<tr class="separator:adc14c56a457c18d805e026d3b6e934e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea76ce163ba1be5938d033a270b683c" id="r_a3ea76ce163ba1be5938d033a270b683c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_field.html">Field</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ea76ce163ba1be5938d033a270b683c">field</a></td></tr>
+<tr class="separator:a3ea76ce163ba1be5938d033a270b683c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163ce585798cc0c371538094102700b" id="r_a9163ce585798cc0c371538094102700b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_handler_gemstone.html">GameHandlerGemstone</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9163ce585798cc0c371538094102700b">handler</a></td></tr>
+<tr class="separator:a9163ce585798cc0c371538094102700b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f90ebbe4cf119a552bab6331feb3e7" id="r_aa8f90ebbe4cf119a552bab6331feb3e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8f90ebbe4cf119a552bab6331feb3e7">snakes_count</a></td></tr>
+<tr class="separator:aa8f90ebbe4cf119a552bab6331feb3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231531af5cccb22a3d8a0e464ded9ab4" id="r_a231531af5cccb22a3d8a0e464ded9ab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a2bfe62acece945e8aff6354c0b328fe9">game_step</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a231531af5cccb22a3d8a0e464ded9ab4">st</a></td></tr>
+<tr class="separator:a231531af5cccb22a3d8a0e464ded9ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2474373fc11ae265c947a3eadcbd1a66" id="r_a2474373fc11ae265c947a3eadcbd1a66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2474373fc11ae265c947a3eadcbd1a66">food_count</a></td></tr>
+<tr class="separator:a2474373fc11ae265c947a3eadcbd1a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Класс для управления сервером. </p>
 <p>Этот класс предназначен для управления сервером, включая управление клиентами и игровым процессом. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a2bfe62acece945e8aff6354c0b328fe9" name="a2bfe62acece945e8aff6354c0b328fe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bfe62acece945e8aff6354c0b328fe9">&#9670;&#160;</a></span>game_step</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a2bfe62acece945e8aff6354c0b328fe9">Server::game_step</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2bfe62acece945e8aff6354c0b328fe9aad23c3e718330f7160be0c631b570cff" name="a2bfe62acece945e8aff6354c0b328fe9aad23c3e718330f7160be0c631b570cff"></a>not_started&#160;</td><td class="fielddoc"><p>Игра не началась. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bfe62acece945e8aff6354c0b328fe9aed2d49b17f7518bc80469e4257c12779" name="a2bfe62acece945e8aff6354c0b328fe9aed2d49b17f7518bc80469e4257c12779"></a>started&#160;</td><td class="fielddoc"><p>Игра началась. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a53ad1c9f97d2fd8dcf222943ee9aa40e" name="a53ad1c9f97d2fd8dcf222943ee9aa40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ad1c9f97d2fd8dcf222943ee9aa40e">&#9670;&#160;</a></span>Server()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Server::Server </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_fd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_event_selector.html">EventSelector</a> *</td>          <td class="paramname"><span class="paramname"><em>_the_selector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_field.html">Field</a> *</td>          <td class="paramname"><span class="paramname"><em>_field</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_handler_gemstone.html">GameHandlerGemstone</a> *</td>          <td class="paramname"><span class="paramname"><em>_handler</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_food_count</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор для сервера. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_fd</td><td>Дескриптор файла сервера. </td></tr>
+    <tr><td class="paramname">_the_selector</td><td>Селектор событий. </td></tr>
+    <tr><td class="paramname">_field</td><td>Игровое поле. </td></tr>
+    <tr><td class="paramname">_handler</td><td>Обработчик игры. </td></tr>
+    <tr><td class="paramname">_food_count</td><td>Количество еды на поле. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_a53ad1c9f97d2fd8dcf222943ee9aa40e_cgraph.png" border="0" usemap="#aclass_server_a53ad1c9f97d2fd8dcf222943ee9aa40e_cgraph" alt=""/></div>
+</div>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_a53ad1c9f97d2fd8dcf222943ee9aa40e_icgraph.png" border="0" usemap="#aclass_server_a53ad1c9f97d2fd8dcf222943ee9aa40e_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
 <a id="a4b3aa2579cb1c8cd1d069582c14d0fa6" name="a4b3aa2579cb1c8cd1d069582c14d0fa6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b3aa2579cb1c8cd1d069582c14d0fa6">&#9670;&#160;</a></span>~Server()</h2>
 
@@ -182,15 +342,199 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Виртуальный деструктор. </p>
 <p>Деструктор класса <a class="el" href="class_server.html" title="Класс для управления сервером.">Server</a>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_server_a4b3aa2579cb1c8cd1d069582c14d0fa6_cgraph.png" border="0" usemap="#aclass_server_a4b3aa2579cb1c8cd1d069582c14d0fa6_cgraph" alt=""/></div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a396a05223ce021f8df62c5b037726615" name="a396a05223ce021f8df62c5b037726615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a396a05223ce021f8df62c5b037726615">&#9670;&#160;</a></span>AddToDeleteList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::AddToDeleteList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_client.html">Client</a> *</td>          <td class="paramname"><span class="paramname"><em>cl</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавляет клиента в список для удаления. </p>
+<p>Добавление клиента в список на удаление.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cl</td><td>Клиент для удаления.</td></tr>
+    <tr><td class="paramname">cl</td><td>Клиент. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_a396a05223ce021f8df62c5b037726615_icgraph.png" border="0" usemap="#aclass_server_a396a05223ce021f8df62c5b037726615_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a57eb4221ca74cda9ae58843f6abf1d06" name="a57eb4221ca74cda9ae58843f6abf1d06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57eb4221ca74cda9ae58843f6abf1d06">&#9670;&#160;</a></span>DeleteAllFromList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::DeleteAllFromList </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удаляет всех клиентов из списка. </p>
+<p>Удаление всех клиентов из списка на удаление. </p>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_a57eb4221ca74cda9ae58843f6abf1d06_cgraph.png" border="0" usemap="#aclass_server_a57eb4221ca74cda9ae58843f6abf1d06_cgraph" alt=""/></div>
+</div>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_a57eb4221ca74cda9ae58843f6abf1d06_icgraph.png" border="0" usemap="#aclass_server_a57eb4221ca74cda9ae58843f6abf1d06_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a44be6f37d46d022833250be1a29d2ce0" name="a44be6f37d46d022833250be1a29d2ce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44be6f37d46d022833250be1a29d2ce0">&#9670;&#160;</a></span>DrawAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::DrawAll </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отрисовывает все элементы на поле. </p>
+<p>Отрисовка поля для всех клиентов. </p>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_a44be6f37d46d022833250be1a29d2ce0_cgraph.png" border="0" usemap="#aclass_server_a44be6f37d46d022833250be1a29d2ce0_cgraph" alt=""/></div>
+</div>
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_a44be6f37d46d022833250be1a29d2ce0_icgraph.png" border="0" usemap="#aclass_server_a44be6f37d46d022833250be1a29d2ce0_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a8648f906002f679f9393ae69a70ca845" name="a8648f906002f679f9393ae69a70ca845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8648f906002f679f9393ae69a70ca845">&#9670;&#160;</a></span>FindClientBySnake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_client.html">Client</a> * Server::FindClientBySnake </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_snake.html">Snake</a> *</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Находит клиента по змее. </p>
+<p>Поиск клиента по змее.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Змей для поиска. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Клиент, соответствующий змее.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Змея. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Клиент, соответствующий змее. </dd></dl>
+<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_a8648f906002f679f9393ae69a70ca845_cgraph.png" border="0" usemap="#aclass_server_a8648f906002f679f9393ae69a70ca845_cgraph" alt=""/></div>
+</div>
+<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_a8648f906002f679f9393ae69a70ca845_icgraph.png" border="0" usemap="#aclass_server_a8648f906002f679f9393ae69a70ca845_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
 <a id="aa8a2b033575df088c0716ba949875c63" name="aa8a2b033575df088c0716ba949875c63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8a2b033575df088c0716ba949875c63">&#9670;&#160;</a></span>Handle()</h2>
 
@@ -231,9 +575,11 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p>Implements <a class="el" href="class_fd_handler.html#a4bb9cf381b465d76a06e3776ca42b89e">FdHandler</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_server_aa8a2b033575df088c0716ba949875c63_cgraph.png" border="0" usemap="#aclass_server_aa8a2b033575df088c0716ba949875c63_cgraph" alt=""/></div>
 </div>
 
@@ -263,14 +609,18 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_server_ab3e95f363c640b977ea7b7933063f0f1_cgraph.png" border="0" usemap="#aclass_server_ab3e95f363c640b977ea7b7933063f0f1_cgraph" alt=""/></div>
 </div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_server_ab3e95f363c640b977ea7b7933063f0f1_icgraph.png" border="0" usemap="#aclass_server_ab3e95f363c640b977ea7b7933063f0f1_icgraph" alt=""/></div>
 </div>
 
@@ -313,6 +663,13 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_ac3bc7c9686112d2c478e8978640afdf0_icgraph.png" border="0" usemap="#aclass_server_ac3bc7c9686112d2c478e8978640afdf0_icgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -389,9 +746,18 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Указатель на созданный сервер. </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_ab714f70af639732cbd139098c3154118_cgraph.png" border="0" usemap="#aclass_server_ab714f70af639732cbd139098c3154118_cgraph" alt=""/></div>
+</div>
+<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_server_ab714f70af639732cbd139098c3154118_icgraph.png" border="0" usemap="#aclass_server_ab714f70af639732cbd139098c3154118_icgraph" alt=""/></div>
 </div>
 
@@ -414,11 +780,240 @@ Here is the caller graph for this function:</div>
 
 <p>Начинает игру. </p>
 <p>Начало игры. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_server_afe6c13a6d4c5b5d2a2fb9f4a750a16ba_icgraph.png" border="0" usemap="#aclass_server_afe6c13a6d4c5b5d2a2fb9f4a750a16ba_icgraph" alt=""/></div>
 </div>
+
+</div>
+</div>
+<a id="a76a0e5a2a9bbc3abf9f77ac704f554af" name="a76a0e5a2a9bbc3abf9f77ac704f554af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76a0e5a2a9bbc3abf9f77ac704f554af">&#9670;&#160;</a></span>WriteHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Server::WriteHandle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает события записи. </p>
+<p>Обработка событий записи. </p>
+<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_a76a0e5a2a9bbc3abf9f77ac704f554af_cgraph.png" border="0" usemap="#aclass_server_a76a0e5a2a9bbc3abf9f77ac704f554af_cgraph" alt=""/></div>
+</div>
+<div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_server_a76a0e5a2a9bbc3abf9f77ac704f554af_icgraph.png" border="0" usemap="#aclass_server_a76a0e5a2a9bbc3abf9f77ac704f554af_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad73b30fabbadf336f712328f805c0fd7" name="ad73b30fabbadf336f712328f805c0fd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad73b30fabbadf336f712328f805c0fd7">&#9670;&#160;</a></span>delete_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_server_1_1item.html">item</a>* Server::delete_list</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Список клиентов для удаления. </p>
+
+</div>
+</div>
+<a id="a3ea76ce163ba1be5938d033a270b683c" name="a3ea76ce163ba1be5938d033a270b683c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ea76ce163ba1be5938d033a270b683c">&#9670;&#160;</a></span>field</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_field.html">Field</a>* Server::field</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Игровое поле. </p>
+
+</div>
+</div>
+<a id="a451eb691566896ab4fcf90bb404dc536" name="a451eb691566896ab4fcf90bb404dc536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a451eb691566896ab4fcf90bb404dc536">&#9670;&#160;</a></span>first</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_server_1_1item.html">item</a>* Server::first</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Первый элемент в списке клиентов. </p>
+
+</div>
+</div>
+<a id="a2474373fc11ae265c947a3eadcbd1a66" name="a2474373fc11ae265c947a3eadcbd1a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2474373fc11ae265c947a3eadcbd1a66">&#9670;&#160;</a></span>food_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Server::food_count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Количество еды на поле. </p>
+
+</div>
+</div>
+<a id="a9163ce585798cc0c371538094102700b" name="a9163ce585798cc0c371538094102700b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9163ce585798cc0c371538094102700b">&#9670;&#160;</a></span>handler</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_handler_gemstone.html">GameHandlerGemstone</a>* Server::handler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Обработчик игры. </p>
+
+</div>
+</div>
+<a id="aa8f90ebbe4cf119a552bab6331feb3e7" name="aa8f90ebbe4cf119a552bab6331feb3e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f90ebbe4cf119a552bab6331feb3e7">&#9670;&#160;</a></span>snakes_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Server::snakes_count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Количество змей. </p>
+
+</div>
+</div>
+<a id="a231531af5cccb22a3d8a0e464ded9ab4" name="a231531af5cccb22a3d8a0e464ded9ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a231531af5cccb22a3d8a0e464ded9ab4">&#9670;&#160;</a></span>st</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a2bfe62acece945e8aff6354c0b328fe9">game_step</a> Server::st</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Текущий шаг игры. </p>
+
+</div>
+</div>
+<a id="adc14c56a457c18d805e026d3b6e934e6" name="adc14c56a457c18d805e026d3b6e934e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc14c56a457c18d805e026d3b6e934e6">&#9670;&#160;</a></span>the_selector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_event_selector.html">EventSelector</a>* Server::the_selector</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Селектор событий. </p>
 
 </div>
 </div>
@@ -429,7 +1024,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Thu Jun 20 2024 13:42:50 for Snake 2P by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

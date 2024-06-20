@@ -27,6 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Snake 2P
    </div>
+   <div id="projectbrief">An online Snake game written in C++</div>
   </td>
  </tr>
  </tbody>
@@ -93,45 +94,60 @@ $(function(){ initResizable(false); });
 <div class="contents">
 <a href="_game_init_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef GAMEINIT_HPP_SENTRY</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define GAMEINIT_HPP_SENTRY</span></div>
-<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_init.html">    7</a></span><span class="keyword">class </span><a class="code hl_class" href="class_game_init.html">GameInit</a> {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">enum</span> {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        max_argc = 11,</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        std_port = 8808,</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_init.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="class_game_init.html">GameInit</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">// Константы, используемые в инициализации игры</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26a71bce389e492a4b256da61c630d2ca7c">   11</a></span>        <a class="code hl_enumvalue" href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26a71bce389e492a4b256da61c630d2ca7c">max_argc</a> = 11,           </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        std_width = 100,</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        std_height = 40,</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        std_food_count = 15</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    };</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">int</span> argc;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> **argv;  </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_init.html#a93dc0f8f57915d3e400d55dd84ae6588">   22</a></span>    <a class="code hl_function" href="class_game_init.html#a93dc0f8f57915d3e400d55dd84ae6588">GameInit</a>(<span class="keywordtype">int</span> _argc, <span class="keyword">const</span> <span class="keywordtype">char</span> **_argv) : argc(_argc), argv(_argv) {}</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_game_init.html#a1b50f5c75a233b3548f2a4b3d0e27eec">   23</a></span>    <a class="code hl_function" href="class_game_init.html#a1b50f5c75a233b3548f2a4b3d0e27eec">~GameInit</a>() {}</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_init.html#a044dc9d28077555e45a12a6f6f21bb03">Start</a>();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">bool</span> IsOneOfArgv(<span class="keyword">const</span> <span class="keywordtype">char</span> *argv[6], <span class="keyword">const</span> <span class="keywordtype">char</span> *arg, </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                     <span class="keywordtype">int</span> argc, <span class="keywordtype">int</span> *matched_argv_idx);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">bool</span> HandleArgv(<span class="keywordtype">int</span> argv_idx, <span class="keywordtype">int</span> matched_argv, </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    <span class="keywordtype">int</span> *num_args, <span class="keyword">const</span> <span class="keywordtype">char</span> **ip);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> WriteHelp();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26a66a5559fb90d43a620654545d08a351c">   13</a></span>        <a class="code hl_enumvalue" href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26a66a5559fb90d43a620654545d08a351c">std_port</a> = 8808,         </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26a9d9c2232318c155c9a6181ccf2812b04">   15</a></span>        <a class="code hl_enumvalue" href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26a9d9c2232318c155c9a6181ccf2812b04">std_width</a> = 100,         </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26a0e20c03a786fc89e53625af6ea3fe101">   16</a></span>        <a class="code hl_enumvalue" href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26a0e20c03a786fc89e53625af6ea3fe101">std_height</a> = 40,         </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <a class="code hl_enumvalue" href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26ab4153e6ca0cf0ebf8f52878e9865aa3f">std_food_count</a> = 15      </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26ab4153e6ca0cf0ebf8f52878e9865aa3f">   18</a></span>    };</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_init.html#a6ef49eca128d0c5323d392f66e71cbb9">   20</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_init.html#a6ef49eca128d0c5323d392f66e71cbb9">argc</a>;                   </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_game_init.html#a39c213c03ca5081106c68d47b837d79a">   21</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> **<a class="code hl_variable" href="class_game_init.html#a39c213c03ca5081106c68d47b837d79a">argv</a>;          </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_game_init.html#a93dc0f8f57915d3e400d55dd84ae6588">   29</a></span>    <a class="code hl_function" href="class_game_init.html#a93dc0f8f57915d3e400d55dd84ae6588">GameInit</a>(<span class="keywordtype">int</span> _argc, <span class="keyword">const</span> <span class="keywordtype">char</span> **_argv) : <a class="code hl_variable" href="class_game_init.html#a6ef49eca128d0c5323d392f66e71cbb9">argc</a>(_argc), <a class="code hl_variable" href="class_game_init.html#a39c213c03ca5081106c68d47b837d79a">argv</a>(_argv) {}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_game_init.html#a1b50f5c75a233b3548f2a4b3d0e27eec">   34</a></span>    <a class="code hl_function" href="class_game_init.html#a1b50f5c75a233b3548f2a4b3d0e27eec">~GameInit</a>() {}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_init.html#a044dc9d28077555e45a12a6f6f21bb03">Start</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_init.html#a601bf7f7fcab368716738c1dc4441dbd">IsOneOfArgv</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="class_game_init.html#a39c213c03ca5081106c68d47b837d79a">argv</a>[6], <span class="keyword">const</span> <span class="keywordtype">char</span> *arg, </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                     <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_init.html#a6ef49eca128d0c5323d392f66e71cbb9">argc</a>, <span class="keywordtype">int</span> *matched_argv_idx);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_init.html#a202c15769a97282957b9dcbf08997e6d">HandleArgv</a>(<span class="keywordtype">int</span> argv_idx, <span class="keywordtype">int</span> matched_argv, </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    <span class="keywordtype">int</span> *num_args, <span class="keyword">const</span> <span class="keywordtype">char</span> **ip);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_init.html#a6bb23240def1be31f3c870fb5880c2f4">WriteHelp</a>();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
 </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_game_init_html"><div class="ttname"><a href="class_game_init.html">GameInit</a></div><div class="ttdoc">Инициализирует настройки игры.</div><div class="ttdef"><b>Definition</b> GameInit.hpp:7</div></div>
-<div class="ttc" id="aclass_game_init_html_a044dc9d28077555e45a12a6f6f21bb03"><div class="ttname"><a href="class_game_init.html#a044dc9d28077555e45a12a6f6f21bb03">GameInit::Start</a></div><div class="ttdeci">int Start()</div><div class="ttdef"><b>Definition</b> GameInit.cpp:32</div></div>
-<div class="ttc" id="aclass_game_init_html_a1b50f5c75a233b3548f2a4b3d0e27eec"><div class="ttname"><a href="class_game_init.html#a1b50f5c75a233b3548f2a4b3d0e27eec">GameInit::~GameInit</a></div><div class="ttdeci">~GameInit()</div><div class="ttdef"><b>Definition</b> GameInit.hpp:23</div></div>
-<div class="ttc" id="aclass_game_init_html_a93dc0f8f57915d3e400d55dd84ae6588"><div class="ttname"><a href="class_game_init.html#a93dc0f8f57915d3e400d55dd84ae6588">GameInit::GameInit</a></div><div class="ttdeci">GameInit(int _argc, const char **_argv)</div><div class="ttdef"><b>Definition</b> GameInit.hpp:22</div></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_game_init_html"><div class="ttname"><a href="class_game_init.html">GameInit</a></div><div class="ttdoc">Класс для инициализации настроек игры.</div><div class="ttdef"><b>Definition</b> GameInit.hpp:8</div></div>
+<div class="ttc" id="aclass_game_init_html_a044dc9d28077555e45a12a6f6f21bb03"><div class="ttname"><a href="class_game_init.html#a044dc9d28077555e45a12a6f6f21bb03">GameInit::Start</a></div><div class="ttdeci">int Start()</div><div class="ttdoc">Метод для старта инициализации игры.</div><div class="ttdef"><b>Definition</b> GameInit.cpp:35</div></div>
+<div class="ttc" id="aclass_game_init_html_a1b50f5c75a233b3548f2a4b3d0e27eec"><div class="ttname"><a href="class_game_init.html#a1b50f5c75a233b3548f2a4b3d0e27eec">GameInit::~GameInit</a></div><div class="ttdeci">~GameInit()</div><div class="ttdoc">Деструктор класса GameInit.</div><div class="ttdef"><b>Definition</b> GameInit.hpp:34</div></div>
+<div class="ttc" id="aclass_game_init_html_a202c15769a97282957b9dcbf08997e6d"><div class="ttname"><a href="class_game_init.html#a202c15769a97282957b9dcbf08997e6d">GameInit::HandleArgv</a></div><div class="ttdeci">bool HandleArgv(int argv_idx, int matched_argv, int *num_args, const char **ip)</div><div class="ttdoc">Обрабатывает аргументы командной строки.</div><div class="ttdef"><b>Definition</b> GameInit.cpp:114</div></div>
+<div class="ttc" id="aclass_game_init_html_a39c213c03ca5081106c68d47b837d79a"><div class="ttname"><a href="class_game_init.html#a39c213c03ca5081106c68d47b837d79a">GameInit::argv</a></div><div class="ttdeci">const char ** argv</div><div class="ttdoc">Массив аргументов командной строки</div><div class="ttdef"><b>Definition</b> GameInit.hpp:21</div></div>
+<div class="ttc" id="aclass_game_init_html_a601bf7f7fcab368716738c1dc4441dbd"><div class="ttname"><a href="class_game_init.html#a601bf7f7fcab368716738c1dc4441dbd">GameInit::IsOneOfArgv</a></div><div class="ttdeci">bool IsOneOfArgv(const char *argv[6], const char *arg, int argc, int *matched_argv_idx)</div><div class="ttdoc">Проверяет, является ли аргумент одним из допустимых.</div><div class="ttdef"><b>Definition</b> GameInit.cpp:98</div></div>
+<div class="ttc" id="aclass_game_init_html_a6bb23240def1be31f3c870fb5880c2f4"><div class="ttname"><a href="class_game_init.html#a6bb23240def1be31f3c870fb5880c2f4">GameInit::WriteHelp</a></div><div class="ttdeci">void WriteHelp()</div><div class="ttdoc">Выводит информацию о доступных аргументах командной строки.</div><div class="ttdef"><b>Definition</b> GameInit.cpp:139</div></div>
+<div class="ttc" id="aclass_game_init_html_a6ef49eca128d0c5323d392f66e71cbb9"><div class="ttname"><a href="class_game_init.html#a6ef49eca128d0c5323d392f66e71cbb9">GameInit::argc</a></div><div class="ttdeci">int argc</div><div class="ttdoc">Количество аргументов командной строки</div><div class="ttdef"><b>Definition</b> GameInit.hpp:20</div></div>
+<div class="ttc" id="aclass_game_init_html_a8efa7bba7b023e99dcab1ae6bd1fea26a0e20c03a786fc89e53625af6ea3fe101"><div class="ttname"><a href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26a0e20c03a786fc89e53625af6ea3fe101">GameInit::std_height</a></div><div class="ttdeci">@ std_height</div><div class="ttdoc">Стандартная высота игрового поля</div><div class="ttdef"><b>Definition</b> GameInit.hpp:16</div></div>
+<div class="ttc" id="aclass_game_init_html_a8efa7bba7b023e99dcab1ae6bd1fea26a66a5559fb90d43a620654545d08a351c"><div class="ttname"><a href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26a66a5559fb90d43a620654545d08a351c">GameInit::std_port</a></div><div class="ttdeci">@ std_port</div><div class="ttdoc">Стандартный порт сервера</div><div class="ttdef"><b>Definition</b> GameInit.hpp:13</div></div>
+<div class="ttc" id="aclass_game_init_html_a8efa7bba7b023e99dcab1ae6bd1fea26a71bce389e492a4b256da61c630d2ca7c"><div class="ttname"><a href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26a71bce389e492a4b256da61c630d2ca7c">GameInit::max_argc</a></div><div class="ttdeci">@ max_argc</div><div class="ttdoc">Максимальное количество аргументов командной строки</div><div class="ttdef"><b>Definition</b> GameInit.hpp:11</div></div>
+<div class="ttc" id="aclass_game_init_html_a8efa7bba7b023e99dcab1ae6bd1fea26a9d9c2232318c155c9a6181ccf2812b04"><div class="ttname"><a href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26a9d9c2232318c155c9a6181ccf2812b04">GameInit::std_width</a></div><div class="ttdeci">@ std_width</div><div class="ttdoc">Стандартная ширина игрового поля</div><div class="ttdef"><b>Definition</b> GameInit.hpp:15</div></div>
+<div class="ttc" id="aclass_game_init_html_a8efa7bba7b023e99dcab1ae6bd1fea26ab4153e6ca0cf0ebf8f52878e9865aa3f"><div class="ttname"><a href="class_game_init.html#a8efa7bba7b023e99dcab1ae6bd1fea26ab4153e6ca0cf0ebf8f52878e9865aa3f">GameInit::std_food_count</a></div><div class="ttdeci">@ std_food_count</div><div class="ttdoc">Стандартное количество еды на игровом поле</div><div class="ttdef"><b>Definition</b> GameInit.hpp:17</div></div>
+<div class="ttc" id="aclass_game_init_html_a93dc0f8f57915d3e400d55dd84ae6588"><div class="ttname"><a href="class_game_init.html#a93dc0f8f57915d3e400d55dd84ae6588">GameInit::GameInit</a></div><div class="ttdeci">GameInit(int _argc, const char **_argv)</div><div class="ttdoc">Конструктор класса GameInit.</div><div class="ttdef"><b>Definition</b> GameInit.hpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Thu Jun 20 2024 13:42:50 for Snake 2P by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

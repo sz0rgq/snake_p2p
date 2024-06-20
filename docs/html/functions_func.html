@@ -27,6 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Snake 2P
    </div>
+   <div id="projectbrief">An online Snake game written in C++</div>
   </td>
  </tr>
  </tbody>
@@ -90,6 +91,7 @@ $(function(){ initResizable(false); });
 <li>Add()&#160;:&#160;<a class="el" href="class_event_selector.html#a8043af807f70322a768cfc88f260c92d">EventSelector</a></li>
 <li>AddFood()&#160;:&#160;<a class="el" href="class_food_handler.html#ab836bbdcab564067091cb0233dd22751">FoodHandler</a>, <a class="el" href="class_game_handler.html#aeb3f272d99af4862d056efa8e386acfc">GameHandler</a></li>
 <li>AddSnake()&#160;:&#160;<a class="el" href="class_game_handler.html#a8a07fd1cf3cb7835687a6a78acb29189">GameHandler</a>, <a class="el" href="class_snake_handler.html#a76810c919dcb7655e577041b339da772">SnakeHandler</a></li>
+<li>AddToDeleteList()&#160;:&#160;<a class="el" href="class_server.html#a396a05223ce021f8df62c5b037726615">Server</a></li>
 </ul>
 
 
@@ -100,6 +102,8 @@ $(function(){ initResizable(false); });
 
 
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
+<li>DeleteAllFromList()&#160;:&#160;<a class="el" href="class_server.html#a57eb4221ca74cda9ae58843f6abf1d06">Server</a></li>
+<li>DrawAll()&#160;:&#160;<a class="el" href="class_server.html#a44be6f37d46d022833250be1a29d2ce0">Server</a></li>
 <li>DrawField()&#160;:&#160;<a class="el" href="class_draw_handler.html#a8b3351b429a0387e54aa5c399a557a16">DrawHandler</a>, <a class="el" href="class_game_handler.html#ac168ebbfd7f028108e3a114db9814a45">GameHandler</a></li>
 <li>DrawFieldFor()&#160;:&#160;<a class="el" href="class_draw_handler.html#af69e4051dccdc7b2a413c408ba372b52">DrawHandler</a>, <a class="el" href="class_game_handler.html#a6c7bba20d16e3287f56065e10333412c">GameHandler</a></li>
 <li>DrawHandler()&#160;:&#160;<a class="el" href="class_draw_handler.html#ac96679fc908b51347288321026173126">DrawHandler</a></li>
@@ -116,6 +120,7 @@ $(function(){ initResizable(false); });
 <li>FdHandler()&#160;:&#160;<a class="el" href="class_fd_handler.html#a4eb8248efa9532c0068c13bd3b21c5aa">FdHandler</a></li>
 <li>Field()&#160;:&#160;<a class="el" href="class_field.html#aeda9ded6b09d74af42f6786224f8e16d">Field</a></li>
 <li>FieldHandler()&#160;:&#160;<a class="el" href="class_field_handler.html#a63db6f3f241fe570a9f246605cca144f">FieldHandler</a></li>
+<li>FindClientBySnake()&#160;:&#160;<a class="el" href="class_server.html#a8648f906002f679f9393ae69a70ca845">Server</a></li>
 <li>Food()&#160;:&#160;<a class="el" href="class_food.html#ac0a0df9159f10305c240570f2905cee5">Food</a></li>
 <li>FoodHandler()&#160;:&#160;<a class="el" href="class_food_handler.html#a5d4d3ca01e0f9f1c55de8ea2b4a72e4d">FoodHandler</a></li>
 </ul>
@@ -129,8 +134,10 @@ $(function(){ initResizable(false); });
 <li>GetField()&#160;:&#160;<a class="el" href="class_field.html#a73b68481fb7fc596bedba92782108e5f">Field</a></li>
 <li>GetFullLen()&#160;:&#160;<a class="el" href="class_field.html#aa154caa34062240e997f7a7710802423">Field</a></li>
 <li>GetLen()&#160;:&#160;<a class="el" href="class_snake.html#aed78f659b60028e78def21e795d83900">Snake</a></li>
+<li>GetMove()&#160;:&#160;<a class="el" href="class_snake.html#a997117362b873080530809f88617589d">Snake</a></li>
 <li>GetSizeX()&#160;:&#160;<a class="el" href="class_field.html#abf94fd52060956ee36b4e613de017607">Field</a></li>
 <li>GetSizeY()&#160;:&#160;<a class="el" href="class_field.html#a43c0640c0f978ec7bba61084de61a5d2">Field</a></li>
+<li>GetSnake()&#160;:&#160;<a class="el" href="class_client.html#ab63dac270def68310b81515da93616a2">Client</a></li>
 <li>GetX()&#160;:&#160;<a class="el" href="class_point.html#a56ef488d55611d823a35eb1655f1de7a">Point</a></li>
 <li>GetY()&#160;:&#160;<a class="el" href="class_point.html#aa42c18de4df078af493363a423fd9580">Point</a></li>
 </ul>
@@ -138,15 +145,19 @@ $(function(){ initResizable(false); });
 
 <h3><a id="index_h" name="index_h"></a>- h -</h3><ul>
 <li>Handle()&#160;:&#160;<a class="el" href="class_client.html#a19bc7e4772a0567a814c0e57b5b881e0">Client</a>, <a class="el" href="class_fd_handler.html#a4bb9cf381b465d76a06e3776ca42b89e">FdHandler</a>, <a class="el" href="class_server.html#aa8a2b033575df088c0716ba949875c63">Server</a></li>
+<li>HandleArgv()&#160;:&#160;<a class="el" href="class_game_init.html#a202c15769a97282957b9dcbf08997e6d">GameInit</a></li>
 <li>HandleOutOfField()&#160;:&#160;<a class="el" href="class_field_handler.html#a02019cf19586f16a4c338c8947a9784d">FieldHandler</a>, <a class="el" href="class_game_handler.html#a456c9cb36f9dbb638775f950c019a6f1">GameHandler</a></li>
 </ul>
 
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
 <li>IsFood()&#160;:&#160;<a class="el" href="class_game_handler.html#a15a7c5a0ad0846d234958fa147dfc8dd">GameHandler</a>, <a class="el" href="class_snake_handler.html#a59199ce5eaf4c2fdc21873168dc50bd5">SnakeHandler</a></li>
+<li>IsOneOfArgv()&#160;:&#160;<a class="el" href="class_game_init.html#a601bf7f7fcab368716738c1dc4441dbd">GameInit</a></li>
 <li>IsOtherSnake()&#160;:&#160;<a class="el" href="class_game_handler.html#a5d28fc45725271772c8614335e65681b">GameHandler</a>, <a class="el" href="class_snake_handler.html#a419af6e8b85ed903d66f2a763a272963">SnakeHandler</a></li>
 <li>IsSnake()&#160;:&#160;<a class="el" href="class_game_handler.html#a1ae4d0fce47a5d5b8c039afc503dcca3">GameHandler</a>, <a class="el" href="class_snake_handler.html#afdc28795a525015236795f39d1e4d02a">SnakeHandler</a></li>
+<li>item()&#160;:&#160;<a class="el" href="struct_snake_1_1item.html#a04b3294f062081bf7af30ff5806d3d95">Snake::item</a></li>
 <li>Iterate()&#160;:&#160;<a class="el" href="class_list.html#a4e8f5003c3dcd437493060bbdf45e5cb">List&lt; T &gt;</a></li>
+<li>Iterator()&#160;:&#160;<a class="el" href="class_list_1_1_iterator.html#aba475309667e2faa4d0e0663a551dbf3">List&lt; T &gt;::Iterator</a></li>
 </ul>
 
 
@@ -202,6 +213,7 @@ $(function(){ initResizable(false); });
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
 <li>SendTo()&#160;:&#160;<a class="el" href="class_server.html#ac3bc7c9686112d2c478e8978640afdf0">Server</a></li>
+<li>Server()&#160;:&#160;<a class="el" href="class_server.html#a53ad1c9f97d2fd8dcf222943ee9aa40e">Server</a></li>
 <li>SetRead()&#160;:&#160;<a class="el" href="class_fd_handler.html#a1954196ce71ad037c99b185ab270f166">FdHandler</a></li>
 <li>SetServerFd()&#160;:&#160;<a class="el" href="class_event_selector.html#add557411afa2c53a68268edabe00e995">EventSelector</a></li>
 <li>SetWrite()&#160;:&#160;<a class="el" href="class_fd_handler.html#a06a62d234d28f5dca51a7c860485c706">FdHandler</a></li>
@@ -219,6 +231,8 @@ $(function(){ initResizable(false); });
 <h3><a id="index_w" name="index_w"></a>- w -</h3><ul>
 <li>WantRead()&#160;:&#160;<a class="el" href="class_fd_handler.html#a212ea700300020962577c1af60c2de86">FdHandler</a></li>
 <li>WantWrite()&#160;:&#160;<a class="el" href="class_fd_handler.html#a430f7dcad1ca6ab4442a7622a683fc77">FdHandler</a></li>
+<li>WriteHandle()&#160;:&#160;<a class="el" href="class_server.html#a76a0e5a2a9bbc3abf9f77ac704f554af">Server</a></li>
+<li>WriteHelp()&#160;:&#160;<a class="el" href="class_game_init.html#a6bb23240def1be31f3c870fb5880c2f4">GameInit</a></li>
 </ul>
 
 
@@ -241,7 +255,7 @@ $(function(){ initResizable(false); });
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Thu Jun 20 2024 13:42:50 for Snake 2P by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

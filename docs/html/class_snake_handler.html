@@ -27,6 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Snake 2P
    </div>
+   <div id="projectbrief">An online Snake game written in C++</div>
   </td>
  </tr>
  </tbody>
@@ -86,6 +87,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_snake_handler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">SnakeHandler Class Reference</div></div>
 </div><!--header-->
@@ -95,6 +97,13 @@ $(function(){ initResizable(false); });
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_game_handler_8hpp_source.html">GameHandler.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for SnakeHandler:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_snake_handler__coll__graph.png" border="0" usemap="#a_snake_handler_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -110,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a419af6e8b85ed903d66f2a763a272963" id="r_a419af6e8b85ed903d66f2a763a272963"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a419af6e8b85ed903d66f2a763a272963">IsOtherSnake</a> (<a class="el" href="class_snake.html">Snake</a> *s, <a class="el" href="class_snake.html">Snake</a> **other_snake)</td></tr>
 <tr class="memdesc:a419af6e8b85ed903d66f2a763a272963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на столкновение змеи с другой змеей.  <br /></td></tr>
 <tr class="separator:a419af6e8b85ed903d66f2a763a272963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7759b60a834a94f9e066f28d233a9be2" id="r_a7759b60a834a94f9e066f28d233a9be2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7759b60a834a94f9e066f28d233a9be2">SnakeTruncate</a> (<a class="el" href="class_snake.html">Snake</a> *s, Snake::item *to)</td></tr>
+<tr class="memitem:a7759b60a834a94f9e066f28d233a9be2" id="r_a7759b60a834a94f9e066f28d233a9be2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7759b60a834a94f9e066f28d233a9be2">SnakeTruncate</a> (<a class="el" href="class_snake.html">Snake</a> *s, <a class="el" href="struct_snake_1_1item.html">Snake::item</a> *to)</td></tr>
 <tr class="memdesc:a7759b60a834a94f9e066f28d233a9be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрезка змеи до указанного элемента.  <br /></td></tr>
 <tr class="separator:a7759b60a834a94f9e066f28d233a9be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab18220bdd08da7c8aa087ca1e5e4852d" id="r_ab18220bdd08da7c8aa087ca1e5e4852d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab18220bdd08da7c8aa087ca1e5e4852d">RemoveSnake</a> (<a class="el" href="class_snake.html">Snake</a> *s)</td></tr>
@@ -119,6 +128,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a76810c919dcb7655e577041b339da772" id="r_a76810c919dcb7655e577041b339da772"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76810c919dcb7655e577041b339da772">AddSnake</a> (<a class="el" href="class_snake.html">Snake</a> *s)</td></tr>
 <tr class="memdesc:a76810c919dcb7655e577041b339da772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавление змеи в список змей.  <br /></td></tr>
 <tr class="separator:a76810c919dcb7655e577041b339da772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:adaf24d00693a198766afc90b044c92fc" id="r_adaf24d00693a198766afc90b044c92fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_handler.html">GameHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaf24d00693a198766afc90b044c92fc">handler</a></td></tr>
+<tr class="separator:adaf24d00693a198766afc90b044c92fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Класс, представляющий обработчик змей. </p>
@@ -171,9 +185,11 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_snake_handler_a76810c919dcb7655e577041b339da772_cgraph.png" border="0" usemap="#aclass_snake_handler_a76810c919dcb7655e577041b339da772_cgraph" alt=""/></div>
 </div>
 
@@ -202,9 +218,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true, если столкновение произошло. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_snake_handler_a59199ce5eaf4c2fdc21873168dc50bd5_cgraph.png" border="0" usemap="#aclass_snake_handler_a59199ce5eaf4c2fdc21873168dc50bd5_cgraph" alt=""/></div>
 </div>
 
@@ -238,9 +256,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true, если столкновение произошло. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_snake_handler_a419af6e8b85ed903d66f2a763a272963_cgraph.png" border="0" usemap="#aclass_snake_handler_a419af6e8b85ed903d66f2a763a272963_cgraph" alt=""/></div>
 </div>
 
@@ -269,9 +289,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true, если столкновение произошло. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_snake_handler_afdc28795a525015236795f39d1e4d02a_cgraph.png" border="0" usemap="#aclass_snake_handler_afdc28795a525015236795f39d1e4d02a_cgraph" alt=""/></div>
 </div>
 
@@ -299,9 +321,11 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_snake_handler_ab18220bdd08da7c8aa087ca1e5e4852d_cgraph.png" border="0" usemap="#aclass_snake_handler_ab18220bdd08da7c8aa087ca1e5e4852d_cgraph" alt=""/></div>
 </div>
 
@@ -321,7 +345,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Snake::item *</td>          <td class="paramname"><span class="paramname"><em>to</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="struct_snake_1_1item.html">Snake::item</a> *</td>          <td class="paramname"><span class="paramname"><em>to</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -334,11 +358,36 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_snake_handler_a7759b60a834a94f9e066f28d233a9be2_cgraph.png" border="0" usemap="#aclass_snake_handler_a7759b60a834a94f9e066f28d233a9be2_cgraph" alt=""/></div>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="adaf24d00693a198766afc90b044c92fc" name="adaf24d00693a198766afc90b044c92fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf24d00693a198766afc90b044c92fc">&#9670;&#160;</a></span>handler</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_handler.html">GameHandler</a>* SnakeHandler::handler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -349,7 +398,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Thu Jun 20 2024 13:42:50 for Snake 2P by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

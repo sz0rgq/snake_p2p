@@ -9,70 +9,99 @@
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_list_8hpp}{List.hpp}}"{}}}
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_food_8hpp}{Food.hpp}}"{}}}
 \DoxyCodeLine{00007\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_handler}{GameHandler}};}
-\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_food_handler}{FoodHandler}};}
-\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_field_handler}{FieldHandler}};}
-\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_snake_handler}{SnakeHandler}};}
-\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_draw_handler}{DrawHandler}};}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_handler_gemstone}{GameHandlerGemstone}}}
-\DoxyCodeLine{00021\ \{}
-\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_game_handler}{GameHandler}}\ *handler;}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_game_handler_gemstone_a15a1d5e235c33c387dd913e8bc7fb2b8}{GameHandlerGemstone}}(\mbox{\hyperlink{class_field}{Field}}\ *\_field,}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_list}{List<Food>}}\ *\_foods,\ \mbox{\hyperlink{class_list}{List<Snake>}}\ *\_snakes);}
-\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_game_handler_gemstone_a77ef964cb6b8ab388988efd1c0721bab}{\string~GameHandlerGemstone}}();}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{operator}\ \mbox{\hyperlink{class_game_handler}{GameHandler}}();}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{operator}\ \mbox{\hyperlink{class_food_handler}{FoodHandler}}();}
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{operator}\ \mbox{\hyperlink{class_field_handler}{FieldHandler}}();}
-\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{operator}\ \mbox{\hyperlink{class_snake_handler}{SnakeHandler}}();}
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{operator}\ \mbox{\hyperlink{class_draw_handler}{DrawHandler}}();}
-\DoxyCodeLine{00058\ \};}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00063\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_food_handler}{FoodHandler}}}
-\DoxyCodeLine{00064\ \{}
-\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{class_game_handler}{GameHandler}}\ *handler;}
-\DoxyCodeLine{00066\ }
-\DoxyCodeLine{00067\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{class_food_handler_a5d4d3ca01e0f9f1c55de8ea2b4a72e4d}{FoodHandler}}(\mbox{\hyperlink{class_game_handler}{GameHandler}}\ *\_handler);}
-\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_handler_ab836bbdcab564067091cb0233dd22751}{AddFood}}();}
-\DoxyCodeLine{00077\ \};}
-\DoxyCodeLine{00078\ }
-\DoxyCodeLine{00082\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_field_handler}{FieldHandler}}}
-\DoxyCodeLine{00083\ \{}
-\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{class_game_handler}{GameHandler}}\ *handler;}
-\DoxyCodeLine{00085\ }
-\DoxyCodeLine{00086\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{class_field_handler_a63db6f3f241fe570a9f246605cca144f}{FieldHandler}}(\mbox{\hyperlink{class_game_handler}{GameHandler}}\ *\_handler);}
-\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_field_handler_a02019cf19586f16a4c338c8947a9784d}{HandleOutOfField}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
-\DoxyCodeLine{00097\ \};}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00102\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_snake_handler}{SnakeHandler}}}
-\DoxyCodeLine{00103\ \{}
-\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{class_game_handler}{GameHandler}}\ *handler;}
-\DoxyCodeLine{00105\ }
-\DoxyCodeLine{00106\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00111\ \ \ \ \ \mbox{\hyperlink{class_snake_handler_a3fe92f4e9f0ffb04370af580b4e28afd}{SnakeHandler}}(\mbox{\hyperlink{class_game_handler}{GameHandler}}\ *\_handler);}
-\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_snake_handler_afdc28795a525015236795f39d1e4d02a}{IsSnake}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
-\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_snake_handler_a59199ce5eaf4c2fdc21873168dc50bd5}{IsFood}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
-\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_snake_handler_a419af6e8b85ed903d66f2a763a272963}{IsOtherSnake}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s,\ \mbox{\hyperlink{class_snake}{Snake}}\ **other\_snake);}
-\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_snake_handler_a7759b60a834a94f9e066f28d233a9be2}{SnakeTruncate}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s,\ Snake::item\ *to);}
-\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_snake_handler_ab18220bdd08da7c8aa087ca1e5e4852d}{RemoveSnake}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
-\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_snake_handler_a76810c919dcb7655e577041b339da772}{AddSnake}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
-\DoxyCodeLine{00147\ \};}
-\DoxyCodeLine{00148\ }
-\DoxyCodeLine{00152\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_draw_handler}{DrawHandler}}}
-\DoxyCodeLine{00153\ \{}
-\DoxyCodeLine{00154\ \ \ \ \ \mbox{\hyperlink{class_game_handler}{GameHandler}}\ *handler;}
-\DoxyCodeLine{00155\ }
-\DoxyCodeLine{00156\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00161\ \ \ \ \ \mbox{\hyperlink{class_draw_handler_ac96679fc908b51347288321026173126}{DrawHandler}}(\mbox{\hyperlink{class_game_handler}{GameHandler}}\ *\_handler);}
-\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_draw_handler_a8b3351b429a0387e54aa5c399a557a16}{DrawField}}();}
-\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_draw_handler_af69e4051dccdc7b2a413c408ba372b52}{DrawFieldFor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_snake}{Snake}}\ *s);}
-\DoxyCodeLine{00171\ \};}
-\DoxyCodeLine{00172\ }
-\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_handler}{GameHandler}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_field}{Field}}\ *field;\ \textcolor{comment}{//\ Указатель\ на\ игровое\ поле}}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_list}{List<Food>}}\ *foods;\ \textcolor{comment}{//\ Указатель\ на\ список\ еды}}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_list}{List<Snake>}}\ *snakes;\ \textcolor{comment}{//\ Указатель\ на\ список\ змей}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_game_handler_ab1a07cfd552c9d4c2e9358d3adf3a7e0}{GameHandler}}(\mbox{\hyperlink{class_field}{Field}}\ *\_field,\ \mbox{\hyperlink{class_list}{List<Food>}}\ *\_foods,\ \mbox{\hyperlink{class_list}{List<Snake>}}\ *\_snakes)}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ :\ field(\_field),\ foods(\_foods),\ snakes(\_snakes)\ \{\}\ \textcolor{comment}{//\ Инициализация\ полей\ конструктора}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_game_handler_a37e9acdced835f48a2bb2a00cb322635}{\string~GameHandler}}()\ \{\}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ SnakeHandler}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_handler_a1ae4d0fce47a5d5b8c039afc503dcca3}{IsSnake}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_handler_a15a7c5a0ad0846d234958fa147dfc8dd}{IsFood}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_handler_a5d28fc45725271772c8614335e65681b}{IsOtherSnake}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s,\ \mbox{\hyperlink{class_snake}{Snake}}\ **other\_snake);}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_handler_a333ddb4665a101655134b5f8ff293b82}{SnakeTruncate}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s,\ Snake::item\ *to);}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_handler_a3b6336c71c0128ca5bd6fe5dc645bc48}{RemoveSnake}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_handler_a8a07fd1cf3cb7835687a6a78acb29189}{AddSnake}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{//\ FoodHandler}}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_handler_aeb3f272d99af4862d056efa8e386acfc}{AddFood}}();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{comment}{//\ FieldHandler}}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_handler_a456c9cb36f9dbb638775f950c019a6f1}{HandleOutOfField}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{//\ DrawHandler}}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_handler_ac168ebbfd7f028108e3a114db9814a45}{DrawField}}();}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_handler_a6c7bba20d16e3287f56065e10333412c}{DrawFieldFor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00094\ \};}
+\DoxyCodeLine{00095\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_food_handler}{FoodHandler}};}
+\DoxyCodeLine{00096\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_field_handler}{FieldHandler}};}
+\DoxyCodeLine{00097\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_snake_handler}{SnakeHandler}};}
+\DoxyCodeLine{00098\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_draw_handler}{DrawHandler}};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00103\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_handler_gemstone}{GameHandlerGemstone}}}
+\DoxyCodeLine{00104\ \{}
+\DoxyCodeLine{00105\ \ \ \ \ \mbox{\hyperlink{class_game_handler}{GameHandler}}\ *handler;\ \textcolor{comment}{//\ Указатель\ на\ объект\ GameHandler}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{class_game_handler_gemstone_a15a1d5e235c33c387dd913e8bc7fb2b8}{GameHandlerGemstone}}(\mbox{\hyperlink{class_field}{Field}}\ *\_field,}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_list}{List<Food>}}\ *\_foods,\ \mbox{\hyperlink{class_list}{List<Snake>}}\ *\_snakes);}
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{class_game_handler_gemstone_a77ef964cb6b8ab388988efd1c0721bab}{\string~GameHandlerGemstone}}();}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keyword}{operator}\ \mbox{\hyperlink{class_game_handler}{GameHandler}}();}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keyword}{operator}\ \mbox{\hyperlink{class_food_handler}{FoodHandler}}();}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{operator}\ \mbox{\hyperlink{class_field_handler}{FieldHandler}}();}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keyword}{operator}\ \mbox{\hyperlink{class_snake_handler}{SnakeHandler}}();}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keyword}{operator}\ \mbox{\hyperlink{class_draw_handler}{DrawHandler}}();}
+\DoxyCodeLine{00141\ \};}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00146\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_food_handler}{FoodHandler}}}
+\DoxyCodeLine{00147\ \{}
+\DoxyCodeLine{00148\ \ \ \ \ \mbox{\hyperlink{class_game_handler}{GameHandler}}\ *handler;\ \textcolor{comment}{//\ Указатель\ на\ объект\ GameHandler}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00155\ \ \ \ \ \mbox{\hyperlink{class_food_handler_a5d4d3ca01e0f9f1c55de8ea2b4a72e4d}{FoodHandler}}(\mbox{\hyperlink{class_game_handler}{GameHandler}}\ *\_handler);}
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_handler_ab836bbdcab564067091cb0233dd22751}{AddFood}}();}
+\DoxyCodeLine{00160\ \};}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00165\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_field_handler}{FieldHandler}}}
+\DoxyCodeLine{00166\ \{}
+\DoxyCodeLine{00167\ \ \ \ \ \mbox{\hyperlink{class_game_handler}{GameHandler}}\ *handler;\ \textcolor{comment}{//\ Указатель\ на\ объект\ GameHandler}}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00174\ \ \ \ \ \mbox{\hyperlink{class_field_handler_a63db6f3f241fe570a9f246605cca144f}{FieldHandler}}(\mbox{\hyperlink{class_game_handler}{GameHandler}}\ *\_handler);}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_field_handler_a02019cf19586f16a4c338c8947a9784d}{HandleOutOfField}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00180\ \};}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00185\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_snake_handler}{SnakeHandler}}}
+\DoxyCodeLine{00186\ \{}
+\DoxyCodeLine{00187\ \ \ \ \ \mbox{\hyperlink{class_game_handler}{GameHandler}}\ *handler;\ \textcolor{comment}{//\ Указатель\ на\ объект\ GameHandler}}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00189\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00194\ \ \ \ \ \mbox{\hyperlink{class_snake_handler_a3fe92f4e9f0ffb04370af580b4e28afd}{SnakeHandler}}(\mbox{\hyperlink{class_game_handler}{GameHandler}}\ *\_handler);}
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_snake_handler_afdc28795a525015236795f39d1e4d02a}{IsSnake}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_snake_handler_a59199ce5eaf4c2fdc21873168dc50bd5}{IsFood}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00213\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_snake_handler_a419af6e8b85ed903d66f2a763a272963}{IsOtherSnake}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s,\ \mbox{\hyperlink{class_snake}{Snake}}\ **other\_snake);}
+\DoxyCodeLine{00219\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_snake_handler_a7759b60a834a94f9e066f28d233a9be2}{SnakeTruncate}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s,\ Snake::item\ *to);}
+\DoxyCodeLine{00224\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_snake_handler_ab18220bdd08da7c8aa087ca1e5e4852d}{RemoveSnake}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00229\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_snake_handler_a76810c919dcb7655e577041b339da772}{AddSnake}}(\mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00230\ \};}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00235\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_draw_handler}{DrawHandler}}}
+\DoxyCodeLine{00236\ \{}
+\DoxyCodeLine{00237\ \ \ \ \ \mbox{\hyperlink{class_game_handler}{GameHandler}}\ *handler;\ \textcolor{comment}{//\ Указатель\ на\ объект\ GameHandler}}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00239\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00244\ \ \ \ \ \mbox{\hyperlink{class_draw_handler_ac96679fc908b51347288321026173126}{DrawHandler}}(\mbox{\hyperlink{class_game_handler}{GameHandler}}\ *\_handler);}
+\DoxyCodeLine{00248\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_draw_handler_a8b3351b429a0387e54aa5c399a557a16}{DrawField}}();}
+\DoxyCodeLine{00253\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_draw_handler_af69e4051dccdc7b2a413c408ba372b52}{DrawFieldFor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_snake}{Snake}}\ *s);}
+\DoxyCodeLine{00254\ \};}
+\DoxyCodeLine{00255\ }
+\DoxyCodeLine{00256\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

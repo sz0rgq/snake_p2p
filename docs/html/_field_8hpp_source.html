@@ -27,6 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Snake 2P
    </div>
+   <div id="projectbrief">An online Snake game written in C++</div>
   </td>
  </tr>
  </tbody>
@@ -104,36 +105,54 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_field.html#a23d0dfcb136b3dc8999d689fdf77b249">   13</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_handler.html">GameHandler</a>;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">int</span> size_x;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">int</span> size_y;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">int</span> full_len;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">char</span> *field;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_field.html#aa39d00db0c21c0c9dba0dd3ef193d16a">   19</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_field.html#aa39d00db0c21c0c9dba0dd3ef193d16a">size_x</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_field.html#a6d4b477d60ceabea50b87e20ba1104c9">   23</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_field.html#a6d4b477d60ceabea50b87e20ba1104c9">size_y</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_field.html#a378e7ba9eff1e293c0a96cac35ccc210">   27</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_field.html#a378e7ba9eff1e293c0a96cac35ccc210">full_len</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_field.html#a4db6bfe11edbde4eceb213dfac568682">   31</a></span>    <span class="keywordtype">char</span> *<a class="code hl_variable" href="class_field.html#a4db6bfe11edbde4eceb213dfac568682">field</a>;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="class_field.html#aeda9ded6b09d74af42f6786224f8e16d">Field</a>(<span class="keywordtype">int</span> _size_x, <span class="keywordtype">int</span> _size_y);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="class_field.html#a45d6e6d09b8f8e46de62b40119d62c60">~Field</a>();</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_field.html#aa154caa34062240e997f7a7710802423">   49</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_field.html#aa154caa34062240e997f7a7710802423">GetFullLen</a>() { <span class="keywordflow">return</span> full_len; }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_field.html#a73b68481fb7fc596bedba92782108e5f">   54</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="class_field.html#a73b68481fb7fc596bedba92782108e5f">GetField</a>() { <span class="keywordflow">return</span> field; }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_field.html#abf94fd52060956ee36b4e613de017607">   59</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_field.html#abf94fd52060956ee36b4e613de017607">GetSizeX</a>() { <span class="keywordflow">return</span> size_x; }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_field.html#a43c0640c0f978ec7bba61084de61a5d2">   64</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_field.html#a43c0640c0f978ec7bba61084de61a5d2">GetSizeY</a>() { <span class="keywordflow">return</span> size_y; }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_field.html#aa154caa34062240e997f7a7710802423">   49</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_field.html#aa154caa34062240e997f7a7710802423">GetFullLen</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_field.html#a378e7ba9eff1e293c0a96cac35ccc210">full_len</a>; }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_field.html#a73b68481fb7fc596bedba92782108e5f">   54</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="class_field.html#a73b68481fb7fc596bedba92782108e5f">GetField</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_field.html#a4db6bfe11edbde4eceb213dfac568682">field</a>; }</div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_field.html#abf94fd52060956ee36b4e613de017607">   59</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_field.html#abf94fd52060956ee36b4e613de017607">GetSizeX</a>() {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_field.html#aa39d00db0c21c0c9dba0dd3ef193d16a">size_x</a> &lt; 0) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_field.html#aa39d00db0c21c0c9dba0dd3ef193d16a">size_x</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_field_handler_html"><div class="ttname"><a href="class_field_handler.html">FieldHandler</a></div><div class="ttdoc">Класс, представляющий обработчик поля.</div><div class="ttdef"><b>Definition</b> GameHandler.hpp:83</div></div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_field.html#a43c0640c0f978ec7bba61084de61a5d2">   69</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_field.html#a43c0640c0f978ec7bba61084de61a5d2">GetSizeY</a>() {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_field.html#a6d4b477d60ceabea50b87e20ba1104c9">size_y</a> &lt; 0) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_field.html#a6d4b477d60ceabea50b87e20ba1104c9">size_y</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_field_handler_html"><div class="ttname"><a href="class_field_handler.html">FieldHandler</a></div><div class="ttdoc">Класс, представляющий обработчик поля.</div><div class="ttdef"><b>Definition</b> GameHandler.hpp:166</div></div>
 <div class="ttc" id="aclass_field_html"><div class="ttname"><a href="class_field.html">Field</a></div><div class="ttdoc">Класс, представляющий игровое поле.</div><div class="ttdef"><b>Definition</b> Field.hpp:11</div></div>
-<div class="ttc" id="aclass_field_html_a43c0640c0f978ec7bba61084de61a5d2"><div class="ttname"><a href="class_field.html#a43c0640c0f978ec7bba61084de61a5d2">Field::GetSizeY</a></div><div class="ttdeci">int GetSizeY()</div><div class="ttdoc">Получение высоты поля.</div><div class="ttdef"><b>Definition</b> Field.hpp:64</div></div>
+<div class="ttc" id="aclass_field_html_a378e7ba9eff1e293c0a96cac35ccc210"><div class="ttname"><a href="class_field.html#a378e7ba9eff1e293c0a96cac35ccc210">Field::full_len</a></div><div class="ttdeci">int full_len</div><div class="ttdoc">Полная длина поля.</div><div class="ttdef"><b>Definition</b> Field.hpp:27</div></div>
+<div class="ttc" id="aclass_field_html_a43c0640c0f978ec7bba61084de61a5d2"><div class="ttname"><a href="class_field.html#a43c0640c0f978ec7bba61084de61a5d2">Field::GetSizeY</a></div><div class="ttdeci">int GetSizeY()</div><div class="ttdoc">Получение высоты поля.</div><div class="ttdef"><b>Definition</b> Field.hpp:69</div></div>
 <div class="ttc" id="aclass_field_html_a45d6e6d09b8f8e46de62b40119d62c60"><div class="ttname"><a href="class_field.html#a45d6e6d09b8f8e46de62b40119d62c60">Field::~Field</a></div><div class="ttdeci">~Field()</div><div class="ttdoc">Деструктор класса Field.</div><div class="ttdef"><b>Definition</b> Field.cpp:18</div></div>
+<div class="ttc" id="aclass_field_html_a4db6bfe11edbde4eceb213dfac568682"><div class="ttname"><a href="class_field.html#a4db6bfe11edbde4eceb213dfac568682">Field::field</a></div><div class="ttdeci">char * field</div><div class="ttdoc">Массив символов, представляющий поле.</div><div class="ttdef"><b>Definition</b> Field.hpp:31</div></div>
+<div class="ttc" id="aclass_field_html_a6d4b477d60ceabea50b87e20ba1104c9"><div class="ttname"><a href="class_field.html#a6d4b477d60ceabea50b87e20ba1104c9">Field::size_y</a></div><div class="ttdeci">int size_y</div><div class="ttdoc">Высота поля.</div><div class="ttdef"><b>Definition</b> Field.hpp:23</div></div>
 <div class="ttc" id="aclass_field_html_a73b68481fb7fc596bedba92782108e5f"><div class="ttname"><a href="class_field.html#a73b68481fb7fc596bedba92782108e5f">Field::GetField</a></div><div class="ttdeci">const char * GetField()</div><div class="ttdoc">Получение массива символов, представляющего поле.</div><div class="ttdef"><b>Definition</b> Field.hpp:54</div></div>
 <div class="ttc" id="aclass_field_html_aa154caa34062240e997f7a7710802423"><div class="ttname"><a href="class_field.html#aa154caa34062240e997f7a7710802423">Field::GetFullLen</a></div><div class="ttdeci">int GetFullLen()</div><div class="ttdoc">Получение полной длины поля.</div><div class="ttdef"><b>Definition</b> Field.hpp:49</div></div>
+<div class="ttc" id="aclass_field_html_aa39d00db0c21c0c9dba0dd3ef193d16a"><div class="ttname"><a href="class_field.html#aa39d00db0c21c0c9dba0dd3ef193d16a">Field::size_x</a></div><div class="ttdeci">int size_x</div><div class="ttdoc">Ширина поля.</div><div class="ttdef"><b>Definition</b> Field.hpp:19</div></div>
 <div class="ttc" id="aclass_field_html_abf94fd52060956ee36b4e613de017607"><div class="ttname"><a href="class_field.html#abf94fd52060956ee36b4e613de017607">Field::GetSizeX</a></div><div class="ttdeci">int GetSizeX()</div><div class="ttdoc">Получение ширины поля.</div><div class="ttdef"><b>Definition</b> Field.hpp:59</div></div>
 <div class="ttc" id="aclass_field_html_aeda9ded6b09d74af42f6786224f8e16d"><div class="ttname"><a href="class_field.html#aeda9ded6b09d74af42f6786224f8e16d">Field::Field</a></div><div class="ttdeci">Field(int _size_x, int _size_y)</div><div class="ttdoc">Конструктор класса Field.</div><div class="ttdef"><b>Definition</b> Field.cpp:8</div></div>
-<div class="ttc" id="aclass_game_handler_html"><div class="ttname"><a href="class_game_handler.html">GameHandler</a></div><div class="ttdoc">GameHandler класс реализует основную логику игры</div><div class="ttdef"><b>Definition</b> GameHandler.cpp:11</div></div>
+<div class="ttc" id="aclass_game_handler_html"><div class="ttname"><a href="class_game_handler.html">GameHandler</a></div><div class="ttdoc">GameHandler класс реализует основную логику игры</div><div class="ttdef"><b>Definition</b> GameHandler.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Thu Jun 20 2024 13:42:50 for Snake 2P by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

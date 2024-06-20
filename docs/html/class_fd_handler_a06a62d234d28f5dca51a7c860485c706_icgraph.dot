@@ -9,5 +9,9 @@ digraph "FdHandler::SetWrite"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="EventSelector::Run",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_event_selector.html#a9cd9f58dfd10faf5b408ee9dd19864fb",tooltip="Запускает цикл обработки событий."];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="GameInit::Start",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_game_init.html#a044dc9d28077555e45a12a6f6f21bb03",tooltip=" "];
+  Node3 [id="Node000003",label="GameInit::Start",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_game_init.html#a044dc9d28077555e45a12a6f6f21bb03",tooltip="Метод для старта инициализации игры."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Server::WriteHandle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_server.html#a76a0e5a2a9bbc3abf9f77ac704f554af",tooltip="Обрабатывает события записи."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Server::Handle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_server.html#aa8a2b033575df088c0716ba949875c63",tooltip="Абстрактный метод для обработки событий."];
 }

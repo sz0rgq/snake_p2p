@@ -7,8 +7,10 @@ var searchData=
   ['getfield_4',['GetField',['../class_field.html#a73b68481fb7fc596bedba92782108e5f',1,'Field']]],
   ['getfulllen_5',['GetFullLen',['../class_field.html#aa154caa34062240e997f7a7710802423',1,'Field']]],
   ['getlen_6',['GetLen',['../class_snake.html#aed78f659b60028e78def21e795d83900',1,'Snake']]],
-  ['getsizex_7',['GetSizeX',['../class_field.html#abf94fd52060956ee36b4e613de017607',1,'Field']]],
-  ['getsizey_8',['GetSizeY',['../class_field.html#a43c0640c0f978ec7bba61084de61a5d2',1,'Field']]],
-  ['getx_9',['GetX',['../class_point.html#a56ef488d55611d823a35eb1655f1de7a',1,'Point']]],
-  ['gety_10',['GetY',['../class_point.html#aa42c18de4df078af493363a423fd9580',1,'Point']]]
+  ['getmove_7',['GetMove',['../class_snake.html#a997117362b873080530809f88617589d',1,'Snake']]],
+  ['getsizex_8',['GetSizeX',['../class_field.html#abf94fd52060956ee36b4e613de017607',1,'Field']]],
+  ['getsizey_9',['GetSizeY',['../class_field.html#a43c0640c0f978ec7bba61084de61a5d2',1,'Field']]],
+  ['getsnake_10',['GetSnake',['../class_client.html#ab63dac270def68310b81515da93616a2',1,'Client']]],
+  ['getx_11',['GetX',['../class_point.html#a56ef488d55611d823a35eb1655f1de7a',1,'Point']]],
+  ['gety_12',['GetY',['../class_point.html#aa42c18de4df078af493363a423fd9580',1,'Point']]]
 ];

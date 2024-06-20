@@ -7,5 +7,5 @@ digraph "EventSelector::Run"
   rankdir="RL";
   Node1 [id="Node000001",label="EventSelector::Run",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Запускает цикл обработки событий."];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="GameInit::Start",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_game_init.html#a044dc9d28077555e45a12a6f6f21bb03",tooltip=" "];
+  Node2 [id="Node000002",label="GameInit::Start",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_game_init.html#a044dc9d28077555e45a12a6f6f21bb03",tooltip="Метод для старта инициализации игры."];
 }

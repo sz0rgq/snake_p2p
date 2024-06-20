@@ -14,49 +14,67 @@
 \DoxyCodeLine{00022\ }
 \DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_point_a364091762d6aa1aa5983d36fd7d8b6d5}{\string~Point}}()\ \{\}}
 \DoxyCodeLine{00027\ }
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_point_a56ef488d55611d823a35eb1655f1de7a}{GetX}}()\ \{\ \textcolor{keywordflow}{return}\ pos\_x;\ \}}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_point_aa42c18de4df078af493363a423fd9580}{GetY}}()\ \{\ \textcolor{keywordflow}{return}\ pos\_y;\ \}}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_point_a839b4405541912bf74145aaff087b698}{SetX}}(\textcolor{keywordtype}{int}\ \_pos\_x)\ \{\ pos\_x\ =\ \_pos\_x;\ \}}
-\DoxyCodeLine{00048\ }
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_point_ae6350ca9aebaafa5363619a04e164e85}{SetY}}(\textcolor{keywordtype}{int}\ \_pos\_y)\ \{\ pos\_y\ =\ \_pos\_y;\ \}}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}\ \&\mbox{\hyperlink{class_point_a145aeae2ec938d82a5a2f3a1639f2c15}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&a)}
-\DoxyCodeLine{00063\ \ \ \ \ \{}
-\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&a)}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ pos\_x\ =\ a.pos\_x;}
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ pos\_y\ =\ a.pos\_y;}
-\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00070\ \ \ \ \ \}}
-\DoxyCodeLine{00071\ }
-\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_point_a6c428a70f1bb4b470628b5174aa5bf5e}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&a)}
-\DoxyCodeLine{00079\ \ \ \ \ \{}
-\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pos\_x\ ==\ a.pos\_x\ \&\&\ pos\_y\ ==\ a.pos\_y;}
-\DoxyCodeLine{00081\ \ \ \ \ \}}
-\DoxyCodeLine{00082\ }
-\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&\mbox{\hyperlink{class_point_a7639aa248a3d735ddbe72aab2b7890e9}{operator+=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&a)}
-\DoxyCodeLine{00090\ \ \ \ \ \{}
-\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ pos\_x\ +=\ a.pos\_x;}
-\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ pos\_y\ +=\ a.pos\_y;}
-\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00094\ \ \ \ \ \}}
-\DoxyCodeLine{00095\ }
-\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&\mbox{\hyperlink{class_point_a7a0563fa0b01392bc4fddc8287534547}{operator-\/=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&a)}
-\DoxyCodeLine{00103\ \ \ \ \ \{}
-\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ pos\_x\ -\/=\ a.pos\_x;}
-\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ pos\_y\ -\/=\ a.pos\_y;}
-\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00107\ \ \ \ \ \}}
-\DoxyCodeLine{00108\ }
-\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}\ \mbox{\hyperlink{class_point_a7d2d85d1ffef82b7ce75467b29f809c1}{operator+}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&a)}
-\DoxyCodeLine{00116\ \ \ \ \ \{}
-\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_point_aa49d4ac67981797aaa5eb2727c4cd4d4}{Point}}(a.pos\_x\ +\ pos\_x,\ a.pos\_y\ +\ pos\_y);}
-\DoxyCodeLine{00118\ \ \ \ \ \}}
-\DoxyCodeLine{00119\ \};}
-\DoxyCodeLine{00120\ }
-\DoxyCodeLine{00121\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_point_a56ef488d55611d823a35eb1655f1de7a}{GetX}}()\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pos\_x\ <\ 0)\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pos\_x;}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_point_aa42c18de4df078af493363a423fd9580}{GetY}}()\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pos\_y\ <\ 0)\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pos\_y;}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_point_a839b4405541912bf74145aaff087b698}{SetX}}(\textcolor{keywordtype}{int}\ \_pos\_x)\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_pos\_x\ >\ 0)\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ pos\_x\ =\ \_pos\_x;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_point_ae6350ca9aebaafa5363619a04e164e85}{SetY}}(\textcolor{keywordtype}{int}\ \_pos\_y)\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_pos\_y\ >\ 0)\ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ pos\_y\ =\ \_pos\_y;}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}\ \&\mbox{\hyperlink{class_point_a145aeae2ec938d82a5a2f3a1639f2c15}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&a)}
+\DoxyCodeLine{00081\ \ \ \ \ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&a)}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ pos\_x\ =\ a.pos\_x;}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ pos\_y\ =\ a.pos\_y;}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00088\ \ \ \ \ \}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_point_a6c428a70f1bb4b470628b5174aa5bf5e}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&a)}
+\DoxyCodeLine{00097\ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pos\_x\ ==\ a.pos\_x\ \&\&\ pos\_y\ ==\ a.pos\_y;}
+\DoxyCodeLine{00099\ \ \ \ \ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&\mbox{\hyperlink{class_point_a7639aa248a3d735ddbe72aab2b7890e9}{operator+=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&a)}
+\DoxyCodeLine{00108\ \ \ \ \ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ pos\_x\ +=\ a.pos\_x;}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ pos\_y\ +=\ a.pos\_y;}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00112\ \ \ \ \ \}}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&\mbox{\hyperlink{class_point_a7a0563fa0b01392bc4fddc8287534547}{operator-\/=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&a)}
+\DoxyCodeLine{00121\ \ \ \ \ \{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ pos\_x\ -\/=\ a.pos\_x;}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ pos\_y\ -\/=\ a.pos\_y;}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00125\ \ \ \ \ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00133\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}\ \mbox{\hyperlink{class_point_a7d2d85d1ffef82b7ce75467b29f809c1}{operator+}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\ \&a)}
+\DoxyCodeLine{00134\ \ \ \ \ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_point_aa49d4ac67981797aaa5eb2727c4cd4d4}{Point}}(a.pos\_x\ +\ pos\_x,\ a.pos\_y\ +\ pos\_y);}
+\DoxyCodeLine{00136\ \ \ \ \ \}}
+\DoxyCodeLine{00137\ \};}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}
