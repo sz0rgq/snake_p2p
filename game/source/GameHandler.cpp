@@ -4,6 +4,15 @@
 
 
 
+/**
+ * @brief Проверяет, столкнулась ли змея сама с собой.
+ *
+ * Эта функция определяет, столкнулась ли указанная змея сама с собой,
+ * проверяя, совпадает ли позиция головы змеи с любой позицией её тела.
+ *
+ * @param s Указатель на объект Snake, который нужно проверить на столкновение с собой.
+ * @return true если змея столкнулась сама с собой, иначе false.
+ */
 bool GameHandler::IsSnake(Snake *s)
 {
     if (s->GetLen() == 1)
@@ -18,6 +27,15 @@ bool GameHandler::IsSnake(Snake *s)
     return false; // Столкновения нет
 }
 
+/**
+ * @brief Проверяет, съела ли змея еду.
+ *
+ * Эта функция определяет, съела ли указанная змея еду, проверяя, совпадает ли позиция головы змеи с любой позицией еды.
+ * Если змея съела еду, функция удаляет её из списка еды, добавляет новую еду и возвращает true.
+ *
+ * @param s Указатель на объект Snake, который нужно проверить на поедание еды.
+ * @return true если змея съела еду, иначе false.
+ */
 bool GameHandler::IsFood(Snake *s)
 {
     List<Food>::Iterator *it = foods->Iterate(); // Итератор по списку еды
@@ -37,6 +55,15 @@ bool GameHandler::IsFood(Snake *s)
     return false; // Еда не найдена
 }
 
+
+/**
+ * @brief Обрабатывает ситуацию выхода змеи за пределы поля.
+ *
+ * Эта функция проверяет, вышла ли голова змеи за пределы игрового поля,
+ * и при необходимости перемещает её на противоположную сторону поля.
+ *
+ * @param s Указатель на объект Snake, который нужно проверить и обработать.
+ */
 void GameHandler::HandleOutOfField(Snake *s)
 {
     int max_x = field->GetSizeX(); // Максимальный размер поля по X
@@ -51,6 +78,11 @@ void GameHandler::HandleOutOfField(Snake *s)
         s->last->pos.SetY(max_y - 1); // Перенос головы змеи на противоположную сторону по Y
 }
 
+/**
+ * @brief Добавляет новую еду на поле.
+ *
+ * Эта функция добавляет новую еду в случайной позиции на игровом поле.
+ */
 void GameHandler::AddFood()
 {
     int x = field->GetSizeX(); // Получение размеров поля по X
@@ -58,6 +90,16 @@ void GameHandler::AddFood()
     foods->Push(new Food(rand() % x, rand() % y)); // Добавление новой еды в случайной позиции
 }
 
+/**
+ * @brief Проверяет, столкнулась ли змея с другой змеёй.
+ *
+ * Эта функция проверяет, столкнулась ли указанная змея с любой другой змеёй на поле.
+ * В случае столкновения возвращает указатель на другую змею.
+ *
+ * @param s Указатель на объект Snake, который нужно проверить на столкновение.
+ * @param other_snake Указатель на указатель другой змеи, с которой произошло столкновение.
+ * @return true если произошло столкновение с другой змеёй, иначе false.
+ */
 bool GameHandler::IsOtherSnake(Snake *s, Snake **other_snake)
 {
     List<Snake>::Iterator *it = snakes->Iterate(); // Итератор по списку змей
@@ -65,7 +107,7 @@ bool GameHandler::IsOtherSnake(Snake *s, Snake **other_snake)
 
     while (it->More())
     {
-        ListCursor<Snake> cr(it->Next());
+        ListCursor<Snake> cr = it->Next();
         if (s != &(*cr)) // Исключаем саму змею s
         {
             if (cr->last->pos == head->pos)
@@ -106,19 +148,13 @@ bool GameHandler::IsOtherSnake(Snake *s, Snake **other_snake)
     return false;
 }
 
-void GameHandler::SnakeTruncate(Snake *s, Snake::item *to)
-{
-    Snake::item *p = s->first; // Начало змеи
-    while (p != to)
-    {
-        Snake::item *tmp = p->next; // Временный указатель на следующий элемент
-        delete p; // Удаление текущего элемента
-        s->len--; // Уменьшение длины змеи
-        p = tmp; // Переход к следующему элементу
-    }
-    s->first = p; // Обновление начала змеи
-}
-
+/**
+ * @brief Удаляет змею из списка змей.
+ *
+ * Эта функция удаляет указанную змею из списка змей.
+ *
+ * @param s Указатель на объект Snake, который нужно удалить.
+ */
 void GameHandler::RemoveSnake(Snake *s)
 {
     List<Snake>::Iterator *it = snakes->Iterate(); // Итератор по списку змей
@@ -135,11 +171,23 @@ void GameHandler::RemoveSnake(Snake *s)
     delete it;
 }
 
+/**
+ * @brief Добавляет змею в список змей.
+ *
+ * Эта функция добавляет указанную змею в список змей.
+ *
+ * @param s Указатель на объект Snake, который нужно добавить.
+ */
 void GameHandler::AddSnake(Snake *s)
 {
     snakes->Push(s); // Добавление змеи в список
 }
 
+/**
+ * @brief Рисует игровое поле.
+ *
+ * Эта функция рисует игровое поле, включая границы, еду и змей.
+ */
 void GameHandler::DrawField()
 {
     int x = field->GetSizeX() + 1; // Ширина поля с учетом границы
@@ -196,6 +244,13 @@ void GameHandler::DrawField()
     delete it_snake;
 }
 
+/**
+ * @brief Рисует головы змей на поле.
+ *
+ * Эта функция рисует головы змей на игровом поле, обозначая текущую змею '@' и других змей '%'.
+ *
+ * @param s Указатель на текущую змею, для которой нужно нарисовать голову.
+ */
 void GameHandler::DrawFieldFor(const Snake *s)
 {
     int x = field->GetSizeX() + 1;
@@ -212,6 +267,7 @@ void GameHandler::DrawFieldFor(const Snake *s)
     }
     delete it_snake;
 }
+
 
 /////////////////////////
 
@@ -300,16 +356,6 @@ bool SnakeHandler::IsFood(Snake *s)
 bool SnakeHandler::IsOtherSnake(Snake *s, Snake **other_snake)
 {
     return handler->IsOtherSnake(s, other_snake); // Вызов соответствующего метода GameHandler
-}
-
-/**
- * @brief Обрезка змеи до указанного элемента.
- * @param s Змея.
- * @param to Элемент, до которого обрезать змею.
- */
-void SnakeHandler::SnakeTruncate(Snake *s, Snake::item *to)
-{
-    handler->SnakeTruncate(s, to); // Вызов соответствующего метода GameHandler
 }
 
 /**

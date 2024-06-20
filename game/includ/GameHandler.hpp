@@ -56,11 +56,7 @@ public:
      * @param s Змея.
      * @param to Элемент, до которого обрезать змею.
      */
-    void SnakeTruncate(Snake *s, Snake::item *to);
-    /**
-     * @brief Удаление змеи из списка змей.
-     * @param s Змея.
-     */
+
     void RemoveSnake(Snake *s);
     /**
      * @brief Добавление змеи в список змей.
