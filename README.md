@@ -1,4 +1,4 @@
-```markdown
+
 # 🐍 snake_p2p
 
 **Snake TCP** is an online game written in C++. Spend your time playing this game and finding bugs and errors! 🙂
@@ -68,4 +68,4 @@ Contributions are welcome! Feel free to open issues or submit pull requests.
 ---
 
 Enjoy playing and feel free to report any issues or bugs! 🎉
-```
+
