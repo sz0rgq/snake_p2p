@@ -1,17 +1,60 @@
 # Project related configuration
 PROJECT_NAME           = "Snake 2P"
+PROJECT_BRIEF          = "An online Snake game written in C++"
 OUTPUT_DIRECTORY       = ./docs
-INPUT                  = ./game/source ./game/includ
+INPUT                  = ./game/source ./game/includ ./README.md
 RECURSIVE              = YES
 EXTRACT_ALL            = YES
-BRIEF_MEMBER_DESC      = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_METHODS  = YES
+EXTRACT_ANON_NSPACES   = YES
+FULL_PATH_NAMES        = YES
+
+# Build related configuration
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+
+# Output related configuration
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_TIMESTAMP         = YES
+HTML_DYNAMIC_SECTIONS  = YES
+HTML_INDEX_NUM_ENTRIES = 100
+
+# Diagrams and Graphs
+HAVE_DOT               = YES
+DOT_PATH               = /usr/local/bin
+DOT_FONTNAME           = Helvetica
+DOT_FONTSIZE           = 10
+CLASS_DIAGRAMS         = YES
+COLLABORATION_GRAPH    = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
 CALL_GRAPH             = YES
 CALLER_GRAPH           = YES
-DOT                     = YES
-HAVE_DOT                = YES
-CLASS_DIAGRAMS          = YES
-INCLUDE_GRAPH           = YES
-INCLUDED_BY_GRAPH       = YES
-GRAPHICAL_HIERARCHY     = YES
-DIRECTORY_GRAPH         = YES
-DOT_PATH                = /usr/local/bin
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DOT_TRANSPARENT        = YES
+DOT_MULTI_TARGETS      = YES
+
+# Extra files
+USE_MDFILE_AS_MAINPAGE = README.md
+
+# Doxygen layout
+LAYOUT_FILE            = layout.xml
+
+# Enable Markdown support
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
+TOC_INCLUDE_HEADINGS   = 2
