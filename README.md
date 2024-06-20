@@ -1,34 +1,37 @@
-# snake_p2p
+```markdown
+# 🐍 snake_p2p
 
-Snake TCP is an online game written in C++. Spend your time playing this game and finding bugs and errors! :)
+**Snake TCP** is an online game written in C++. Spend your time playing this game and finding bugs and errors! 🙂
 
-## How to Build
+## 📦 How to Build
 
-1. Create a build directory and navigate into it:
+1. **Create a build directory and navigate into it:**
    ```sh
    mkdir build && cd build
    ```
 
-2. Run CMake to configure the project:
+2. **Run CMake to configure the project:**
    ```sh
    cmake ..
    ```
 
-3. Build the game:
+3. **Build the game:**
    ```sh
    cmake --build .
    ```
 
-## How to Run a Server
+## 🚀 How to Run a Server
 
 To run the server, execute the following command:
 ```sh
 ./game/game
 ```
 
-## How to Play
+## 🎮 How to Play
 
-To connect to the game, you need a telnet client. In the terminal, type:
+### Connect to the Game
+
+You need a telnet client to connect to the game. In the terminal, type:
 ```sh
 telnet <IP_ADDRESS> <PORT>
 ```
@@ -42,8 +45,8 @@ Replace `<IP_ADDRESS>` with the IP where the game is running and `<PORT>` with t
 
 ### Controls
 
-- Use `W`, `A`, `S`, `D` keys to move.
-- Press `Enter` after typing a direction key to send it to the server.
+- Use <kbd>W</kbd>, <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd> keys to move.
+- Press <kbd>Enter</kbd> after typing a direction key to send it to the server.
 
 ### Symbols
 
@@ -58,4 +61,11 @@ Replace `<IP_ADDRESS>` with the IP where the game is running and `<PORT>` with t
 - You can eat the body (`#`) of other snakes to reduce their size.
 - If you collide with another snake's head (`%`), both you and the other player will be removed from the game.
 
-Enjoy playing and feel free to report any issues or bugs!
+## 🤝 Contribution
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+---
+
+Enjoy playing and feel free to report any issues or bugs! 🎉
+```
