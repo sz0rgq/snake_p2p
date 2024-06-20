@@ -244,6 +244,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Добавление еды на поле. </p>
+<p>Добавляет новую еду на поле.</p>
+<p>Эта функция добавляет новую еду в случайной позиции на игровом поле. </p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -277,9 +279,17 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Добавление змеи в список змей. </p>
+<p>Добавляет змею в список змей.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Змея. </td></tr>
+    <tr><td class="paramname">s</td><td>Змея.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Эта функция добавляет указанную змею в список змей.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Указатель на объект <a class="el" href="class_snake.html" title="Класс для представления змеи в игре.">Snake</a>, который нужно добавить. </td></tr>
   </table>
   </dd>
 </dl>
@@ -316,6 +326,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Отрисовка поля. </p>
+<p>Рисует игровое поле.</p>
+<p>Эта функция рисует игровое поле, включая границы, еду и змей. </p>
 <div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -349,9 +361,17 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Отрисовка поля для конкретной змеи. </p>
+<p>Рисует головы змей на поле.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Змея. </td></tr>
+    <tr><td class="paramname">s</td><td>Змея.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Эта функция рисует головы змей на игровом поле, обозначая текущую змею '@' и других змей ''.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Указатель на текущую змею, для которой нужно нарисовать голову. </td></tr>
   </table>
   </dd>
 </dl>
@@ -388,9 +408,17 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Обработка выхода змеи за пределы поля. </p>
+<p>Обрабатывает ситуацию выхода змеи за пределы поля.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Змея. </td></tr>
+    <tr><td class="paramname">s</td><td>Змея.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Эта функция проверяет, вышла ли голова змеи за пределы игрового поля, и при необходимости перемещает её на противоположную сторону поля.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Указатель на объект <a class="el" href="class_snake.html" title="Класс для представления змеи в игре.">Snake</a>, который нужно проверить и обработать. </td></tr>
   </table>
   </dd>
 </dl>
@@ -427,13 +455,22 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Проверка на столкновение змеи с едой. </p>
+<p>Проверяет, съела ли змея еду.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Змея. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, если столкновение произошло. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если столкновение произошло.</dd></dl>
+<p>Эта функция определяет, съела ли указанная змея еду, проверяя, совпадает ли позиция головы змеи с любой позицией еды. Если змея съела еду, функция удаляет её из списка еды, добавляет новую еду и возвращает true.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Указатель на объект <a class="el" href="class_snake.html" title="Класс для представления змеи в игре.">Snake</a>, который нужно проверить на поедание еды. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true если змея съела еду, иначе false. </dd></dl>
 <div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -471,6 +508,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Проверка на столкновение змеи с другой змеей. </p>
+<p>Проверяет, столкнулась ли змея с другой змеёй.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Змея. </td></tr>
@@ -478,7 +516,16 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, если столкновение произошло. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если столкновение произошло.</dd></dl>
+<p>Эта функция проверяет, столкнулась ли указанная змея с любой другой змеёй на поле. В случае столкновения возвращает указатель на другую змею.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Указатель на объект <a class="el" href="class_snake.html" title="Класс для представления змеи в игре.">Snake</a>, который нужно проверить на столкновение. </td></tr>
+    <tr><td class="paramname">other_snake</td><td>Указатель на указатель другой змеи, с которой произошло столкновение. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true если произошло столкновение с другой змеёй, иначе false. </dd></dl>
 <div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -512,13 +559,22 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Проверка на столкновение змеи с самой собой. </p>
+<p>Проверяет, столкнулась ли змея сама с собой.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Змея. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, если столкновение произошло. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если столкновение произошло.</dd></dl>
+<p>Эта функция определяет, столкнулась ли указанная змея сама с собой, проверяя, совпадает ли позиция головы змеи с любой позицией её тела.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Указатель на объект <a class="el" href="class_snake.html" title="Класс для представления змеи в игре.">Snake</a>, который нужно проверить на столкновение с собой. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true если змея столкнулась сама с собой, иначе false. </dd></dl>
 <div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -552,9 +608,17 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Удаление змеи из списка змей. </p>
+<p>Удаляет змею из списка змей.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Змея. </td></tr>
+    <tr><td class="paramname">s</td><td>Змея.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Эта функция удаляет указанную змею из списка змей.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Указатель на объект <a class="el" href="class_snake.html" title="Класс для представления змеи в игре.">Snake</a>, который нужно удалить. </td></tr>
   </table>
   </dd>
 </dl>
@@ -595,10 +659,19 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Обрезка змеи до указанного элемента. </p>
+<p>Укорачивает змею до указанного элемента.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Змея. </td></tr>
-    <tr><td class="paramname">to</td><td>Элемент, до которого обрезать змею. </td></tr>
+    <tr><td class="paramname">to</td><td>Элемент, до которого обрезать змею.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Эта функция укорачивает змею до указанного элемента, удаляя все элементы до него.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Указатель на объект <a class="el" href="class_snake.html" title="Класс для представления змеи в игре.">Snake</a>, который нужно укоротить. </td></tr>
+    <tr><td class="paramname">to</td><td>Указатель на элемент, до которого нужно укоротить змею. </td></tr>
   </table>
   </dd>
 </dl>
@@ -686,7 +759,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 20 2024 13:42:50 for Snake 2P by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Thu Jun 20 2024 14:14:35 for Snake 2P by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -297,7 +297,18 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, если аргумент "help" был найден и обработка завершена, false в противном случае. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если аргумент "help" был найден и обработка завершена, false в противном случае.</dd></dl>
+<p>Этот метод обрабатывает переданные аргументы командной строки, устанавливая соответствующие значения для параметров игры или выводя справочную информацию.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argv_idx</td><td>Индекс текущего аргумента в массиве <code>argv</code>. </td></tr>
+    <tr><td class="paramname">matched_argv</td><td>Индекс совпавшего аргумента в массиве <code>args</code>. </td></tr>
+    <tr><td class="paramname">num_args</td><td>Массив с текущими значениями параметров игры. </td></tr>
+    <tr><td class="paramname">ip</td><td>Указатель на строку с IP адресом сервера. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Возвращает true, если необходимо завершить программу после обработки аргумента, иначе false. </dd></dl>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -353,6 +364,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Проверяет, является ли аргумент одним из допустимых. </p>
+<p>Проверяет, является ли переданный аргумент одним из допустимых.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argv</td><td>Массив допустимых аргументов. </td></tr>
@@ -362,7 +374,18 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, если аргумент найден, false в противном случае. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если аргумент найден, false в противном случае.</dd></dl>
+<p>Этот метод проверяет, является ли переданный аргумент одним из допустимых, заданных в массиве <code>args</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argv</td><td>Массив строк с допустимыми аргументами. </td></tr>
+    <tr><td class="paramname">arg</td><td>Проверяемый аргумент командной строки. </td></tr>
+    <tr><td class="paramname">argc</td><td>Количество элементов в массиве <code>args</code>. </td></tr>
+    <tr><td class="paramname">matched_argv_idx</td><td>Указатель на переменную, в которой сохраняется индекс совпавшего аргумента. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Возвращает true, если аргумент является допустимым, иначе false. </dd></dl>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -389,7 +412,10 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Метод для старта инициализации игры. </p>
-<dl class="section return"><dt>Returns</dt><dd>Код завершения: 0 - успешное завершение, 1 - ошибка. </dd></dl>
+<p>Метод для инициализации и запуска игры.</p>
+<dl class="section return"><dt>Returns</dt><dd>Код завершения: 0 - успешное завершение, 1 - ошибка.</dd></dl>
+<p>Этот метод инициализирует и запускает игру, используя параметры командной строки, указанные пользователем или значения по умолчанию.</p>
+<dl class="section return"><dt>Returns</dt><dd>Возвращает 0 в случае успешного запуска игры, иначе возвращает 1. </dd></dl>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -424,6 +450,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Выводит информацию о доступных аргументах командной строки. </p>
+<p>Выводит справочную информацию о командной строке.</p>
+<p>Этот метод выводит справочную информацию о командной строке, включая допустимые аргументы и их описания. </p>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -490,7 +518,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 20 2024 13:42:50 for Snake 2P by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Thu Jun 20 2024 14:14:35 for Snake 2P by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>
