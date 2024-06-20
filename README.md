@@ -58,7 +58,6 @@ Replace `<IP_ADDRESS>` with the IP where the game is running and `<PORT>` with t
 ### Objective
 
 - Eat the food (`*`) to grow your snake.
-- You can eat the body (`#`) of other snakes to reduce their size.
 - If you collide with another snake's head (`%`), both you and the other player will be removed from the game.
 
 ## 🤝 Contribution
@@ -68,4 +67,3 @@ Contributions are welcome! Feel free to open issues or submit pull requests.
 ---
 
 Enjoy playing and feel free to report any issues or bugs! 🎉
-
